@@ -1,12 +1,12 @@
-# Nome do projeto
+# Simplifica Terapia
 
 `CURSO: Análise e Desenvolvimento de Sistemas`
 
 `DISCIPLINA: Trabalho Interdisciplinar Desenvolvimento de Aplicação Interativa`
 
-`Xº semestre/ANO`
+`1º semestre/2025`
 
-Escreva um ou dois parágrafos resumindo o objetivo do seu projeto.
+## Uma solução online para gerenciamento de terapia
 
 ## Integrantes
 
