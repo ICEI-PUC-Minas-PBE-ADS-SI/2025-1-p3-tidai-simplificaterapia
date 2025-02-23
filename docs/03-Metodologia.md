@@ -3,9 +3,14 @@
 
 <span style="color:red">Pré-requisitos: <a href="02-Especificacao.md"> Especificação do projeto</a></span>
 
-Descreva aqui a metodologia de trabalho do grupo para abordar o problema. Inclua definições sobre os ambientes de trabalho utilizados pela equipe para desenvolver o projeto. Isso abrange a relação dos ambientes utilizados, a estrutura para a gestão do código-fonte, além da definição do processo e das ferramentas por meio dos quais a equipe se organiza (gestão de equipes).
+A metodologia exigida pelo grupo para o desenvolvimento do projeto "Terapia Simplifica" segue práticas modernas de desenvolvimento ágil e eficiente, com o objetivo de garantir um produto funcional, seguro e escalável. A concepção do projeto foi definida com base em uma análise minuciosa das necessidades do público-alvo e das soluções técnicas, levando em consideração a estrutura da plataforma digital para a gestão de consultas psicológicas e o apoio remoto.
 
 ## Relação de ambientes de trabalho
+
+| Coluna 1 | Coluna 2 | Coluna 3 |
+| -------- | -------- | -------- |
+| Dado 1   | Dado 2   | Dado 3   |
+| Dado 4   | Dado 5   | Dado 6   |
 
 Os artefatos do projeto são desenvolvidos a partir de diversas plataformas. A relação dos ambientes com seus respectivos propósitos deverá ser apresentada em uma tabela que especifique e detalhe Ambiente, Plataforma e Link de Acesso. Defina também os ambientes e frameworks que serão utilizados no desenvolvimento de aplicações móveis.
 
