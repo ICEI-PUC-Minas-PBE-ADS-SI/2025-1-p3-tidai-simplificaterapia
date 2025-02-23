@@ -46,7 +46,7 @@ Discuta como a configuração do projeto foi feita na ferramenta de versionament
 - _Scrum master_: AlunaX
 - Protótipos: AlunoY
 - Testes: AlunoK
-- Documentação: AlunaZ
+- Documentação: Vânia 
 
 #### Sprint 2
 - _Scrum master_: AlunaY
