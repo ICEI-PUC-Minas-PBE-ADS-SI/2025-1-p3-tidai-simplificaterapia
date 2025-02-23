@@ -8,7 +8,7 @@ A metodologia exigida pelo grupo para o desenvolvimento do projeto "Terapia Simp
 ## Relação de ambientes de trabalho
 Os artefatos do projeto são desenvolvidos a partir de diversas plataformas. A relação dos ambientes com seus respectivos propósitos deverá ser apresentada em uma tabela que especifique e detalhe Ambiente, Plataforma e Link de Acesso. Defina também os ambientes e frameworks que serão utilizados no desenvolvimento de aplicações móveis.
 
-A equipe de desenvolvimento utilizará uma série de ferramentas e plataformas para garantir um trabalho eficiente e a entrega de um produto de qualidade. Abaixo está uma tabela detalhando 
+A equipe de desenvolvimento utilizará uma série de ferramentas e plataformas para garantir um trabalho eficiente e a entrega de um produto de qualidade. Abaixo está uma tabela detalhando:  
 
 | Ambiente                 | Plataforma             | Link de Acesso        | Propósito                         |
 | ------------------------ | ---------------------- | --------------------- | --------------------------------- | 
@@ -18,8 +18,8 @@ A equipe de desenvolvimento utilizará uma série de ferramentas e plataformas p
 |                          |                        |                       | feitas no código.                 | 
 | Documentação             | Google Docs            | (https://docs.goog)   | Registro e organização das        |
 |                          |                        |                       | informações do projeto.           |    
-| Comunicação              | Google Meet            | (https://meet.google) | Comunicação entre os membros da   |
-|                          |                        |                       | equipe, reuniões online e         |
+|                          |                        |                       | Comunicação entre os membros da   |
+| Comunicação              | Google Meet            | (https://meet.google) | equipe, reuniões online e         |
 |                          |                        |                       | videoconferências.                |
 | Design e Prototipagem	   | Canva                  | (https://www.canva)   | Criação de interfaces e           |
 |                          |                        |                       | protótipos visuais.               |
