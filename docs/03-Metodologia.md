@@ -6,13 +6,26 @@
 A metodologia exigida pelo grupo para o desenvolvimento do projeto "Terapia Simplifica" segue práticas modernas de desenvolvimento ágil e eficiente, com o objetivo de garantir um produto funcional, seguro e escalável. A concepção do projeto foi definida com base em uma análise minuciosa das necessidades do público-alvo e das soluções técnicas, levando em consideração a estrutura da plataforma digital para a gestão de consultas psicológicas e o apoio remoto.
 
 ## Relação de ambientes de trabalho
-
-| Coluna 1 | Coluna 2 | Coluna 3 |
-| -------- | -------- | -------- |
-| Dado 1   | Dado 2   | Dado 3   |
-| Dado 4   | Dado 5   | Dado 6   |
-
 Os artefatos do projeto são desenvolvidos a partir de diversas plataformas. A relação dos ambientes com seus respectivos propósitos deverá ser apresentada em uma tabela que especifique e detalhe Ambiente, Plataforma e Link de Acesso. Defina também os ambientes e frameworks que serão utilizados no desenvolvimento de aplicações móveis.
+
+A equipe de desenvolvimento utilizará uma série de ferramentas e plataformas para garantir um trabalho eficiente e a entrega de um produto de qualidade. Abaixo está uma tabela detalhando 
+
+| Ambiente                 | Plataforma             | Link de Acesso        | Propósito                         |
+| ------------------------ | ---------------------- | --------------------- | --------------------------------- | 
+| Desenvolvimento          | Visual Studio Code     | (https://visuals)     | Desenvolvimento do código-fonte e |
+|                          |                        |                       | criação de protótipos.            | 
+| Controle de versão       | Git/GitHub             | (https://githu)       | Registre todas as alterações      |
+|                          |                        |                       | feitas no código.                 | 
+| Documentação             | Google Docs            | (https://docs.goog)   | Registro e organização das        |
+|                          |                        |                       | informações do projeto.           |    
+| Comunicação              | Google Meet            | (https://meet.google) | Comunicação entre os membros da   |
+|                          |                        |                       | equipe, reuniões online e         |
+|                          |                        |                       | videoconferências.                |
+| Design e Prototipagem	   | Canva                  | (https://www.canva)   | Criação de interfaces e           |
+|                          |                        |                       | protótipos visuais.               |
+| Repositório de Código    | GitHub                 | (https://githu)       | Armazenamento e controle de       |
+|                          |                        |                       | versão do código-fonte.           |
+
 
 ## Controle de versão
 
