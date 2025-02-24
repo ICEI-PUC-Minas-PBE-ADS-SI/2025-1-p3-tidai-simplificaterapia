@@ -2,6 +2,12 @@
 
 Texto descritivo com a visão geral do projeto abordado. Inclui o contexto, o problema, os objetivos, a justificativa e o público-alvo do projeto.
 
+O projeto "Simplifica Terapia" tem como objetivo desenvolver uma solução tecnológica inovadora para otimizar a gestão de serviços psicológicos, tornando o acesso à terapia mais eficiente e acessível. Em um cenário onde a demanda por suporte psicológico tem aumentado significativamente, especialmente após a pandemia de COVID-19, é essencial que profissionais da área contem com ferramentas que automatizem processos administrativos e facilitem a interação com seus pacientes.
+
+O sistema proposto visa solucionar desafios enfrentados por clínicas e profissionais autônomos, como o gerenciamento de consultas, a emissão de documentos e a comunicação eficiente com os pacientes. A implementação de uma plataforma digital contribuirá para a melhoria da qualidade dos atendimentos, garantindo segurança, acessibilidade e eficácia.
+
+
+
 ## Problema
 Aqui, a equipe deve fornecer uma descrição detalhada do problema a ser resolvido. Não é o momento adequado para abordar questões técnicas relacionadas ao desenvolvimento da aplicação. O objetivo é compreender e comunicar de maneira precisa qual é o desafio ou necessidade que motiva a criação da aplicação.
 
