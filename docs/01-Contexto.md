@@ -1,6 +1,6 @@
 # Introdução
 
-Texto descritivo com a visão geral do projeto abordado. Inclui o contexto, o problema, os objetivos, a justificativa e o público-alvo do projeto.
+<!--Texto descritivo com a visão geral do projeto abordado. Inclui o contexto, o problema, os objetivos, a justificativa e o público-alvo do projeto.-->
 
 O projeto "Simplifica Terapia" tem como objetivo desenvolver uma solução tecnológica inovadora para otimizar a gestão de serviços psicológicos, tornando o acesso à terapia mais eficiente e acessível. Em um cenário onde a demanda por suporte psicológico tem aumentado significativamente, especialmente após a pandemia de COVID-19, é essencial que profissionais da área contem com ferramentas que automatizem processos administrativos e facilitem a interação com seus pacientes.
 
