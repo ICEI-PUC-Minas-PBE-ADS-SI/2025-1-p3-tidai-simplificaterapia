@@ -8,13 +8,15 @@
 
 ## Uma solução online para gerenciamento de terapia
 
+O **Simplifica Terapia** é uma plataforma digital desenvolvida para otimizar o acesso e o gerenciamento das consultas terapêuticas, buscando oferecer um suporte psicológico mais acessível, escalável e confidencial. O sistema visa atender à crescente demanda por saúde mental, especialmente no contexto atual marcado por desafios como a pandemia de COVID-19 e a sobrecarga dos serviços tradicionais.
+
 ## Integrantes
 
-* André Marcus Ribeiro Beiral
-* Maria Eduarda Ferreira de Souza
-* Mariany Karla Abranches de Melo
-* Vânia Lourenço Gonçalves
-* Vitor Schmidt Ribeiro
+- André Marcus Ribeiro Beiral
+- Maria Eduarda Ferreira de Souza
+- Mariany Karla Abranches de Melo
+- Vânia Lourenço Gonçalves
+- Vitor Schmidt Ribeiro
 
 ## Professor
 
@@ -22,13 +24,12 @@
 
 ## Instruções de utilização
 
-Assim que a primeira versão do sistema estiver disponível, deverá complementar com as instruções de utilização. Descreva como instalar eventuais dependências e como executar a aplicação.
+Assim que a primeira versão do sistema estiver disponível, será necessário complementar com as instruções de utilização. Aqui, deverá ser descrito como instalar eventuais dependências e como executar a aplicação.
 
-Não deixe de informar o link onde a aplicação estará disponível para acesso (por exemplo: https://adota-pet.herokuapp.com/src/index.html).
-
-Se houver usuário de teste, o login e a senha também deverão ser informados aqui (por exemplo: usuário - admin / senha - admin).
-
-O link e o usuário/senha descritos acima são apenas exemplos de como tais informações deverão ser apresentadas.
+📌 **Exemplo de Instruções**:
+- **Link de acesso à aplicação**: [https://simplifica-terapia.com](https://simplifica-terapia.com) `EXEMPLO LINK`
+- **Usuário de teste**: `admin`  
+- **Senha de teste**: `admin123`
 
 # Documentação
 
@@ -52,4 +53,30 @@ O link e o usuário/senha descritos acima são apenas exemplos de como tais info
 
 # Apresentação
 
+Confira a apresentação do projeto:
+
 * <a href="presentation/README.md">Apresentação do projeto</a>
+
+## 📑 **Resumo do Projeto - Simplifica Terapia**
+
+O projeto **Simplifica Terapia** surge em um contexto crítico, onde a demanda por serviços de saúde mental está em alta, principalmente devido à pandemia e a sobrecarga dos serviços tradicionais. Com o objetivo de facilitar o acesso à terapia psicológica e aliviar a pressão sobre os sistemas convencionais, nossa solução digital oferece uma plataforma acessível e eficiente.
+
+### **Objetivos Principais**:
+
+- Oferecer uma solução completa para o gerenciamento de clínicas psicológicas.
+- Automatizar processos diários como agendamentos, notificações e gerenciamento de cobranças.
+- Promover o acesso remoto à terapia psicológica, aumentando a privacidade e a flexibilidade.
+  
+---
+
+## 💬 **Como Contribuir**
+
+Se você deseja contribuir para o projeto, siga os passos abaixo:
+
+1. Fork o repositório.
+2. Crie uma branch com sua feature ou correção.
+3. Realize as modificações necessárias e envie um pull request.
+
+---
+
+🌱 **Simplifica Terapia**: Ajudando você a cuidar da sua saúde mental de forma simples e acessível.
