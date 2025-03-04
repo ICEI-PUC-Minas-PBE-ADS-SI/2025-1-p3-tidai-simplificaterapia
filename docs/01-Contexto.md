@@ -30,7 +30,7 @@ O sistema Simplifica Terapia tem como objetivo principal oferecer uma solução 
 Além disso, a plataforma será desenvolvida com foco na escalabilidade e acessibilidade, visando atender à crescente demanda por suporte psicológico de maneira eficaz. Outro aspecto central será a facilidade de gestão dos dados cadastrais dos pacientes, garantindo que as informações estejam sempre organizadas e disponíveis de forma prática e segura.
 
 
-Objetivos específicos:
+### Objetivos específicos:
 
 ●	Desenvolver um sistema completo de gestão para psicólogos;
 ●	Permitir a automatização de tarefas cotidianas em clínicas psicológicas, como: agendamento de consultas, envio de notificações e cobrança; 
@@ -40,6 +40,7 @@ Objetivos específicos:
  
 > **Links úteis**:
 > - [Objetivo geral e objetivo específico: como fazer e quais verbos utilizar](https://blog.mettzer.com/diferenca-entre-objetivo-geral-e-objetivo-especifico/)
+
 
 ## Justificativa
 
