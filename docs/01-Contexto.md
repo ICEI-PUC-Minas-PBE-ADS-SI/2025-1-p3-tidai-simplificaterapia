@@ -13,7 +13,7 @@ A crescente demanda por serviços psicológicos tem evidenciado desafios signifi
 
 Muitos profissionais enfrentam dificuldades na organização de agendas, controle financeiro, além de um suporte para a emissão de documentos essenciais, como recibos e relatórios. Além disso, clínicas que lidam com um grande volume de atendimentos tendem a ter falhas na comunicação com seus pacientes. A falta de uma ferramenta digital integrada pode resultar em atrasos, falta de informações e menor qualidade no atendimento prestado.
 
-Nesse contexto, o "Simplifica Terapia" busca oferecer uma solução eficiente para otimizar esses processos, garantindo uma melhor experiência tanto para os profissionais quanto para os pacientes. A aplicação será utilizada em clínicas de psicologia e por terapeutas autônomos que desejam automatizar suas tarefas diárias, tornando o atendimento mais acessível e eficiente.
+Nesse contexto, o **"Simplifica Terapia"** busca oferecer uma solução eficiente para otimizar esses processos, garantindo uma melhor experiência tanto para os profissionais quanto para os pacientes. A aplicação será utilizada em clínicas de psicologia e por terapeutas autônomos que desejam automatizar suas tarefas diárias, tornando o atendimento mais acessível e eficiente.
 
 
 O grupo pode optar por fazer uso de ferramentas como Design Thinking, que permite uma visão completa do problema.
@@ -32,10 +32,10 @@ Além disso, a plataforma será desenvolvida com foco na escalabilidade e acessi
 
 ### Objetivos específicos:
 
-●	Desenvolver um sistema completo de gestão para psicólogos;
-●	Permitir a automatização de tarefas cotidianas em clínicas psicológicas, como: agendamento de consultas, envio de notificações e cobrança; 
-●	Facilitar a gestão dos dados cadastrais de cada paciente.
-•	Ampliar o acesso aos cuidados de saúde mental por meio de soluções digitais.
+- Desenvolver um sistema completo de gestão para psicólogos;
+- Permitir a automatização de tarefas cotidianas em clínicas psicológicas, como: agendamento de consultas, envio de notificações e cobrança;
+- Facilitar a gestão dos dados cadastrais de cada paciente;
+- Ampliar o acesso aos cuidados de saúde mental por meio de soluções digitais.
 
  
 > **Links úteis**:
@@ -58,21 +58,20 @@ O grupo de trabalho pode fazer uso de questionários, entrevistas e dados estat�
 
 ## Público-alvo
 
-O "Simplifica Terapia" é voltado para diferentes perfis de usuários que buscam otimizar e facilitar o acesso à terapia online. O público pode ser dividido em dois grandes grupos:
+O **"Simplifica Terapia"** é voltado para diferentes perfis de usuários que buscam otimizar e facilitar o acesso à terapia online. O público pode ser dividido em dois grandes grupos:
 
-1. Psicólogos e Terapeutas
+### 1. Psicólogos e Terapeutas
+- Profissionais da área de psicologia que atuam de forma autônoma ou em clínicas.
+- Possuem conhecimento técnico em saúde mental e buscam ferramentas para gerenciar atendimentos e processos administrativos.
+- Têm familiaridade variável com tecnologia, desde iniciantes até profissionais que já utilizam plataformas digitais.
+- Precisam de soluções para organização de consultas, gestão de pacientes e emissão de documentos clínicos.
 
-•	Profissionais da área de psicologia que atuam de forma autônoma ou em clínicas.
-•	Possuem conhecimento técnico em saúde mental e buscam ferramentas para gerenciar atendimentos e processos administrativos.
-•	Têm familiaridade variável com tecnologia, desde iniciantes até profissionais que já utilizam plataformas digitais.
-•	Precisam de soluções para organização de consultas, gestão de pacientes e emissão de documentos clínicos.
+### 2. Pacientes e Usuários da Plataforma
+- Pessoas que buscam acompanhamento psicológico de forma prática e acessível.
+- Podem ser jovens, adultos ou idosos com diferentes graus de familiaridade com tecnologia.
+- Incluem usuários com dificuldades de mobilidade, restrições geográficas ou que preferem atendimento remoto por questões de privacidade e conforto.
+- Enfrentam desafios como estresse, ansiedade, depressão e outros transtornos psicológicos.
 
-2. Pacientes e Usuários da Plataforma
-
-•	Pessoas que buscam acompanhamento psicológico de forma prática e acessível.
-•	Podem ser jovens, adultos ou idosos com diferentes graus de familiaridade com tecnologia.
-•	Incluem usuários com dificuldades de mobilidade, restrições geográficas ou que preferem atendimento remoto por questões de privacidade e conforto.
-•	Enfrentam desafios como estresse, ansiedade, depressão e outros transtornos psicológicos.
 
 
 Adicione informações sobre o público-alvo por meio de uma descrição textual, diagramas de personas e mapa de stakeholders.
