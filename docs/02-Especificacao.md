@@ -1,7 +1,5 @@
 # Especificação do projeto
 
-<span style="color:red">Pré-requisitos: <a href="01-Contexto.md"> Documentação de contexto</a></span>
-
 ## Definição do Problema e Ideia de Solução
 
 ### Problema
