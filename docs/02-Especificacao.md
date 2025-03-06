@@ -26,7 +26,7 @@ Para realizar a especificação do projeto, foram utilizadas as seguintes técni
 
 ## Personas
 
-# Perfis de Usuários do Simplifica Terapia
+## Perfis de Usuários do Simplifica Terapia
 
 ## 1. Ana, 30 anos – Psicóloga Clínica
 
@@ -139,10 +139,3 @@ Essas restrições estabelecem os limites e diretrizes para o desenvolvimento do
 
 ![image](https://github.com/user-attachments/assets/9cf9ba61-0190-4c9d-a6bd-57ce99a8cc42)
 
-
-> **Links úteis**:
-> - [Criando casos de uso](https://www.ibm.com/docs/pt-br/engineering-lifecycle-management-suite/design-rhapsody/10.0?topic=cases-creating-use)
-> - [Como criar diagrama de caso de uso: tutorial passo a passo](https://gitmind.com/pt/fazer-diagrama-de-caso-uso.html/)
-> - [Lucidchart](https://www.lucidchart.com/)
-> - [Astah](https://astah.net/)
-> - [Diagrams](https://app.diagrams.net/)
