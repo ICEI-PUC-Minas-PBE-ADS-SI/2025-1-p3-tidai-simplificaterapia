@@ -25,7 +25,7 @@ Para realizar a especificação do projeto, foram utilizadas as seguintes técni
 - **Metodologia Ágil**: Aplicação de práticas ágeis para desenvolvimento incremental e iterativo da solução.
 
 ---
-
+<br>
 ## Personas
 
 ## Perfis de Usuários do Simplifica Terapia
@@ -48,7 +48,7 @@ Para realizar a especificação do projeto, foram utilizadas as seguintes técni
 - Gostaria de acessar terapia de forma prática, sem precisar deslocar-se até uma clínica.
 - Se sente mais confortável com um ambiente digital seguro e com atendimento personalizado.
 
-
+<br>
 ## Histórias de Usuários
 
 Com base na análise das personas, foram identificadas as seguintes histórias de usuários:
@@ -66,6 +66,7 @@ Com base na análise das personas, foram identificadas as seguintes histórias d
 | Mariana, Paciente Trabalhadora | Acessar laudos e receitas digitais | Ter mais comodidade no acompanhamento do meu tratamento |
 | Mariana, Paciente Trabalhadora | Solicitar troca de terapeuta | Escolher um profissional que melhor atenda minhas necessidades |
 
+<br>
 
 ## Requisitos
 
@@ -84,6 +85,7 @@ O levantamento de requisitos funcionais do sistema Simplifica Terapia visa ident
 | RF-007  | Terapeutas poderão emitir receitas eletrônicas aos pacientes, que terão acesso a essas receitas diretamente no sistema. | MÉDIA |
 | RF-008  | O sistema deverá permitir que os pacientes solicitem a troca de terapeuta, caso não estejam satisfeitos com o atendimento atual. | MÉDIA |
 
+<br>
 
 Os requisitos não funcionais visam garantir que o sistema Simplifica Terapia ofereça uma experiência de uso eficiente, segura e confiável.
 
@@ -98,6 +100,7 @@ Os requisitos não funcionais visam garantir que o sistema Simplifica Terapia of
 | RNF-005 | A aplicação deverá ser escalável para suportar o aumento no número de usuários sem perda de desempenho. | MÉDIA |
 | RNF-006 | O uso do sistema dependerá de uma conexão estável com a internet. | ALTA |
 
+<br>
 
 ## Requisitos da Solução
 
@@ -127,6 +130,7 @@ Os requisitos não funcionais visam garantir que o sistema Simplifica Terapia of
 | RNF-006 | A aplicação deve ser escalável para suportar o aumento do número de usuários sem perda de desempenho. |
 | RNF-007 | O sistema deve exigir uma conexão estável com a internet para funcionamento adequado. |
 
+<br>
 
 ## Restrições
 
@@ -141,6 +145,7 @@ O projeto está sujeito às seguintes limitações:
 
 Essas restrições estabelecem os limites e diretrizes para o desenvolvimento do **Simplifica Terapia**, garantindo viabilidade e conformidade com as necessidades dos usuários e os recursos disponíveis.
 
+<br>
 
 ## Diagrama de casos de uso
 
