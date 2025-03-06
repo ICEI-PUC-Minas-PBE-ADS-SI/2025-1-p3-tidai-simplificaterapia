@@ -6,6 +6,8 @@
 
 O acesso à terapia psicológica enfrenta diversos desafios, incluindo a sobrecarga dos serviços de saúde mental, a distribuição desigual de profissionais e barreiras como custos elevados e deslocamento. Muitos pacientes enfrentam dificuldades para encontrar atendimento acessível e adequado às suas rotinas, enquanto terapeutas precisam gerenciar consultas, finanças e documentação de forma eficiente.
 
+---
+
 ### Ideia de Solução
 
 O **Simplifica Terapia** propõe uma plataforma digital que conecta pacientes a terapeutas de forma prática e segura. O sistema permitirá o agendamento de consultas, envio de lembretes automáticos, geração de laudos e receitas eletrônicas, além de fornecer ferramentas para organização da agenda dos profissionais. Dessa forma, busca-se facilitar o acesso à terapia e otimizar a gestão dos atendimentos.
@@ -21,6 +23,8 @@ Para realizar a especificação do projeto, foram utilizadas as seguintes técni
 - **Requisitos Funcionais e Não Funcionais**: Definição detalhada das funcionalidades essenciais e dos aspectos técnicos que a solução deve atender.
 - **Diagrama de Caso de Uso**: Modelagem dos principais fluxos de interação dos usuários com o sistema.
 - **Metodologia Ágil**: Aplicação de práticas ágeis para desenvolvimento incremental e iterativo da solução.
+
+---
 
 ## Personas
 
