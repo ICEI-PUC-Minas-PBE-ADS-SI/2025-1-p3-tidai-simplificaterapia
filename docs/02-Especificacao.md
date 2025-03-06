@@ -48,6 +48,7 @@ Para realizar a especificação do projeto, foram utilizadas as seguintes técni
 - Gostaria de acessar terapia de forma prática, sem precisar deslocar-se até uma clínica.
 - Se sente mais confortável com um ambiente digital seguro e com atendimento personalizado.
 
+
 ## Histórias de Usuários
 
 Com base na análise das personas, foram identificadas as seguintes histórias de usuários:
@@ -65,6 +66,7 @@ Com base na análise das personas, foram identificadas as seguintes histórias d
 | Mariana, Paciente Trabalhadora | Acessar laudos e receitas digitais | Ter mais comodidade no acompanhamento do meu tratamento |
 | Mariana, Paciente Trabalhadora | Solicitar troca de terapeuta | Escolher um profissional que melhor atenda minhas necessidades |
 
+
 ## Requisitos
 
 O levantamento de requisitos funcionais do sistema Simplifica Terapia visa identificar as funcionalidades essenciais para o sistema e atender às necessidades dos usuários finais. 
@@ -81,6 +83,7 @@ O levantamento de requisitos funcionais do sistema Simplifica Terapia visa ident
 | RF-006  | Pacientes deverão poder acessar laudos de suas consultas de forma segura, após o término das sessões. | ALTA |
 | RF-007  | Terapeutas poderão emitir receitas eletrônicas aos pacientes, que terão acesso a essas receitas diretamente no sistema. | MÉDIA |
 | RF-008  | O sistema deverá permitir que os pacientes solicitem a troca de terapeuta, caso não estejam satisfeitos com o atendimento atual. | MÉDIA |
+
 
 Os requisitos não funcionais visam garantir que o sistema Simplifica Terapia ofereça uma experiência de uso eficiente, segura e confiável.
 
@@ -124,6 +127,7 @@ Os requisitos não funcionais visam garantir que o sistema Simplifica Terapia of
 | RNF-006 | A aplicação deve ser escalável para suportar o aumento do número de usuários sem perda de desempenho. |
 | RNF-007 | O sistema deve exigir uma conexão estável com a internet para funcionamento adequado. |
 
+
 ## Restrições
 
 O projeto está sujeito às seguintes limitações:
@@ -136,6 +140,7 @@ O projeto está sujeito às seguintes limitações:
 | 004 | O armazenamento dos dados deve seguir as normas de privacidade e segurança vigentes. |
 
 Essas restrições estabelecem os limites e diretrizes para o desenvolvimento do **Simplifica Terapia**, garantindo viabilidade e conformidade com as necessidades dos usuários e os recursos disponíveis.
+
 
 ## Diagrama de casos de uso
 
