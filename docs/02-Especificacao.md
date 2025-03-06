@@ -70,9 +70,9 @@ Com base na análise das personas, foram identificadas as seguintes histórias d
 
 ## Requisitos
 
-O levantamento de requisitos funcionais do sistema Simplifica Terapia visa identificar as funcionalidades essenciais para o sistema e atender às necessidades dos usuários finais. 
-
 ## Requisitos Funcionais
+
+O levantamento de requisitos funcionais do sistema Simplifica Terapia visa identificar as funcionalidades essenciais para o sistema e atender às necessidades dos usuários finais. 
 
 | ID      | Descrição do Requisito | Prioridade |
 |---------|---------------------------------------------------------|--------|
@@ -87,9 +87,9 @@ O levantamento de requisitos funcionais do sistema Simplifica Terapia visa ident
 
 
 
-Os requisitos não funcionais visam garantir que o sistema Simplifica Terapia ofereça uma experiência de uso eficiente, segura e confiável.
-
 ## Requisitos Não Funcionais
+
+Os requisitos não funcionais visam garantir que o sistema Simplifica Terapia ofereça uma experiência de uso eficiente, segura e confiável.
 
 | ID      | Descrição do Requisito | Prioridade |
 |---------|--------------------------------------------------------------|--------|
