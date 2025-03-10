@@ -15,13 +15,10 @@ Muitos profissionais enfrentam dificuldades na organização de agendas, control
 
 Nesse contexto, o **"Simplifica Terapia"** busca oferecer uma solução eficiente para otimizar esses processos, garantindo uma melhor experiência tanto para os profissionais quanto para os pacientes. A aplicação será utilizada em clínicas de psicologia e por terapeutas autônomos que desejam automatizar suas tarefas diárias, tornando o atendimento mais acessível e eficiente.
 
+## Matriz CSD
+![Matriz_CSD](https://github.com/user-attachments/assets/96468d2b-6705-4406-ae88-36fb3e1fc4ff)
 
-O grupo pode optar por fazer uso de ferramentas como Design Thinking, que permite uma visão completa do problema.
 
-> **Links úteis**:
-> - [Objetivos, problema de pesquisa e justificativa](https://medium.com/@versioparole/objetivos-problema-de-pesquisa-e-justificativa-c98c8233b9c3)
-> - [Matriz certezas, suposições e dúvidas](https://medium.com/educa%C3%A7%C3%A3o-fora-da-caixa/matriz-certezas-suposi%C3%A7%C3%B5es-e-d%C3%BAvidas-fa2263633655)
-> - [Brainstorming](https://www.euax.com.br/2018/09/brainstorming/)
 
 ## Objetivos
 
@@ -37,9 +34,6 @@ Além disso, a plataforma será desenvolvida com foco na escalabilidade e acessi
 - Facilitar a gestão dos dados cadastrais de cada paciente;
 - Ampliar o acesso aos cuidados de saúde mental por meio de soluções digitais.
 
- 
-> **Links úteis**:
-> - [Objetivo geral e objetivo específico: como fazer e quais verbos utilizar](https://blog.mettzer.com/diferenca-entre-objetivo-geral-e-objetivo-especifico/)
 
 
 ## Justificativa
