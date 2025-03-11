@@ -1,6 +1,5 @@
 # Introdução
 
-<!--Texto descritivo com a visão geral do projeto abordado. Inclui o contexto, o problema, os objetivos, a justificativa e o público-alvo do projeto.-->
 
 O projeto "Simplifica Terapia" tem como objetivo desenvolver uma solução tecnológica inovadora para otimizar a gestão de serviços psicológicos, tornando o acesso à terapia mais eficiente e acessível. Em um cenário onde a demanda por suporte psicológico tem aumentado significativamente, especialmente após a pandemia de COVID-19, é essencial que profissionais da área contem com ferramentas que automatizem processos administrativos e facilitem a interação com seus pacientes.
 
@@ -15,7 +14,7 @@ Muitos profissionais enfrentam dificuldades na organização de agendas, control
 
 Nesse contexto, o **"Simplifica Terapia"** busca oferecer uma solução eficiente para otimizar esses processos, garantindo uma melhor experiência tanto para os profissionais quanto para os pacientes. A aplicação será utilizada em clínicas de psicologia e por terapeutas autônomos que desejam automatizar suas tarefas diárias, tornando o atendimento mais acessível e eficiente.
 
-## Matriz CSD
+### Matriz CSD
 ![Matriz_CSD](https://github.com/user-attachments/assets/96468d2b-6705-4406-ae88-36fb3e1fc4ff)
 
 
@@ -45,10 +44,6 @@ A escolha pelo desenvolvimento do "Simplifica Terapia" se dá pela carência de 
 Neste contexto, o “Simplifica Terapia” oferece uma solução digital que proporciona um ambiente seguro e anônimo para busca de apoio psicológico. O aplicativo irá permitir que os alunos se conectem com terapeutas qualificados, reduzam o medo de serem julgados, facilitem o agendamento de sessões, melhorem a disponibilidade de tempo de acordo com o aluno e promovam o acesso a informações sobre saúde mental.
 
 
-O grupo de trabalho pode fazer uso de questionários, entrevistas e dados estatísticos, que podem ser apresentados, com o objetivo de esclarecer detalhes do problema que será abordado pelo grupo.
-
-> **Links úteis**:
-> - [Como montar a justificativa](https://guiadamonografia.com.br/como-montar-justificativa-do-tcc/)
 
 ## Público-alvo
 
@@ -68,10 +63,15 @@ O **"Simplifica Terapia"** é voltado para diferentes perfis de usuários que bu
 
 
 
-Adicione informações sobre o público-alvo por meio de uma descrição textual, diagramas de personas e mapa de stakeholders.
+### Mapa de Stakeholders  
 
-> **Links úteis**:
-> - [Público-alvo](https://blog.hotmart.com/pt-br/publico-alvo/)
-> - [Como definir o público-alvo](https://exame.com/pme/5-dicas-essenciais-para-definir-o-publico-alvo-do-seu-negocio/)
-> - [Público-alvo: o que é, tipos, como definir seu público e exemplos](https://klickpages.com.br/blog/publico-alvo-o-que-e/)
-> - [Qual a diferença entre público-alvo e persona?](https://rockcontent.com/blog/diferenca-publico-alvo-e-persona/)
+| Stakeholder                 | Interesse | Influência | Estratégia de Engajamento |
+|-----------------------------|-----------|------------|--------------------------|
+| **Psicólogos e Terapeutas**  | Alto      | Alto       | Comunicação direta, suporte contínuo e treinamentos |
+| **Pacientes**               | Alto      | Médio      | Interface intuitiva, suporte técnico e feedbacks regulares |
+| **Clínicas e Consultórios**  | Médio     | Alto       | Relatórios de desempenho e suporte à gestão |
+| **Órgãos Reguladores (CRP, CFP)** | Médio | Médio | Conformidade com normas e segurança dos dados |
+| **Equipe de Desenvolvimento** | Alto    | Médio      | Reuniões regulares e metodologia ágil |
+| **Empresas e Planos de Saúde** | Baixo   | Médio      | Parcerias estratégicas e integração |
+| **Fornecedores de Tecnologia** | Baixo  | Baixo      | Monitoramento mínimo, suporte eventual |
+
