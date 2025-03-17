@@ -5,6 +5,8 @@ O projeto "Simplifica Terapia" tem como objetivo desenvolver uma solução tecno
 
 O sistema proposto visa solucionar desafios enfrentados por clínicas e profissionais autônomos, como o gerenciamento de consultas, a emissão de documentos e a comunicação eficiente com os pacientes. A implementação de uma plataforma digital contribuirá para a melhoria da qualidade dos atendimentos, garantindo segurança, acessibilidade e eficácia.
 
+O Simplifica Terapia é voltado para psicólogos, clínicas e pacientes que buscam uma experiência mais prática e eficiente. A plataforma visa oferecer uma solução acessível e intuitiva, contribuindo para a digitalização dos serviços de saúde mental e aprimorando a qualidade dos atendimentos.
+
 
 
 ## Problema
