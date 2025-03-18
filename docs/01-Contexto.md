@@ -1,3 +1,5 @@
+<!-- A Introdução consiste das etapas: Contextualização -- Definição do problema -- Definição dos Objetivos -- Justificativa, e tem como função situar o seu trabalho dentro de um contexto de mercado e mostrar a importância da sua proposta para resolver a dor de um usuário. -->
+
 # Introdução
 
 
@@ -8,7 +10,8 @@ O sistema proposto visa solucionar desafios enfrentados por clínicas e profissi
 O Simplifica Terapia é voltado para psicólogos, clínicas e pacientes que buscam uma experiência mais prática e eficiente. A plataforma visa oferecer uma solução acessível e intuitiva, contribuindo para a digitalização dos serviços de saúde mental e aprimorando a qualidade dos atendimentos.
 
 
-
+<!-- Nesse momento você deve apresentar o problema que a sua aplicação deve resolver. No entanto, não é a hora de comentar sobre a solução/aplicação.-->
+<!--Descreva também o contexto em que essa aplicação será usada, se houver: empresa, tecnologias, etc. Novamente, descreva apenas o que de fato existir, pois ainda não é a hora de apresentar requisitos detalhados ou projetos.-->
 ## Problema
 A crescente demanda por serviços psicológicos tem evidenciado desafios significativos para profissionais da área e clínicas especializadas. Entre os principais problemas identificados estão a dificuldade na gestão de consultas, a necessidade de automatização de processos administrativos e a comunicação eficiente entre terapeutas e pacientes.
 
@@ -20,7 +23,8 @@ Nesse contexto, o **"Simplifica Terapia"** busca oferecer uma solução eficient
 ![Matriz_CSD](https://github.com/user-attachments/assets/96468d2b-6705-4406-ae88-36fb3e1fc4ff)
 
 
-
+<!-- Aqui você deve descrever os objetivos do trabalho indicando que o objetivo geral é desenvolver um software para solucionar o problema apresentado acima. -->
+<!-- Apresente também alguns (pelo menos 2) objetivos específicos dependendo de onde você vai querer concentrar a sua prática investigativa, ou como você vai aprofundar no seu trabalho. -->
 ## Objetivos
 
 O sistema Simplifica Terapia tem como objetivo principal oferecer uma solução completa de gestão para psicólogos, otimizando o funcionamento de clínicas psicológicas. O sistema permitirá a automatização de tarefas rotineiras, como o agendamento de consultas, o envio de notificações e o gerenciamento de cobranças, promovendo uma maior eficiência operacional.
@@ -36,7 +40,7 @@ Além disso, a plataforma será desenvolvida com foco na escalabilidade e acessi
 - Ampliar o acesso aos cuidados de saúde mental por meio de soluções digitais.
 
 
-
+<!-- Descreva a importância ou a motivação para trabalhar com esta aplicação que você escolheu. Indique as razões pelas quais você escolheu seus objetivos específicos ou as razões para aprofundar em certos aspectos do software. -->
 ## Justificativa
 
 Nascimento et al. (2021) destacam que muitos profissionais de enfermagem sofreram adoecimento psíquico devido à saturação dos leitos críticos e clínicos nos hospitais, o que gerou transtornos como ansiedade, depressão e a Síndrome de Burnout. Essa realidade não afeta apenas os trabalhadores, mas também os centros de saúde mental, que lutam para atender a uma demanda crescente com recursos limitados. A falta de infraestrutura e financiamento torna o desafio ainda maior, dificultando o atendimento às necessidades dos pacientes.
@@ -46,7 +50,7 @@ A escolha pelo desenvolvimento do "Simplifica Terapia" se dá pela carência de 
 Neste contexto, o “Simplifica Terapia” oferece uma solução digital que proporciona um ambiente seguro e anônimo para busca de apoio psicológico. O aplicativo irá permitir que os alunos se conectem com terapeutas qualificados, reduzam o medo de serem julgados, facilitem o agendamento de sessões, melhorem a disponibilidade de tempo de acordo com o aluno e promovam o acesso a informações sobre saúde mental.
 
 
-
+<!-- Descreva quem serão as pessoas que usarão a sua aplicação indicando os diferentes perfis. O objetivo aqui não é definir quem serão os clientes ou quais serão os papéis dos usuários na aplicação. A ideia é, dentro do possível, conhecer um pouco mais sobre o perfil dos usuários: conhecimentos prévios, relação com a tecnologia, relações hierárquicas, etc. -->
 ## Público-alvo
 
 O **"Simplifica Terapia"** é voltado para diferentes perfis de usuários que buscam otimizar e facilitar o acesso à terapia online. O público pode ser dividido em dois grandes grupos:
