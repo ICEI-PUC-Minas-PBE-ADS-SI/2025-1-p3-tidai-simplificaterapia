@@ -16,7 +16,7 @@ A equipe de desenvolvimento utilizará uma série de ferramentas e plataformas p
 | ------------------------ | ---------------------- | --------------------- | --------------------------------- | 
 | Desenvolvimento          | Visual Studio Code     | (https://visuals)     | Desenvolvimento do código-fonte e |
 |                          |                        |                       | criação de protótipos.            | 
-| Controle de versão       | Git/GitHub             | (https://githu)       | Registre todas as alterações      |
+| Controle de versão       | Git/GitHub             |(https://github.com/)       | Registre todas as alterações      |
 |                          |                        |                       | feitas no código.                 | 
 | Documentação             | Google Docs            | (https://docs.goog)   | Registro e organização das        |
 |                          |                        |                       | informações do projeto.           |    
