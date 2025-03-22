@@ -76,7 +76,7 @@ O levantamento de requisitos funcionais do sistema Simplifica Terapia visa ident
 
 | ID      | Descrição do Requisito | Prioridade |
 |---------|---------------------------------------------------------|--------|
-| RF-001  | O sistema deverá permitir o cadastro, edição e exclusão de informações de pacientes e terapeutas, incluindo dados pessoais e históricos de atendimento. | ALTA |
+| RF-001  | O sistema deverá permitir o cadastro e exclusão de informações de pacientes e terapeutas, incluindo dados pessoais e históricos de atendimento. | ALTA |
 | RF-002  | O sistema deverá possibilitar que os pacientes agendem, visualizem e cancelem sessões de terapia com terapeutas disponíveis. | ALTA |
 | RF-003  | Terapeutas deverão poder visualizar suas consultas agendadas, com possibilidade de confirmar ou cancelar os atendimentos. | ALTA |
 | RF-004  | O sistema deverá gerar relatórios sobre consultas realizadas, permitindo a análise de informações como frequência de sessões e progresso dos pacientes. | MÉDIA |
@@ -108,7 +108,7 @@ Os requisitos não funcionais visam garantir que o sistema Simplifica Terapia of
 
 | ID     | Descrição do Requisito |
 |--------|------------------------------------------------------------|
-| RF-001 | O sistema deve permitir o cadastro, edição e exclusão de pacientes e terapeutas. |
+| RF-001 | O sistema deve permitir o cadastro e exclusão de pacientes e terapeutas. |
 | RF-002 | Deve ser possível que pacientes agendem, visualizem e cancelem sessões de terapia. |
 | RF-003 | O sistema deve permitir que terapeutas gerenciem sua agenda e confirmem ou cancelem atendimentos. |
 | RF-004 | Deve ser possível emitir relatórios de consultas realizadas para análise do progresso dos pacientes. |
