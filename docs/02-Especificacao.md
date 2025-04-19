@@ -151,4 +151,4 @@ Essas restrições estabelecem os limites e diretrizes para o desenvolvimento do
 
 ![image](https://github.com/user-attachments/assets/9cf9ba61-0190-4c9d-a6bd-57ce99a8cc42)
 
-![Diagrama de caso de uso - Diagrama de caso de uso](https://github.com/user-attachments/assets/b9148689-b5e8-439b-b548-8ae2a7f60e97)
+![Diagrama de caso de uso](https://github.com/user-attachments/assets/242272c5-5fba-4ae8-872c-c79756b185a5)
