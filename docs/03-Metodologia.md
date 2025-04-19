@@ -16,16 +16,16 @@ A equipe de desenvolvimento utilizará uma série de ferramentas e plataformas p
 | ------------------------ | ---------------------- | --------------------- | --------------------------------- | 
 | Desenvolvimento          | Visual Studio Code     | (https://visuals)     | Desenvolvimento do código-fonte e |
 |                          |                        |                       | criação de protótipos.            | 
-| Controle de versão       | Git/GitHub             |(https://github.com/)       | Registre todas as alterações      |
+| Controle de versão       | Git/GitHub             |(https://github.com/)  | Registre todas as alterações      |
 |                          |                        |                       | feitas no código.                 | 
-| Documentação             | Google Docs            | ([https://docs.goog])   | Registro e organização das        |
+| Documentação             | Google Docs            |(https://docs.google.com/)| Registro e organização das        |
 |                          |                        |                       | informações do projeto.           |    
 |                          |                        |                       | Comunicação entre os membros da   |
-| Comunicação              | Google Meet            | (https://meet.google) | equipe, reuniões online e         |
+| Comunicação              | Google Meet            |(https://meet.google.com/)| equipe, reuniões online e         |
 |                          |                        |                       | videoconferências.                |
-| Design e Prototipagem	   | Canva                  | (https://www.canva)   | Criação de interfaces e           |
+| Design e Prototipagem	   | Canva                  |(https://www.canva.com/)| Criação de interfaces e           |
 |                          |                        |                       | protótipos visuais.               |
-| Repositório de Código    | GitHub                 | (https://githu)       | Armazenamento e controle de       |
+| Repositório de Código    | GitHub                 |((https://github.com/) | Armazenamento e controle de       |
 |                          |                        |                       | versão do código-fonte.           |
 
 
