@@ -18,7 +18,7 @@ A equipe de desenvolvimento utilizará uma série de ferramentas e plataformas p
 |                          |                        |                       | criação de protótipos.            | 
 | Controle de versão       | Git/GitHub             |(https://github.com/)       | Registre todas as alterações      |
 |                          |                        |                       | feitas no código.                 | 
-| Documentação             | Google Docs            | (https://docs.goog)   | Registro e organização das        |
+| Documentação             | Google Docs            | ([https://docs.goog])   | Registro e organização das        |
 |                          |                        |                       | informações do projeto.           |    
 |                          |                        |                       | Comunicação entre os membros da   |
 | Comunicação              | Google Meet            | (https://meet.google) | equipe, reuniões online e         |
