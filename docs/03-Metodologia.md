@@ -14,7 +14,7 @@ A equipe de desenvolvimento utilizará uma série de ferramentas e plataformas p
 
 | Ambiente                 | Plataforma             | Link de Acesso        | Propósito                         |
 | ------------------------ | ---------------------- | --------------------- | --------------------------------- | 
-| Desenvolvimento          | Visual Studio Code     | (https://visuals)     | Desenvolvimento do código-fonte e |
+| Desenvolvimento          | Visual Studio Code     |(https://visualstudio.microsoft.com/)| Desenvolvimento do código-fonte e |
 |                          |                        |                       | criação de protótipos.            | 
 | Controle de versão       | Git/GitHub             |(https://github.com/)  | Registre todas as alterações      |
 |                          |                        |                       | feitas no código.                 | 
