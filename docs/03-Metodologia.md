@@ -25,7 +25,7 @@ A equipe de desenvolvimento utilizará uma série de ferramentas e plataformas p
 |                          |                        |                       | videoconferências.                |
 | Design e Prototipagem	   | Canva                  |(https://www.canva.com/)| Criação de interfaces e           |
 |                          |                        |                       | protótipos visuais.               |
-| Repositório de Código    | GitHub                 |((https://github.com/) | Armazenamento e controle de       |
+| Repositório de Código    | GitHub                 |(https://github.com/) | Armazenamento e controle de       |
 |                          |                        |                       | versão do código-fonte.           |
 
 
