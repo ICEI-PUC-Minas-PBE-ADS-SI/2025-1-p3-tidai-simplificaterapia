@@ -76,6 +76,25 @@ Esse mapeamento garantiu que a criação dos wireframes e a arquitetura da plata
 
 ## Wireframes
 
+Foram produzidos wireframes de média fidelidade para visualizar a estrutura das principais telas da plataforma:
+> - Tela Inicial (Menu principal)
+> - Tela de Agendamento de Consulta
+> - Tela de Consultas Agendadas
+> - Tela de Laudos e Receitas
+> - Tela de Pagamento
+> - Tela de Avaliações de Terapeutas
+
+Esses protótipos foram essenciais para testar a disposição dos elementos, usabilidade e a jornada do usuário, antecipando melhorias no fluxo de navegação.
+
+### Ferramentas Utilizadas:
+> - Visual Paradigm
+> - Canva
+
+ ![Exemplo de user flow](images/1.png)
+ ![Exemplo de user flow](images/4.png)
+ ![Exemplo de user flow](images/6.png)
+ ![Exemplo de user flow](images/7.png)
+ ![Exemplo de user flow](images/16.png)
 <!-- São protótipos usados no design de interface para sugerir a estrutura de um site web e seu relacionamento entre suas páginas. Um wireframe web é uma ilustração que mostra o layout dos elementos fundamentais na interface.
 
 ![Exemplo de wireframe](images/wireframe.png)
@@ -93,6 +112,21 @@ Esse mapeamento garantiu que a criação dos wireframes e a arquitetura da plata
 
 ## Interface do sistema
 
-Visão geral da interação do usuário por meio das telas do sistema. 
+<!-- Visão geral da interação do usuário por meio das telas do sistema. 
 
-> Apresente as principais interfaces da plataforma em sua versão final.
+> Apresente as principais interfaces da plataforma em sua versão final. -->
+A interface final do Simplifica Terapia foi desenvolvida com atenção às boas práticas de UX/UI, sendo:
+
+> - Responsiva, adequada para dispositivos móveis e desktops (atendendo RNF-001)
+> - Clara e Intuitiva, focada em usabilidade rápida e amigável (RNF-003, RNF-004)
+> - Segura, com criptografia de dados sensíveis dos pacientes e terapeutas (RNF-003)
+> - Disponível 24/7, respeitando alta disponibilidade (RNF-005)
+
+As telas finais entregam uma experiência prática e confiável, otimizando tanto o atendimento ao paciente quanto a organização do terapeuta, exatamente como as histórias de usuários e requisitos funcionais exigiam.
+
+ ![Exemplo de user flow](images/8.png)
+ ![Exemplo de user flow](images/11.png)
+ ![Exemplo de user flow](images/19.png)
+ ![Exemplo de user flow](images/23.png)
+ ![Exemplo de user flow](images/28.png)
+
