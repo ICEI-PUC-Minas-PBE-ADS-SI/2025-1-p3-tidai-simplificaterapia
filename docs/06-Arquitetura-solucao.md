@@ -105,7 +105,7 @@ Apresente também uma figura explicando como as tecnologias estão relacionadas 
 
 ## Hospedagem
 
-Explique como a hospedagem e o lançamento da plataforma foram realizados.
+Utilizaremos a hospedagem gratuita do GitHub.
 
 > **Links úteis**:
 > - [Website com GitHub Pages](https://pages.github.com/)
