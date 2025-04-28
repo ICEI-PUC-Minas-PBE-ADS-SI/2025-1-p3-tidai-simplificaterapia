@@ -7,7 +7,7 @@ Definição de como o software é estruturado em termos dos componentes que faze
 ![Arquitetura da Solução](images/arquitetura.png) -->
 A construção da arquitetura do Simplifica Terapia foi fundamentada no projeto de interface previamente desenvolvido, garantindo que todos os componentes da solução fossem planejados para oferecer uma experiência prática, segura e acessível para pacientes e terapeutas.
 
-🧩 ###Arquitetura da Solução
+🧩 ### Arquitetura da Solução
 A solução foi estruturada em três grandes camadas:
 
 > - Front-end: Responsável pela interação do usuário com o sistema.
@@ -30,7 +30,7 @@ O diagrama de classes do Simplifica Terapia ilustra a estrutura do sistema, repr
 
 O modelo de classes foi desenvolvido para atender os requisitos funcionais e garantir integridade dos dados durante a execução do sistema.
 
-##  Modelo de dados
+## Modelo de dados
 
 <!-- O desenvolvimento da solução proposta requer a existência de bases de dados que permitam realizar o cadastro de dados e os controles associados aos processos identificados, assim como suas recuperações.
 
