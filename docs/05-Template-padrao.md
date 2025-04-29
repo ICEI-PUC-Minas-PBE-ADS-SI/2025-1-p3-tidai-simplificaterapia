@@ -2,7 +2,7 @@
 
 <span style="color:red">Pré-requisitos: <a href="02-Especificacao.md"> Especificação do projeto</a></span>, <a href="03-Metodologia.md"> Metodologia</a>, <a href="04-Projeto-interface.md"> Projeto de interface</a>
 
-Layout padrão da aplicação que será utilizado em todas as páginas com a definição de identidade visual, aspectos de responsividade e iconografia.
+Layout padrão da aplicação: https://drive.google.com/file/d/1qUbb19VJMMD7PbfNqVGf5xO-m0e28Jbk/view?usp=sharing
 
 > **Links úteis**:
 >
