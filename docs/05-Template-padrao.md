@@ -4,6 +4,7 @@
 
 A estrutura das telas foi pensada para a interação com interfaces mobile, a ideia é ser uma interface bastante simples e intuitiva, sem muita informação e elementos supérfluos.
 
+![Estrutura das telas](https://github.com/user-attachments/assets/fe735726-e7dd-4d75-b695-fbcbed46ba4f)
 
 
 ## Uso das Cores
