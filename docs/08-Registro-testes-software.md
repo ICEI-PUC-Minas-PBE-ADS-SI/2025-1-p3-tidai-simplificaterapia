@@ -8,17 +8,17 @@ Para cada caso de teste definido no <a href="07-Plano-testes-software.md"> Plano
 
 | **Caso de teste** 	| **CT-001 – Cadastrar perfil** 	|
 |:---:	|:---:	|
-| Requisito associado | RF-00X - A aplicação deve apresentar, na página principal, a funcionalidade de cadastro de usuários para que esses consigam criar e gerenciar seu perfil. |
+| Requisito associado | RF-001 - A aplicação deve apresentar, na página principal, a funcionalidade de cadastro de usuários para que estes consigam criar e gerenciar seu perfil. |
 | Registro de evidência | [www.teste.com.br/drive/ct-01](http://www.teste.com.br/drive/ct-01) |
 
 | **Caso de teste** 	| **CT-002 – Agendar conculta** 	|
 |:---:	|:---:	|
-| Requisito associado | RF-00Y - A aplicação deve permitir que um usuário previamente cadastrado faça login. |
+| Requisito associado | RF-002 - O sistema deverá possibilitar que os pacientes agendem, visualizem e cancelem sessões de terapia com terapeutas disponíveis. |
 | Registro de evidência | [www.teste.com.br/drive/ct-02](http://www.teste.com.br/drive/ct-02) |
 
 | **Caso de teste** 	| **CT-003 – Visualizar consultas** 	|
 |:---:	|:---:	|
-| Requisito associado | RF-00X - A aplicação deve apresentar, na página principal, a funcionalidade de cadastro de usuários para que esses consigam criar e gerenciar seu perfil. |
+| Requisito associado | RF-003 - Pacientes deverão poder visualizar suas consultas agendadas, com possibilidade de confirmar ou cancelar os atendimentos. |
 | Registro de evidência | [www.teste.com.br/drive/ct-01](http://www.teste.com.br/drive/ct-01) |
 
 | **Caso de teste** 	| **CT-004 – Gerar relatórios** 	|
@@ -31,10 +31,9 @@ Para cada caso de teste definido no <a href="07-Plano-testes-software.md"> Plano
 | Requisito associado | RF-00X - A aplicação deve apresentar, na página principal, a funcionalidade de cadastro de usuários para que esses consigam criar e gerenciar seu perfil. |
 | Registro de evidência | [www.teste.com.br/drive/ct-01](http://www.teste.com.br/drive/ct-01) |
 
-| **Caso de teste** 	| **CT-006 – Acessar laudos** 	|
+| **Caso de teste** 	| **CT-006 – Acessar laudos/receitas** 	|
 |:---:	|:---:	|
-| Requisito associado | RF-00Y - A aplicação deve permitir que um usuário previamente cadastrado faça login. |
-| Registro de evidência | [www.teste.com.br/drive/ct-02](http://www.teste.com.br/drive/ct-02) |
+| Requisito associado | RF-006 - Pacientes deverão poder acessar laudos/receitas de suas consultas de forma segura, após o término das sessões. | [www.teste.com.br/drive/ct-02](http://www.teste.com.br/drive/ct-02) |
 
 | **Caso de teste** 	| **CT-007 – Emitir receitas eletrônicas** 	|
 |:---:	|:---:	|
@@ -43,8 +42,7 @@ Para cada caso de teste definido no <a href="07-Plano-testes-software.md"> Plano
 
 | **Caso de teste** 	| **CT-008 – Solicitar troca de teraupeta** |
 |:---:	|:---:	|
-| Requisito associado | RF-00Y - A aplicação deve permitir que um usuário previamente cadastrado faça login. |
-| Registro de evidência | [www.teste.com.br/drive/ct-02](http://www.teste.com.br/drive/ct-02) |
+| Requisito associado | RF-008 - O sistema deverá permitir que os pacientes solicitem a troca de terapeuta, caso não estejam satisfeitos com o atendimento atual. | [www.teste.com.br/drive/ct-02](http://www.teste.com.br/drive/ct-02) |
 
 
 > **Links úteis**:
