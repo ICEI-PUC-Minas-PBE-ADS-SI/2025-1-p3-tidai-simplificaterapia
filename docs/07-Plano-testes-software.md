@@ -12,7 +12,7 @@ Por exemplo:
 
 | **Caso de teste**  | **CT-001 – Cadastrar perfil**  |
 |:---: |:---: |
-| Requisito associado | RF-00X - A aplicação deve apresentar, na página principal, a funcionalidade de cadastro de usuários para que estes consigam criar e gerenciar seu perfil. |
+| Requisito associado | RF-001 - A aplicação deve apresentar, na página principal, a funcionalidade de cadastro de usuários para que estes consigam criar e gerenciar seu perfil. |
 | Objetivo do teste | Verificar se o usuário consegue se cadastrar na aplicação. |
 | Passos | - Acessar o navegador <br> - Informar o endereço do site https://adota-pet.herokuapp.com/src/index.html <br> - Clicar em "Criar conta" <br> - Preencher os campos obrigatórios (e-mail, nome, sobrenome, celular, CPF, senha, confirmação de senha) <br> - Aceitar os termos de uso <br> - Clicar em "Registrar" |
 | Critério de êxito | - O cadastro foi realizado com sucesso. |
@@ -72,7 +72,7 @@ Por exemplo:
 
 | **Caso de teste**  | **CT-007 – Solicitar troca de terapeuta**  |
 |:---: |:---: |
-| Requisito associado | RF-00Y - O sistema deverá permitir que os pacientes solicitem a troca de terapeuta, caso não estejam satisfeitos com o atendimento atual. |
+| Requisito associado | RF-008 - O sistema deverá permitir que os pacientes solicitem a troca de terapeuta, caso não estejam satisfeitos com o atendimento atual. |
 | Passos | - Acessar o navegador <br> - Informar o endereço do site https://adota-pet.herokuapp.com/src/index.html <br> - Clicar no botão "Entrar" <br> - Preencher o campo de e-mail <br> - Preencher o campo de senha <br> - Clicar em "Login" |
 | Critério de êxito | - O login foi realizado com sucesso. |
 | Responsável pela elaboração do caso de teste | Nome do integrante responsável. |
