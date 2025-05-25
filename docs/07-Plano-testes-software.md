@@ -12,9 +12,11 @@ Por exemplo:
 
 | **Caso de teste**  | **CT-001 – Cadastrar perfil**  |
 |:---: |:---: |
-| Requisito associado | RF-001 - A aplicação deve apresentar, na página principal, a funcionalidade de cadastro de usuários para que estes consigam criar e gerenciar seu perfil. |
-| Objetivo do teste | Verificar se o usuário consegue se cadastrar na aplicação. |
-| Passos | - Acessar o navegador <br> - Informar o endereço do site https://adota-pet.herokuapp.com/src/index.html <br> - Clicar em "Criar conta" <br> - Preencher os campos obrigatórios (e-mail, nome, sobrenome, celular, CPF, senha, confirmação de senha) <br> - Aceitar os termos de uso <br> - Clicar em "Registrar" |
+| Requisito associado | RF-001 - O sistema deverá permitir o cadastro e exclusão de informações de pacientes e terapeutas, incluindo dados pessoais e históricos de atendimento. |
+| Objetivo do teste | Verificar se o usuário consegue realizar login. |
+| Passos | - Acessar o navegador <br> - Informar o endereço do site https://adota-pet.herokuapp.com/src/index.html <br> - Escolhe a opção Sou paciente -  Clicar em "Criar conta" <br> - Preencher os campos obrigatórios (nome completo, UF, Município, Usuário, Data Nascimento, CPF, Nº Cartão SUS, Telefone, Email, senha, Confirmar Senha) <br>  <br> - Clicar em "Entrar" |
+| Critério de êxito | - O cadastro foi realizado com sucesso. |
+| Passos | - Acessar o navegador <br> - Informar o endereço do site https://adota-pet.herokuapp.com/src/index.html <br> -  Escolhe a opção Sou Médico - Clicar em "Criar conta" <br> - Preencher os campos obrigatórios (nome completo, UF, Município, Usuário, CRM, CPF, Especialidade, Valor p/ hora, Formação, Email, senha, Confirmar Senha) <br>  <br> - Clicar em "Entrar" |
 | Critério de êxito | - O cadastro foi realizado com sucesso. |
 | Responsável pela elaboração do caso de teste | Vânia Lourenço. |
 
@@ -32,10 +34,10 @@ Por exemplo:
 
 | **Caso de teste**  | **CT-003 – Visualizar consulta**  |
 |:---: |:---: |
-| Requisito associado | RF-00X - Terapeutas deverão poder visualizar suas consultas agendadas, com possibilidade de confirmar ou cancelar os atendimentos. |
-| Objetivo do teste | Verificar se o usuário consegue se cadastrar na aplicação. |
-| Passos | - Acessar o navegador <br> - Informar o endereço do site https://adota-pet.herokuapp.com/src/index.html <br> - Clicar em "Criar conta" <br> - Preencher os campos obrigatórios (e-mail, nome, sobrenome, celular, CPF, senha, confirmação de senha) <br> - Aceitar os termos de uso <br> - Clicar em "Registrar" |
-| Critério de êxito | - O cadastro foi realizado com sucesso. |
+| Requisito associado | RF-003 - Os Terapeutas deverão poder visualizar suas consultas agendadas, com a possibilidade de confirmar ou cancelar os atendimentos. |
+| Objetivo do teste | Verificar se o usuário consegue visualizar consulta. |
+| Passos | - Acessar o navegador <br> - Informar o endereço do site https://adota-pet.herokuapp.com/src/index.html <br> - Clicar em "Consulta"  - "Visualizar" <br> - Caso deseje cancelar, clicar no ícone "cancelar". Caso deseje editar, clicar no ícone "editar" . <br> |
+| Critério de êxito | - Consulta visível na tela. |
 | Responsável pela elaboração do caso de teste | Vânia Lourenço. |
 
 <br>
