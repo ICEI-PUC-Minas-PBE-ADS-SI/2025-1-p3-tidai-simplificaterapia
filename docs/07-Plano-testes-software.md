@@ -14,7 +14,7 @@ Por exemplo:
 |:---: |:---: |
 | Requisito associado | RF-001 - O sistema deverá permitir o cadastro e exclusão de informações de pacientes e terapeutas, incluindo dados pessoais e históricos de atendimento. |
 | Objetivo do teste | Verificar se o usuário consegue cadastrar perfil. |
-| Passos / Paciente| - Acessar o navegador <br> - Informar o endereço do site https://adota-pet.herokuapp.com/src/index.html <br> - Escolhe a opção Sou paciente -  Clicar em "Criar conta" <br> - Preencher os campos obrigatórios (nome completo, UF, Município, Usuário, Data Nascimento, CPF, Nº Cartão SUS, Telefone, Email, senha, Confirmar Senha) <br>  <br> - Clicar em "Entrar" |
+| Passos / Paciente| - Acessar o navegador <br> - Informar o endereço do site https://adota-pet.herokuapp.com/src/index.html <br> - Escolhe a opção Sou paciente -  Clicar em "Criar conta" <br> - Preencher os campos obrigatórios (nome completo, UF, Município, Usuário, Data Nascimento, CPF, Nº Cartão SUS, Telefone, Email, senha, Confirmar Senha) <br>  <br> - Clicar em "Entrar" 
 | Passos / Médico| - Acessar o navegador <br> - Informar o endereço do site https://adota-pet.herokuapp.com/src/index.html <br> -  Escolhe a opção Sou Médico - Clicar em "Criar conta" <br> - Preencher os campos obrigatórios (nome completo, UF, Município, Usuário, CRM, CPF, Especialidade, Valor p/ hora, Formação, Email, senha, Confirmar Senha) <br>  <br> - Clicar em "Entrar" |
 | Critério de êxito | - O cadastro foi realizado com sucesso. |
 | Responsável pela elaboração do caso de teste | Vânia Lourenço. |
@@ -41,17 +41,7 @@ Por exemplo:
 
 <br>
 
-| **Caso de teste**  | **CT-004 – Gerar relatórios**  |
-|:---: |:---: |
-| Requisito associado | RF-004 - O sistema deverá gerar relatórios sobre consultas realizadas, permitindo a análise de informações como frequência de sessões e progresso dos pacientes. |
-| Objetivo do teste | Verificar se o sistema consegue gerar relatórios. |
-| Passos | - Acessar o navegador <br> - Informar o endereço do site https://adota-pet.herokuapp.com/src/index.html <br> - Clicar no botão "Entrar" <br> - Preencher o campo de e-mail <br> - Preencher o campo de senha <br> - Clicar em "Login" |
-| Critério de êxito | - O login foi realizado com sucesso. |
-| Responsável pela elaboração do caso de teste | Nome do integrante da equipe. |
-
-<br>
-
-| **Caso de teste**  | **CT-005 – Acessar laudos/receitas**  |
+| **Caso de teste**  | **CT-004 – Acessar laudos/receitas**  |
 |:---: |:---: |
 | Requisito associado | RF-006 - Pacientes deverão poder acessar laudos/receitas de suas consultas de forma segura, após o término das sessões. |
 | Objetivo do teste | Verificar se o usuário consegue acessar laudos de suas consultas. |
@@ -61,17 +51,7 @@ Por exemplo:
 
 <br>
 
-| **Caso de teste**  | **CT-006 – Emitir receitas eletrônicas**  |
-|:---: |:---: |
-| Requisito associado | RF-007 - Terapeutas poderão emitir receitas eletrônicas aos pacientes, que terão acesso a essas receitas diretamente no sistema. |
-| Objetivo do teste | Verificar se o usuário consegue se cadastrar na aplicação. |
-| Passos | - Acessar o navegador <br> - Informar o endereço do site https://adota-pet.herokuapp.com/src/index.html <br> - Clicar em "Criar conta" <br> - Preencher os campos obrigatórios (e-mail, nome, sobrenome, celular, CPF, senha, confirmação de senha) <br> - Aceitar os termos de uso <br> - Clicar em "Registrar" |
-| Critério de êxito | - O cadastro foi realizado com sucesso. |
-| Responsável pela elaboração do caso de teste | Nome do integrante responsável. |
-
-<br>
-
-| **Caso de teste**  | **CT-007 – Solicitar troca de terapeuta**  |
+| **Caso de teste**  | **CT-005 – Solicitar troca de terapeuta**  |
 |:---: |:---: |
 | Requisito associado | RF-008 - O sistema deverá permitir que os pacientes solicitem a troca de terapeuta, caso não estejam satisfeitos com o atendimento atual. |
 | Passos | - Acessar o navegador <br> - Informar o endereço do site https://adota-pet.herokuapp.com/src/index.html <br> - Clicar no botão "Entrar" <br> - Preencher o campo de e-mail <br> - Preencher o campo de senha <br> - Clicar em "Login" |
