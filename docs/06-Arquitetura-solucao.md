@@ -181,7 +181,7 @@ Para desenvolver a plataforma Simplifica Terapia, foram escolhidas tecnologias m
 
 | **Dimensão**   | **Tecnologia**  |
 | ---            | ---             |
-| Front-end      | HTML + CSS + JS + React |
+| Front-end      | HTML + CSS + TS + Angular |
 | Back-end       | C#              |
 | SGBD           | MySQL           |
 | Deploy         | Render          |
