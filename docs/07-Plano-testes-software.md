@@ -24,7 +24,7 @@ Por exemplo:
 |:---: |:---: |
 | Requisito associado | RF-002 - O sistema deverá possibilitar que os pacientes agendem, visualizem e cancelem sessões de terapia com terapeutas disponíveis. |
 | Objetivo do teste | Verificar se o usuário consegue agendar consulta na aplicação. |
-| Passos | - Acessar o navegador <br> - Informar o endereço do site https://adota-pet.herokuapp.com/src/index.html <br> - Clicar no menu "Consultas" <br> - Clicar em "Agendar" <br> - Escolher terapeuta <br> - Clicar no ícone de marcar consulta - <br> - Preencher os campos obrigatórios (data, horário, duração, situação, tipo de atendimento, forma de pagamento, clicar na opção "plano de saúde" caso possua) |
+| Passos | - Acessar o navegador <br> - Informar o endereço do site https://adota-pet.herokuapp.com/src/index.html <br> - Clicar no menu "Consultas" <br> - Clicar em "Agendar" <br> - Escolher terapeuta <br> - Clicar no ícone de marcar consulta <br> - Preencher os campos obrigatórios (data, horário, duração, situação, tipo de atendimento, forma de pagamento, clicar na opção "plano de saúde" caso possua) |
 | Critério de êxito | - Consulta agendada com sucesso. |
 | Responsável pela elaboração do caso de teste | Mariany Karla. |
 
@@ -50,17 +50,7 @@ Por exemplo:
 
 <br>
 
-| **Caso de teste**  | **CT-005 – Receber lembretes automáticos**  |
-|:---: |:---: |
-| Requisito associado | RF-005 - Pacientes e terapeutas deverão receber lembretes automáticos sobre consultas agendadas. |
-| Objetivo do teste | Verificar se o usuário consegue se cadastrar na aplicação. |
-| Passos | - Acessar o navegador <br> - Informar o endereço do site https://adota-pet.herokuapp.com/src/index.html <br> - Clicar em "Criar conta" <br> - Preencher os campos obrigatórios (e-mail, nome, sobrenome, celular, CPF, senha, confirmação de senha) <br> - Aceitar os termos de uso <br> - Clicar em "Registrar" |
-| Critério de êxito | - O cadastro foi realizado com sucesso. |
-| Responsável pela elaboração do caso de teste | Nome do integrante da equipe. |
-
-<br>
-
-| **Caso de teste**  | **CT-006 – Acessar laudos**  |
+| **Caso de teste**  | **CT-005 – Acessar laudos**  |
 |:---: |:---: |
 | Requisito associado | RF-006 - Pacientes deverão poder acessar laudos de suas consultas de forma segura, após o término das sessões. |
 | Objetivo do teste | Verificar se o usuário consegue acessar laudos de suas consultas. |
@@ -70,7 +60,7 @@ Por exemplo:
 
 <br>
 
-| **Caso de teste**  | **CT-007 – Emitir receitas eletrônicas**  |
+| **Caso de teste**  | **CT-006 – Emitir receitas eletrônicas**  |
 |:---: |:---: |
 | Requisito associado | RF-007 - Terapeutas poderão emitir receitas eletrônicas aos pacientes, que terão acesso a essas receitas diretamente no sistema. |
 | Objetivo do teste | Verificar se o usuário consegue se cadastrar na aplicação. |
@@ -80,7 +70,7 @@ Por exemplo:
 
 <br>
 
-| **Caso de teste**  | **CT-008 – Solicitar troca de terapeuta**  |
+| **Caso de teste**  | **CT-007 – Solicitar troca de terapeuta**  |
 |:---: |:---: |
 | Requisito associado | RF-00Y - O sistema deverá permitir que os pacientes solicitem a troca de terapeuta, caso não estejam satisfeitos com o atendimento atual. |
 | Passos | - Acessar o navegador <br> - Informar o endereço do site https://adota-pet.herokuapp.com/src/index.html <br> - Clicar no botão "Entrar" <br> - Preencher o campo de e-mail <br> - Preencher o campo de senha <br> - Clicar em "Login" |
