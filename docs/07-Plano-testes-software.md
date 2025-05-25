@@ -50,11 +50,11 @@ Por exemplo:
 
 <br>
 
-| **Caso de teste**  | **CT-005 – Acessar laudos**  |
+| **Caso de teste**  | **CT-005 – Acessar laudos/receitas**  |
 |:---: |:---: |
-| Requisito associado | RF-006 - Pacientes deverão poder acessar laudos de suas consultas de forma segura, após o término das sessões. |
+| Requisito associado | RF-006 - Pacientes deverão poder acessar laudos/receitas de suas consultas de forma segura, após o término das sessões. |
 | Objetivo do teste | Verificar se o usuário consegue acessar laudos de suas consultas. |
-| Passos | - Acessar o navegador <br> - Informar o endereço do site https://adota-pet.herokuapp.com/src/index.html <br> - Clicar no menu "Laudos/Receitas" <br> - clicar em "Visualizar <br> - Clinar no ícone de visualizar laudo |
+| Passos | - Acessar o navegador <br> - Informar o endereço do site https://adota-pet.herokuapp.com/src/index.html <br> - Clicar no menu "Laudos/Receitas" <br> - Clicar em "Visualizar <br> - Clinar no ícone de visualizar laudo |
 | Critério de êxito | - Laudo visível na tela. |
 | Responsável pela elaboração do caso de teste | Mariany Karla. |
 
@@ -66,7 +66,7 @@ Por exemplo:
 | Objetivo do teste | Verificar se o usuário consegue se cadastrar na aplicação. |
 | Passos | - Acessar o navegador <br> - Informar o endereço do site https://adota-pet.herokuapp.com/src/index.html <br> - Clicar em "Criar conta" <br> - Preencher os campos obrigatórios (e-mail, nome, sobrenome, celular, CPF, senha, confirmação de senha) <br> - Aceitar os termos de uso <br> - Clicar em "Registrar" |
 | Critério de êxito | - O cadastro foi realizado com sucesso. |
-| Responsável pela elaboração do caso de teste | Mariany Karla. |
+| Responsável pela elaboração do caso de teste | Nome do integrante responsável. |
 
 <br>
 
@@ -75,7 +75,7 @@ Por exemplo:
 | Requisito associado | RF-00Y - O sistema deverá permitir que os pacientes solicitem a troca de terapeuta, caso não estejam satisfeitos com o atendimento atual. |
 | Passos | - Acessar o navegador <br> - Informar o endereço do site https://adota-pet.herokuapp.com/src/index.html <br> - Clicar no botão "Entrar" <br> - Preencher o campo de e-mail <br> - Preencher o campo de senha <br> - Clicar em "Login" |
 | Critério de êxito | - O login foi realizado com sucesso. |
-| Responsável pela elaboração do caso de teste | Mariany Karla |
+| Responsável pela elaboração do caso de teste | Nome do integrante responsável. |
 
 
 ## Ferramentas de testes (opcional)
