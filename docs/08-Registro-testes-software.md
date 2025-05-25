@@ -38,8 +38,7 @@ Para cada caso de teste definido no <a href="07-Plano-testes-software.md"> Plano
 
 | **Caso de teste** 	| **CT-007 – Emitir receitas eletrônicas** 	|
 |:---:	|:---:	|
-| Requisito associado | RF-00X - A aplicação deve apresentar, na página principal, a funcionalidade de cadastro de usuários para que esses consigam criar e gerenciar seu perfil. |
-| Registro de evidência | 
+| Requisito associado | RF-00X - A aplicação deve apresentar, na página principal, a funcionalidade de cadastro de usuários para que esses consigam criar e gerenciar seu perfil. | 
 | Registro de evidência | [www.teste.com.br/drive/ct-01](http://www.teste.com.br/drive/ct-01) |
 
 | **Caso de teste** 	| **CT-008 – Solicitar troca de teraupeta** |
