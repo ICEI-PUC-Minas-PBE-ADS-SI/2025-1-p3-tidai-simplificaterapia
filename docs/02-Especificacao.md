@@ -78,7 +78,7 @@ O levantamento de requisitos funcionais do sistema Simplifica Terapia visa ident
 |---------|---------------------------------------------------------|--------|
 | RF-001  | O sistema deverá permitir o cadastro e exclusão de informações de pacientes e terapeutas, incluindo dados pessoais e históricos de atendimento. | ALTA |
 | RF-002  | O sistema deverá possibilitar que os pacientes agendem, visualizem e cancelem sessões de terapia com terapeutas disponíveis. | ALTA |
-| RF-003  | Terapeutas deverão poder visualizar suas consultas agendadas, com possibilidade de confirmar ou cancelar os atendimentos. | ALTA |
+| RF-003  | Pacientes deverão poder visualizar suas consultas agendadas, com possibilidade de cancelar ou editar. | ALTA |
 | RF-004  | O sistema deverá gerar relatórios sobre consultas realizadas, permitindo a análise de informações como frequência de sessões e progresso dos pacientes. | MÉDIA |
 | RF-005  | Pacientes e terapeutas deverão receber lembretes automáticos sobre consultas agendadas. | MÉDIA |
 | RF-006  | Pacientes deverão poder acessar laudos de suas consultas de forma segura, após o término das sessões. | ALTA |
