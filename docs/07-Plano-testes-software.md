@@ -35,7 +35,7 @@ Por exemplo:
 |:---: |:---: |
 | Requisito associado | RF-003 - Os Terapeutas deverão poder visualizar suas consultas agendadas, com a possibilidade de confirmar ou cancelar os atendimentos. |
 | Objetivo do teste | Verificar se o usuário consegue visualizar consulta. |
-| Passos | - Acessar o navegador <br> - Informar o endereço do site https://adota-pet.herokuapp.com/src/index.html <br> - Clicar em "Consulta"  - "Visualizar" <br> - Caso deseje cancelar, clicar no ícone "cancelar". Caso deseje editar, clicar no ícone "editar" . <br> |
+| Passos | - Acessar o navegador <br> - Informar o endereço do site https://adota-pet.herokuapp.com/src/index.html <br> - Clicar em "Consulta" <br> - Clicar em "Visualizar" <br> - Caso deseje cancelar, clicar no ícone "cancelar". <br> - Caso deseje editar, clicar no ícone "editar" . <br> |
 | Critério de êxito | - Consulta visível na tela. |
 | Responsável pela elaboração do caso de teste | Vânia Lourenço. |
 
