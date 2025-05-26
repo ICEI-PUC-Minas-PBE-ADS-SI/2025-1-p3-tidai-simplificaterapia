@@ -19,8 +19,6 @@ Para cada caso de teste definido no <a href="07-Plano-testes-software.md"> Plano
 | **Caso de teste** 	| **CT-003 – Visualizar consultas** 	|
 |:---:	|:---:	|
 | Requisito associado | RF-003 - Pacientes deverão poder visualizar suas consultas agendadas, com possibilidade de confirmar ou cancelar os atendimentos. 
-Uploading WhatsApp Video 2025-05-26 at 17.20.49.mp4…
-
 | Registro de evidência | [www.teste.com.br/drive/ct-01](http://www.teste.com.br/drive/ct-01) |
 
 | **Caso de teste** 	| **CT-004 – Acessar laudos/receitas** 	|
