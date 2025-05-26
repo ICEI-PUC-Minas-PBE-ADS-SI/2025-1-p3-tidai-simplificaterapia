@@ -9,7 +9,7 @@ Para cada caso de teste definido no <a href="07-Plano-testes-software.md"> Plano
 | **Caso de teste** 	| **CT-001 – Cadastrar perfil** 	|
 |:---:	|:---:	|
 | Requisito associado | RF-001 - O sistema deverá permitir o cadastro e exclusão de informações de pacientes e terapeutas, incluindo dados pessoais e históricos de atendimento. |
-| Registro de evidência | [www.teste.com.br/drive/ct-01](http://www.teste.com.br/drive/ct-01) |
+| Registro de evidência | [[www.teste.com.br/drive/ct-01](https://drive.google.com/file/d/1qKrJwirqPVW35sW8Bfhvo75h6fb3lEqc/view?usp=sharing)](http://www.teste.com.br/drive/ct-01) |
 
 | **Caso de teste** 	| **CT-002 – Agendar conculta** 	|
 |:---:	|:---:	|
