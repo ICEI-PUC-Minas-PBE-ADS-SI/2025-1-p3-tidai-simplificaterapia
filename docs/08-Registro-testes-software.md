@@ -8,7 +8,7 @@ Para cada caso de teste definido no <a href="07-Plano-testes-software.md"> Plano
 
 | **Caso de teste** 	| **CT-001 – Cadastrar perfil** 	|
 |:---:	|:---:	|
-| Requisito associado | RF-001 - A aplicação deve apresentar, na página principal, a funcionalidade de cadastro de usuários para que estes consigam criar e gerenciar seu perfil. |
+| Requisito associado | RF-001 - O sistema deverá permitir o cadastro e exclusão de informações de pacientes e terapeutas, incluindo dados pessoais e históricos de atendimento. |
 | Registro de evidência | [www.teste.com.br/drive/ct-01](http://www.teste.com.br/drive/ct-01) |
 
 | **Caso de teste** 	| **CT-002 – Agendar conculta** 	|
@@ -18,7 +18,9 @@ Para cada caso de teste definido no <a href="07-Plano-testes-software.md"> Plano
 
 | **Caso de teste** 	| **CT-003 – Visualizar consultas** 	|
 |:---:	|:---:	|
-| Requisito associado | RF-003 - Pacientes deverão poder visualizar suas consultas agendadas, com possibilidade de confirmar ou cancelar os atendimentos. |
+| Requisito associado | RF-003 - Pacientes deverão poder visualizar suas consultas agendadas, com possibilidade de confirmar ou cancelar os atendimentos. 
+Uploading WhatsApp Video 2025-05-26 at 17.20.49.mp4…
+
 | Registro de evidência | [www.teste.com.br/drive/ct-01](http://www.teste.com.br/drive/ct-01) |
 
 | **Caso de teste** 	| **CT-004 – Acessar laudos/receitas** 	|
