@@ -34,7 +34,7 @@ Por exemplo:-->
 |:---: |:---: |
 | Requisito associado | RF-003 - Os Terapeutas deverão poder visualizar suas consultas agendadas, com a possibilidade de confirmar ou cancelar os atendimentos. |
 | Objetivo do teste | Verificar se o usuário consegue visualizar consulta. |
-| Passos | - Acessar o navegador <br> - Informar o endereço do site https://adota-pet.herokuapp.com/src/index.html <br> - Clicar no menu "Consultas" <br> - Clicar em "Visualizar" <br> - Caso deseje cancelar, clicar no ícone "cancelar". <br> - Caso deseje editar, clicar no ícone "editar" . <br> |
+| Passos | - Acessar o navegador <br> - Informar o endereço do site http://localhost:4200/ <br> - Clicar no menu "Consultas" <br> - Clicar em "Visualizar" <br> - Caso deseje cancelar, clicar no ícone "cancelar". <br> - Caso deseje editar, clicar no ícone "editar" . <br> |
 | Critério de êxito | - Consulta visível na tela. |
 | Responsável pela elaboração do caso de teste | Vânia Lourenço. |
 
@@ -74,7 +74,7 @@ Por exemplo:-->
 |:---: |:---: |
 | Requisito associado | RF-008 - O sistema deverá permitir que os pacientes solicitem a troca de terapeuta, caso não estejam satisfeitos com o atendimento atual. |
 | Objetivo do teste | Trocar terapeuta. |
-| Passos | - Acessar o navegador <br> - Informar o endereço do site https://adota-pet.herokuapp.com/src/index.html <br> - Clicar no menu terapeutas" <br> - Clicar em visualizar terapeutas <br> - Clicar no ícone trocar terapeuta  <br> - Clicar em "confirmar" |
+| Passos | - Acessar o navegador <br> - Informar o endereço do site http://localhost:4200/ <br> - Clicar no menu terapeutas" <br> - Clicar em visualizar terapeutas <br> - Clicar no ícone trocar terapeuta  <br> - Clicar em "confirmar" |
 | Critério de êxito | - Terapeuta trocado com sucesso. |
 | Responsável pela elaboração do caso de teste | Nome do integrante responsável. |
 
