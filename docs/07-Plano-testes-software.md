@@ -24,7 +24,7 @@ Por exemplo:-->
 |:---: |:---: |
 | Requisito associado | RF-002 - O sistema deverá possibilitar que os pacientes agendem, visualizem e cancelem sessões de terapia com terapeutas disponíveis. |
 | Objetivo do teste | Verificar se o usuário consegue agendar consulta na aplicação. |
-| Passos | - Acessar o navegador <br> - Informar o endereço do site https://adota-pet.herokuapp.com/src/index.html <br> - Clicar no menu "Consultas" <br> - Clicar em "Agendar" <br> - Escolher terapeuta <br> - Clicar no ícone de marcar consulta <br> - Preencher os campos obrigatórios (data, horário, duração, situação, tipo de atendimento, forma de pagamento, clicar na opção "plano de saúde" caso possua) |
+| Passos | - Acessar o navegador <br> - Informar o endereço do site http://localhost:4200/ <br> - Clicar no menu "Consultas" <br> - Clicar em "Agendar" <br> - Escolher terapeuta <br> - Clicar no ícone de marcar consulta <br> - Preencher os campos obrigatórios (data, horário, duração, situação, tipo de atendimento, forma de pagamento, clicar na opção "plano de saúde" caso possua) |
 | Critério de êxito | - Consulta agendada com sucesso. |
 | Responsável pela elaboração do caso de teste | Mariany Karla. |
 
