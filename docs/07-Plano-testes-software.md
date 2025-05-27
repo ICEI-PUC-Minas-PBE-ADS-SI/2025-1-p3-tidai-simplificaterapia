@@ -50,12 +50,23 @@ Por exemplo:-->
 
 <br>
 
-| **Caso de teste**  | **CT-005 – Solicitar troca de terapeuta**  |
+| **Caso de teste**  | **CT-005 – Emitir receitas eletrônicas**  |
+|:---: |:---: |
+| Requisito associado | RF-007 - O sistema deverá permitir que os pacientes solicitem a troca de terapeuta, caso não estejam satisfeitos com o atendimento atual. |
+| Passos | - Acessar o navegador <br> - Informar o endereço do site https://adota-pet.herokuapp.com/src/index.html <br> - Clicar no botão "Entrar" <br> - Preencher o campo de e-mail <br> - Preencher o campo de senha <br> - Clicar em "Login" |
+| Critério de êxito | - Receita visível na tela. |
+| Responsável pela elaboração do caso de teste | Vânia Lourenço. |
+
+<br>
+
+| **Caso de teste**  | **CT-006 – Solicitar troca de terapeuta**  |
 |:---: |:---: |
 | Requisito associado | RF-008 - O sistema deverá permitir que os pacientes solicitem a troca de terapeuta, caso não estejam satisfeitos com o atendimento atual. |
 | Passos | - Acessar o navegador <br> - Informar o endereço do site https://adota-pet.herokuapp.com/src/index.html <br> - Clicar no botão "Entrar" <br> - Preencher o campo de e-mail <br> - Preencher o campo de senha <br> - Clicar em "Login" |
 | Critério de êxito | - O login foi realizado com sucesso. |
 | Responsável pela elaboração do caso de teste | Nome do integrante responsável. |
+
+
 
 
 ## Ferramentas de testes (opcional)
