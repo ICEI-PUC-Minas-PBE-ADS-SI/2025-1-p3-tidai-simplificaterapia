@@ -1,0 +1,77 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Notebook\\Downloads\\SimplificaTerapia\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{93525A1C-F4E5-42CB-8CB9-12BC3033C55F}|SimplificaTerapia_API\\SimplificaTerapia.csproj|c:\\users\\notebook\\downloads\\simplificaterapia\\simplificaterapia_api\\migrations\\20250526190000_altera_datas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{93525A1C-F4E5-42CB-8CB9-12BC3033C55F}|SimplificaTerapia_API\\SimplificaTerapia.csproj|solutionrelative:simplificaterapia_api\\migrations\\20250526190000_altera_datas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93525A1C-F4E5-42CB-8CB9-12BC3033C55F}|SimplificaTerapia_API\\SimplificaTerapia.csproj|c:\\users\\notebook\\downloads\\simplificaterapia\\simplificaterapia_api\\models\\addconsultasdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{93525A1C-F4E5-42CB-8CB9-12BC3033C55F}|SimplificaTerapia_API\\SimplificaTerapia.csproj|solutionrelative:simplificaterapia_api\\models\\addconsultasdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93525A1C-F4E5-42CB-8CB9-12BC3033C55F}|SimplificaTerapia_API\\SimplificaTerapia.csproj|c:\\users\\notebook\\downloads\\simplificaterapia\\simplificaterapia_api\\models\\classes\\consulta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{93525A1C-F4E5-42CB-8CB9-12BC3033C55F}|SimplificaTerapia_API\\SimplificaTerapia.csproj|solutionrelative:simplificaterapia_api\\models\\classes\\consulta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{40ea2e6b-2121-4bb8-a43e-c83c04b51041}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "20250526190000_Altera_datas.cs",
+              "DocumentMoniker": "C:\\Users\\Notebook\\Downloads\\SimplificaTerapia\\SimplificaTerapia_API\\Migrations\\20250526190000_Altera_datas.cs",
+              "RelativeDocumentMoniker": "SimplificaTerapia_API\\Migrations\\20250526190000_Altera_datas.cs",
+              "ToolTip": "C:\\Users\\Notebook\\Downloads\\SimplificaTerapia\\SimplificaTerapia_API\\Migrations\\20250526190000_Altera_datas.cs",
+              "RelativeToolTip": "SimplificaTerapia_API\\Migrations\\20250526190000_Altera_datas.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-26T19:00:01.137Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AddConsultasDto.cs",
+              "DocumentMoniker": "C:\\Users\\Notebook\\Downloads\\SimplificaTerapia\\SimplificaTerapia_API\\Models\\AddConsultasDto.cs",
+              "RelativeDocumentMoniker": "SimplificaTerapia_API\\Models\\AddConsultasDto.cs",
+              "ToolTip": "C:\\Users\\Notebook\\Downloads\\SimplificaTerapia\\SimplificaTerapia_API\\Models\\AddConsultasDto.cs",
+              "RelativeToolTip": "SimplificaTerapia_API\\Models\\AddConsultasDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-26T18:58:28.716Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Consulta.cs",
+              "DocumentMoniker": "C:\\Users\\Notebook\\Downloads\\SimplificaTerapia\\SimplificaTerapia_API\\Models\\Classes\\Consulta.cs",
+              "RelativeDocumentMoniker": "SimplificaTerapia_API\\Models\\Classes\\Consulta.cs",
+              "ToolTip": "C:\\Users\\Notebook\\Downloads\\SimplificaTerapia\\SimplificaTerapia_API\\Models\\Classes\\Consulta.cs",
+              "RelativeToolTip": "SimplificaTerapia_API\\Models\\Classes\\Consulta.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-26T18:57:38.222Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
