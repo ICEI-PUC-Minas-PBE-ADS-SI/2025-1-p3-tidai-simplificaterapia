@@ -1,0 +1,89 @@
+<app-menu></app-menu>
+
+<div class="container">
+    <h2>Forma de Pagamento:</h2>
+
+    <div class="payment-option" [class.expanded]="selectedPayment === 'pix'" (click)="selectPayment('pix')">
+        <div class="option-header">
+            <mat-radio-button [checked]="selectedPayment === 'pix'"></mat-radio-button>
+            <div class="payment-info">
+                <img src="assets/images/pix.png" alt="Pix" class="payment-icon">
+                <span>Pix</span>
+                <span class="info-text">Aprovação em Minutos</span>
+            </div>
+        </div>
+        <div class="option-details" *ngIf="selectedPayment === 'pix'">
+            <p class="amount">R$ 120,00</p>
+            <p>Copie o código Pix na próxima etapa e faça o pagamento na instituição financeira de sua escolha. O código tem validade de 13 horas.</p>
+            <button mat-flat-button class="confirmar">Confirmar</button>
+        </div>
+    </div>
+
+    <div class="payment-option" [class.expanded]="selectedPayment === 'credit_card'" (click)="selectPayment('credit_card')">
+        <div class="option-header">
+            <mat-radio-button [checked]="selectedPayment === 'credit_card'"></mat-radio-button>
+            <div class="payment-info">
+                <mat-icon style="color: #22369b;">credit_card</mat-icon>
+                <span>Cartão de Crédito</span>
+            </div>
+        </div>
+        <div class="option-details" *ngIf="selectedPayment === 'credit_card'">
+            <mat-form-field appearance="outline" class="form-field">
+                <mat-label>Número do Cartão</mat-label>
+                <input matInput type="text" placeholder="0000 0000 0000 0000">
+            </mat-form-field>
+            <mat-form-field appearance="outline" class="form-field">
+                <mat-label>Nome Impresso no Cartão</mat-label>
+                <input matInput type="text" placeholder="Nome Completo">
+            </mat-form-field>
+            <div class="inline-fields">
+                <mat-form-field appearance="outline" class="form-field small-field">
+                    <mat-label>Mês de Validade</mat-label>
+                    <mat-select>
+                        <mat-option value="01">01</mat-option>
+                        <mat-option value="02">02</mat-option>
+                        <mat-option value="12">12</mat-option>
+                    </mat-select>
+                </mat-form-field>
+                <mat-form-field appearance="outline" class="form-field small-field">
+                    <mat-label>Ano de Validade</mat-label>
+                    <mat-select>
+                        <mat-option value="25">2025</mat-option>
+                        <mat-option value="26">2026</mat-option>
+                        <mat-option value="30">2030</mat-option>
+                    </mat-select>
+                </mat-form-field>
+            </div>
+            <mat-form-field appearance="outline" class="form-field cvv-field">
+                <mat-label>CVV</mat-label>
+                <input matInput type="text" placeholder="***">
+                <mat-icon matSuffix>lock</mat-icon>
+            </mat-form-field>
+            <mat-form-field appearance="outline" class="form-field parcelamento-field">
+                <mat-label>Parcelamento</mat-label>
+                <mat-select>
+                    <mat-option value="1">1x R$ 120,00</mat-option>
+                    <mat-option value="2">2x R$ 60,00 sem juros</mat-option>
+                    <mat-option value="3">3x R$ 40,00 sem juros</mat-option>
+                </mat-select>
+            </mat-form-field>
+
+            <button mat-flat-button class="confirmar">Confirmar</button>
+        </div>
+    </div>
+
+    <div class="payment-option" [class.expanded]="selectedPayment === 'boleto'" (click)="selectPayment('boleto')">
+        <div class="option-header">
+            <mat-radio-button [checked]="selectedPayment === 'boleto'"></mat-radio-button>
+            <div class="payment-info">
+                <mat-icon style="color: #22369b;">description</mat-icon>
+                <span>Boleto Bancário</span>
+            </div>
+        </div>
+        <div class="option-details" *ngIf="selectedPayment === 'boleto'">
+            <p class="amount">R$ 110,00 à vista</p>
+            <p>O prazo para pagamento do boleto é 25/04/2025.</p>
+            <button mat-flat-button class="confirmar">Confirmar</button>
+        </div>
+    </div>
+</div>

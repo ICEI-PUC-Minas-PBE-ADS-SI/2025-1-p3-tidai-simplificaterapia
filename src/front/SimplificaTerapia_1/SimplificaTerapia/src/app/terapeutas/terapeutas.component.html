@@ -1,0 +1,82 @@
+<app-menu></app-menu>
+
+<div class="container">
+  <h2 class="title">Terapeutas:</h2>
+
+  <div class="filtro">
+    <label class="filtro-label">Filtro:</label>
+    <div class="inputs">
+      <mat-form-field appearance="outline" class="custom-field nome">
+        <mat-label>Nome</mat-label>
+        <input matInput placeholder="Nome">
+      </mat-form-field>
+
+      <mat-form-field appearance="outline" class="custom-field uf">
+        <mat-label>UF</mat-label>
+        <mat-select>
+          <mat-option *ngFor="let uf of estados" [value]="uf">{{ uf }}</mat-option>
+        </mat-select>
+      </mat-form-field>
+
+      <mat-form-field appearance="outline" class="custom-field sexo">
+        <mat-label>Sexo</mat-label>
+        <mat-select>
+          <mat-option *ngFor="let sexo of sexos" [value]="sexo">{{ sexo }}</mat-option>
+        </mat-select>
+      </mat-form-field>
+
+      <mat-form-field appearance="outline" class="custom-field especialidade">
+        <mat-label>Especialidade</mat-label>
+        <input matInput placeholder="Especialidade">
+      </mat-form-field>
+
+      <mat-form-field appearance="outline" class="custom-field valor">
+        <mat-label>Valor R$</mat-label>
+        <input matInput placeholder="Valor">
+      </mat-form-field>
+    </div>
+
+    <div class="buttons">
+      <button mat-stroked-button class="btn-limpar">
+        <mat-icon>close</mat-icon>
+        Limpar
+      </button>
+
+      <button mat-flat-button color="primary" class="btn-buscar">
+        <mat-icon>search</mat-icon>
+        Buscar
+      </button>
+    </div>
+  </div>
+
+  <div class="card" *ngFor="let medico of medicos">
+    <img class="profile" src="assets/images/login.png" alt="Foto Terapeuta">
+    <div class="info">
+      <h3> {{ medico.nome_completo }}</h3>
+      <p><strong>Especialidade:</strong> {{ medico.especialidade }}</p>
+      <p><strong>CRM:</strong> {{ medico.crm }}</p>
+      <p><strong>Sexo:</strong> {{ medico.sexo }}</p>
+      <p><strong>Localização:</strong> {{ medico.municipio }}/{{ medico.uf }}</p>
+    </div>
+    <div class="icons">
+      <button mat-icon-button matTooltip="Agendar Consulta" routerLink="/agendarconsulta">
+        <mat-icon>calendar_month</mat-icon>
+      </button>
+      <button mat-icon-button matTooltip="Avaliar Terapeuta">
+        <mat-icon>star</mat-icon>
+      </button>
+      <button mat-icon-button matTooltip="Enviar Mensagem">
+        <mat-icon>chat</mat-icon>
+      </button>
+      <button mat-icon-button matTooltip="Ampliar">
+        <mat-icon>open_in_full</mat-icon>
+      </button>
+    </div>
+  </div>
+
+  <mat-paginator
+    [length]="100"
+    [pageSizeOptions]="[10, 50, 100]"
+    aria-label="Select page"
+  ></mat-paginator>
+</div>

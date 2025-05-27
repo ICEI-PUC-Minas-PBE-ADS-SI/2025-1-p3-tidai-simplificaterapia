@@ -1,0 +1,58 @@
+<div class="toolbar">
+  <mat-toolbar class="topbar">
+    <!-- Logo -->
+    <div class="logo">
+      <img src="assets\images\LogoCerebro.png" alt="Logo" routerLink="/">
+      <div class="titulo" routerLink="/">
+        <strong>Simplifica</strong><br>
+        Terapia
+      </div>
+    </div>
+
+    <!-- Menus -->
+    <div class="menu-opcoes" *ngIf="Logado">
+      <button mat-button [matMenuTriggerFor]="menuConsultas">Consultas</button>
+      <mat-menu #menuConsultas="matMenu">
+        <button class="mat-menu-item" routerLink="/terapeutas">Agendar</button><br>
+        <button class="mat-menu-item" routerLink="/consultas">Visualizar</button>
+      </mat-menu>
+
+      <button mat-button [matMenuTriggerFor]="menuLaudos">Laudos/Receitas</button>
+      <mat-menu #menuLaudos="matMenu">
+        <button class="mat-menu-item" routerLink="/laudos">Visualizar</button>
+      </mat-menu>
+
+      <button mat-button [matMenuTriggerFor]="menuPagamentos">Pagamentos</button>
+      <mat-menu #menuPagamentos="matMenu">
+        <button class="mat-menu-item" routerLink="/realizarPagamento">Realizar Pagamento</button><br>
+        <button class="mat-menu-item" routerLink="/recibos">Recibos</button>
+      </mat-menu>
+
+      <button mat-button [matMenuTriggerFor]="menuTerapeutas">Terapeutas</button>
+      <mat-menu #menuTerapeutas="matMenu">
+        <button class="mat-menu-item" routerLink="/terapeutas">Visualizar Terapeutas</button><br>
+        <button class="mat-menu-item">Avaliações</button>
+      </mat-menu>
+
+    </div>
+
+    <!-- Ícones à direita -->
+    <div class="icons">
+      <button mat-icon-button matTooltip="Agenda" routerLink="/perfilMedico" *ngIf="Logado">
+        <mat-icon>calendar_month</mat-icon>
+      </button>
+      <button mat-icon-button matTooltip="Notificações" *ngIf="Logado" (click)="showNotifications = !showNotifications">
+        <mat-icon class="notification-icon">
+          notifications
+        </mat-icon>
+        <span class="badge">2</span> <!-- MUDAR PARA O NUMERO DE NOTIFICAÇÕES -->
+      </button>
+      <button mat-icon-button matTooltip="Perfil" routerLink="/login">
+        <mat-icon>account_circle</mat-icon>
+      </button>
+    </div>
+  </mat-toolbar>
+</div>
+
+<app-notificacoes *ngIf="showNotifications"></app-notificacoes>
+

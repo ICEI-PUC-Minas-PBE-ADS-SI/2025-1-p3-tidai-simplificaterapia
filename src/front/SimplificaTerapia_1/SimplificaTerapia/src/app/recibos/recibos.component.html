@@ -1,0 +1,126 @@
+<app-menu></app-menu>
+
+<div class="conteudo-principal">
+    <h2>Recibos:</h2>
+
+    <div class="filtro filtros-container">
+        <label class="filtro-label">Filtro:</label>
+        <div class="inputs">
+            <mat-form-field appearance="outline" class="custom-field">
+                <mat-label>Data Início</mat-label>
+                <input matInput [matDatepicker]="pickerInicio" placeholder="dd/mm/aaaa" id="data_inicio" name="data_inicio">
+                <mat-datepicker-toggle matSuffix [for]="pickerInicio"></mat-datepicker-toggle>
+                <mat-datepicker #pickerInicio></mat-datepicker>
+            </mat-form-field>
+
+            <mat-form-field appearance="outline" class="custom-field">
+                <mat-label>Data Fim</mat-label>
+                <input matInput [matDatepicker]="pickerFim" placeholder="dd/mm/aaaa" id="data_fim" name="data_fim">
+                <mat-datepicker-toggle matSuffix [for]="pickerFim"></mat-datepicker-toggle>
+                <mat-datepicker #pickerFim></mat-datepicker>
+            </mat-form-field>
+
+            <mat-form-field appearance="outline" class="custom-field medico">
+                <mat-label>Médico</mat-label>
+                <input matInput placeholder="Nome do médico" id="medico" name="medico">
+            </mat-form-field>
+
+            <mat-form-field appearance="outline" class="custom-field">
+                <mat-label>Valor R$</mat-label>
+                <input matInput placeholder="Valor R$" id="valor" name="valor">
+            </mat-form-field>
+
+        </div>
+
+        <div class="buttons">
+            <button mat-stroked-button class="btn-limpar">
+                <mat-icon>close</mat-icon>
+                Limpar
+            </button>
+
+            <button mat-flat-button color="primary" class="btn-buscar">
+                <mat-icon>search</mat-icon>
+                Buscar
+            </button>
+        </div>
+    </div>
+
+
+    <div class="recibos-container">
+        <div class="recibo-card" *ngFor="let recibo of recibos">
+            <h3>Recibo: </h3>
+            <p><strong>Data do Pagamento: </strong> {{ recibo.dataPagamento }}</p>
+            <p><strong>Valor: R$ </strong> {{ recibo.valor }}</p>
+            <p><strong>Forma de Pagamento:</strong> {{ recibo.formaPagamento }}</p>
+            <p><strong>Descrição da Consulta:</strong> {{ recibo.descricao }}</p>
+
+            <div class="acoes">
+                <button mat-icon-button matTooltip="Imprimir" (click)="abrirModalImpressao(recibo)">
+                    <mat-icon>print</mat-icon>
+                </button>
+                <button mat-icon-button matTooltip="Baixar" (click)="abrirModalBaixar(recibo)">
+                    <mat-icon>download</mat-icon>
+                </button>
+                <button mat-icon-button matTooltip="Visualizar" (click)="abrirModalVisualizacao(recibo)">
+                    <mat-icon>visibility</mat-icon>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <footer class="paginator-footer">
+        <mat-paginator
+            [length]="100"
+            [pageSizeOptions]="[10, 50, 100]"
+            aria-label="Select page"
+        ></mat-paginator>
+    </footer>
+</div>
+
+<div class="modal-backdrop" *ngIf="modalImpressaoVisivel">
+    <div class="modal-box">
+        <h3>Deseja imprimir o documento?</h3>
+        <select [(ngModel)]="formatoSelecionado">
+            <option value="pdf">PDF</option>
+            <option value="jpg">JPG</option>
+        </select>
+        <div class="modal-buttons">
+            <button class="cancelar" (click)="fecharModalImpressao()">Cancelar</button>
+            <button class="confirmar" (click)="confirmarImpressao()">Confirmar</button>
+        </div>
+    </div>
+</div>
+
+<div class="modal-backdrop" *ngIf="modalBaixarVisivel">
+    <div class="modal-box">
+        <h3>Deseja baixar o documento?</h3>
+        <select [(ngModel)]="formatoSelecionado">
+            <option value="pdf">PDF</option>
+            <option value="jpg">JPG</option>
+        </select>
+        <div class="modal-buttons">
+            <button class="cancelar" (click)="fecharModalBaixar()">Cancelar</button>
+            <button class="confirmar" (click)="confirmarBaixar()">Confirmar</button>
+        </div>
+    </div>
+</div>
+
+<div class="modal-backdrop visualizacao" *ngIf="modalVisualizacaoVisivel">
+    <div class="visualizacao-box">
+        <h3>Recibo:</h3>
+        <div class="toolbar">
+            <button mat-icon-button matTooltip="Diminuir zoom" (click)="diminuirZoom()">
+                <mat-icon>zoom_out</mat-icon>
+            </button>
+            <button mat-icon-button matTooltip="Aumentar zoom" (click)="aumentarZoom()">
+                <mat-icon>zoom_in</mat-icon>
+            </button>
+            <button mat-icon-button matTooltip="Fechar" (click)="fecharModalVisualizacao()">
+                <mat-icon>close</mat-icon>
+            </button>
+        </div>
+        <div class="visualizacao-documento">
+            <img [src]="imagemRecibo" [style.transform]="'scale(' + zoom + ')'" alt="Visualização do documento" />
+        </div>
+    </div>
+</div>

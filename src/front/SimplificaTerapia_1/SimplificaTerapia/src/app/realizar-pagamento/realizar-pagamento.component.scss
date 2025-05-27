@@ -1,0 +1,138 @@
+.container {
+    padding: 2rem;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #fefefe;
+}
+
+h2 {
+    font-size: 1.5rem;
+    color: #22369b;
+    margin-bottom: 2rem;
+}
+
+.validade-container {
+    margin-bottom: 1rem;
+
+    h5 {
+        margin-top: 0;
+        margin-bottom: 0.5rem;
+        font-size: 1rem;
+        font-weight: bold;
+        color: #555;
+    }
+
+    .inline-fields {
+        display: flex;
+        gap: 1rem;
+
+        .small-field {
+            max-width: 100px;
+        }
+    }
+}
+
+mat-checkbox {
+    margin-bottom: 1rem;
+    display: block; 
+}
+.payment-option {
+    background-color: #f1efe3;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: border-color 0.3s ease;
+
+    &:hover {
+        border-color: #22369b;
+    }
+
+    &.expanded {
+        border-color: #22369b;
+    }
+
+    .option-header {
+        display: flex;
+        align-items: center;
+        padding: 1rem;
+
+        .mat-radio-button {
+            margin-right: 1rem;
+        }
+
+        .payment-info {
+            display: flex;
+            align-items: center;
+
+            .payment-icon {
+                width: 24px;
+                height: 24px;
+                margin-right: 0.5rem;
+            }
+
+            mat-icon {
+                margin-right: 0.5rem;
+            }
+
+            .info-text {
+                background-color: #00a126;
+                padding: 0.4rem;
+                font-size: 0.9rem;
+                color: white;
+                margin-left: 1rem;
+                border-radius: 30px;
+            }
+        }
+    }
+
+    .option-details {
+        padding: 1rem;
+        border-top: 1px solid #ddd;
+        display: none; 
+
+        &.expanded {
+            display: block;
+        }
+
+        p.amount {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #28a745;
+            margin-bottom: 1rem;
+        }
+
+        .form-field {
+            width: 300px;
+            margin-bottom: 0.2rem;
+            margin-right: 1%;
+        }
+
+        .inline-fields {
+            display: flex;
+            margin-right: 1%;
+            margin-bottom: 0.2rem;
+
+            .small-field {
+                max-width: 200px;
+            }
+        }
+
+        .cvv-field {
+            max-width: 150px;
+        }
+
+        .parcelamento-field {
+            max-width: 250px;
+        }
+
+        button[mat-flat-button] {
+            font-weight: bold;
+            padding: 0.8rem 2rem;
+            border-radius: 20px;
+        }
+    }
+
+    &.expanded .option-details {
+        display: block;
+    }
+}

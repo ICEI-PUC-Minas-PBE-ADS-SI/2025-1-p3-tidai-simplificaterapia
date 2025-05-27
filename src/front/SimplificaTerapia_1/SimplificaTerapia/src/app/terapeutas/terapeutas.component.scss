@@ -1,0 +1,171 @@
+body{
+  font-family: 'Lexend', sans-serif; 
+}
+
+.container {
+  padding: 2rem;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fefefe;
+}
+
+.title {
+  font-size: 1.5rem;
+  margin-left: 5%;
+  color: #324ba8;
+  margin-bottom: 1rem;
+}
+
+.filtro {
+  background-color: #f1efe3;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+
+  .filtro-label {
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 15px;
+    display: block;
+    color: #22369b;
+  }
+
+  .inputs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: flex-end; 
+    row-gap: 16px;
+  }
+
+  .custom-field {
+    flex: 1;
+    min-width: 160px;
+
+    .mat-form-field-wrapper {
+      background-color: #e4e4ee;
+      border-radius: 8px;
+      padding: 0 10px;
+    }
+
+    .mat-form-field-outline,
+    .mat-form-field-outline-start,
+    .mat-form-field-outline-end,
+    .mat-form-field-outline-gap {
+      display: none !important;
+    }
+
+    .mat-form-field-label {
+      color: #555 !important;
+      font-weight: 500;
+    }
+
+    .mat-input-element,
+    .mat-select-value {
+      font-family: 'Lexend', sans-serif;
+      font-weight: 500;
+      color: #333;
+    }
+  }
+
+  .uf {
+    max-width: 100px;
+  }
+
+  .sexo,
+  .valor {
+    max-width: 120px;
+  }
+
+  .nome,
+  .especialidade {
+    flex: 2;
+  }
+
+  .buttons {
+  display: flex;
+  gap: 12px;
+  height: 56px;
+
+    .btn-limpar,
+    .btn-buscar {
+        height: 45px;
+        font-weight: bold;
+        font-family: 'Lexend', sans-serif;
+        padding: 0 40px !important;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        white-space: nowrap;
+        background-color: #22369b;
+        color: white;
+    }
+  }
+}
+
+
+
+
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f1efe3;
+  border-radius: 16px;
+  padding: 2rem;
+  margin: 1% 5% 1.5em 5%;
+
+  .profile {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  .info {
+    flex: 1;
+    margin-left: 1.5rem;
+
+    h3 {
+      margin: 0;
+      font-size: 1.5rem;
+      color: #324ba8;
+    }
+
+    p {
+      margin: 2px 0;
+      font-size: 0.95rem;
+    }
+  }
+
+  .icons {
+    display: flex;
+    gap: 0.5rem;
+
+    button {
+      color: #324ba8;
+    }
+  }
+}
+
+.chat-button {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  background-color: #324ba8;
+  color: white;
+  border-radius: 50%;
+  width: 56px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  mat-icon {
+    font-size: 28px;
+  }
+
+  &:hover {
+    background-color: #2c3e90;
+  }
+}

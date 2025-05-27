@@ -1,0 +1,440 @@
+body {
+  font-family: 'Lexend', sans-serif;
+}
+
+.container {
+  padding: 2rem;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fefefe;
+}
+
+.title {
+  font-size: 1.5rem;
+  margin-left: 5%;
+  color: #324ba8;
+  margin-bottom: 1rem;
+}
+
+.filtro {
+  background-color: #f1efe3;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+
+  .filtro-label {
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 15px;
+    display: block;
+    color: #22369b;
+  }
+
+  .inputs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: flex-end;
+    row-gap: 16px;
+  }
+
+  .custom-field {
+    flex: 1;
+    min-width: 160px;
+
+    .mat-form-field-wrapper {
+      background-color: #e4e4ee;
+      border-radius: 8px;
+      padding: 0 10px;
+    }
+
+    .mat-form-field-outline,
+    .mat-form-field-outline-start,
+    .mat-form-field-outline-end,
+    .mat-form-field-outline-gap {
+      display: none !important;
+    }
+
+    .mat-form-field-label {
+      color: #555 !important;
+      font-weight: 500;
+    }
+
+    .mat-input-element,
+    .mat-select-value {
+      font-family: 'Lexend', sans-serif;
+      font-weight: 500;
+      color: #333;
+    }
+  }
+
+  .periodo {
+    min-width: 245px;
+    max-width: 350px;
+  }
+
+  .valor {
+    max-width: 120px;
+  }
+
+  .medico,
+  .especialidade {
+    flex: 2;
+  }
+
+  .buttons {
+    display: flex;
+    gap: 12px;
+    height: 56px;
+
+    .btn-limpar,
+    .btn-buscar {
+      height: 45px;
+      font-weight: bold;
+      font-family: 'Lexend', sans-serif;
+      padding: 0 40px !important;
+      border-radius: 20px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      white-space: nowrap;
+      background-color: #22369b;
+      color: white;
+    }
+  }
+}
+
+.profile {
+  width: 175px;
+  height: 175px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f1efe3;
+  border-radius: 16px;
+  padding: 2rem;
+  margin: 1% 5% 1.5em 5%;
+
+
+
+  .info {
+    flex: 1;
+    margin-left: 1.5rem;
+
+    h3 {
+      margin: 0;
+      font-size: 1.5rem;
+      color: #324ba8;
+    }
+
+    p {
+      margin: 2px 0;
+      font-size: 0.95rem;
+    }
+  }
+
+  .icons {
+    display: flex;
+    gap: 0.5rem;
+
+    button {
+      color: #324ba8;
+    }
+  }
+}
+
+.consultas-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  padding: 0 10px;
+}
+
+.consulta-card {
+  background-color: #f9f6ef;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 0 10px #ddd;
+  font-family: 'Arial', sans-serif;
+  font-size: 15px;
+  color: #000;
+}
+
+.card-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.dados {
+  flex: 1;
+}
+
+.fotoAcoes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.foto {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.acoes {
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.acoes button {
+  background: none;
+  border: none;
+  font-size: 22px;
+  cursor: pointer;
+  color: #1e1e8f;
+  transition: transform 0.2s ease;
+}
+
+.acoes button:hover {
+  transform: scale(1.2);
+}
+
+@media (max-width: 768px) {
+  .conteudo-principal {
+    padding: 0 20px;
+  }
+}
+
+.paginator-footer {
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  padding: 10px;
+  border-radius: 8px;
+
+}
+
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-box {
+  background-color: #fffaf0;
+  padding: 30px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  max-width: 400px; 
+  width: 90%;
+  font-family: Arial, sans-serif;
+}
+
+.modal-box h3 {
+  font-size: 20px;
+  color: #1e1e8f;
+  margin-bottom: 15px;
+}
+
+.modal-box p {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 25px;
+}
+
+.modal-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  margin-right: 5%;
+  margin-bottom: 10px;
+}
+
+.modal-buttons .cancelar,
+.modal-buttons .confirmar {
+  padding: 10px 20px;
+  margin-right: 10px;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+}
+
+.modal-buttons .cancelar {
+  background-color: #1e1e8f;
+}
+
+.modal-buttons .confirmar {
+  background-color: #1e1e8f;
+}
+
+.modal-backdrop.visualizacao {
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 3000;
+}
+
+.modal-backdrop-editar-consulta {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-box-editar-consulta {
+  background-color: #f1efe3;
+  border-radius: 20px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  max-width: 1200px;
+  max-height: 550px;
+  font-family: 'Segoe UI', sans-serif;
+
+  .inputs-list {
+    margin-left: 6%;
+    margin-right: 6%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: flex-end;
+    row-gap: 10px;
+  }
+
+  .custom-field {
+    flex: 1;
+    min-width: 160px;
+
+    .mat-form-field-wrapper {
+      background-color: #e4e4ee;
+      border-radius: 8px;
+      padding: 0 10px;
+    }
+
+    .mat-form-field-outline,
+    .mat-form-field-outline-start,
+    .mat-form-field-outline-end,
+    .mat-form-field-outline-gap {
+      display: none !important;
+    }
+
+    .mat-form-field-label {
+      color: #555 !important;
+      font-weight: 500;
+    }
+
+    .mat-input-element,
+    .mat-select-value {
+      font-family: 'Lexend', sans-serif;
+      font-weight: 500;
+      color: #333;
+    }
+  }
+
+  .tipoAtendimento {
+    min-width: 300px;
+  }
+
+  .planoSaude {}
+
+  .formaPagamento {
+    min-width: 300px;
+  }
+
+  .profissional {
+    min-width: 450px;
+  }
+
+  .crm {
+    min-width: 175px;
+  }
+
+  .especialidade {
+    min-width: 165px;
+  }
+
+  .valorConsulta {
+    min-width: 200px;
+  }
+
+  .contatoMedico {
+    min-width: 200px;
+  }
+
+  .paciente {
+    min-width: 600px;
+  }
+
+  .contatoPaciente {
+    min-width: 400px;
+  }
+
+  .valor {
+    max-width: 120px;
+  }
+
+  .medico,
+  .especialidade {
+    flex: 2;
+  }
+
+  .observacoes {
+    max-height: 90px;
+  }
+}
+
+.btn {
+  font-weight: bold;
+  font-family: 'Lexend', sans-serif;
+  padding: 0 40px !important;
+  margin: 0 8px;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  white-space: nowrap;
+  height: 40px;
+}
+
+.alerta-sucesso {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #28a745; /* Verde sucesso */
+  color: #ffffff; /* Texto branco */
+  padding: 15px 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  font-weight: bold;
+  z-index: 1000;
+  animation: fadeOut 5s forwards;
+}
+
+/* Animação de fade out após 5 segundos */
+@keyframes fadeOut {
+  0% { opacity: 1; }
+  80% { opacity: 1; }
+  100% { opacity: 0; display: none; }
+}

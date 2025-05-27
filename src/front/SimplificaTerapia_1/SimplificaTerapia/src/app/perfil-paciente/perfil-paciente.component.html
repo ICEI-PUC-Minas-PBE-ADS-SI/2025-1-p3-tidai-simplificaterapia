@@ -1,0 +1,90 @@
+<app-menu></app-menu>
+<div class="perfil-container">
+  <div class="perfil-imagem">
+    <img src="assets/images/imgPaciente.jpg" alt="Foto do Paciente">
+  </div>
+
+  <div class="perfil-formulario">
+    <h2>Meu Perfil - Paciente:</h2>
+    <form [formGroup]="perfilForm" (ngSubmit)="onSubmit()">
+
+      <label>Nome Completo*:</label>
+      <input formControlName="nomeCompleto" type="text" style="width: 97%; margin-top: -1%;">
+
+      <div class="linha">
+        <div>
+          <label>UF*:</label>
+          <select formControlName="uf" style="width: 96%;">
+            <option *ngFor="let uf of ufs" [value]="uf">{{ uf }}</option>
+          </select>
+        </div>
+        <div>
+          <label>Município*:</label>
+          <select formControlName="municipio" style="width: 96%;">
+            <option *ngFor="let municipio of municipios" [value]="municipio">{{ municipio }}</option>
+          </select>
+        </div>
+        <div>
+          <label>Situação:</label>
+          <select formControlName="situacao" style="width: 96%;">
+            <option *ngFor="let situacao of situacoes" [value]="situacao">{{ situacao }}</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="linha">
+        <div>
+          <label>Data Nascimento*:</label>
+          <input formControlName="dataNascimento" type="date" style="width: 90%;">
+        </div>
+        <div>
+          <label>CPF*:</label>
+          <input formControlName="cpf" type="text" style="width: 90%;">
+        </div>
+        <div>
+          <label>RG*:</label>
+          <input formControlName="rg" type="text" style="width: 90%;">
+        </div>
+      </div>
+
+      <div class="linha">
+        <div>
+          <label>Sexo:</label>
+          <select formControlName="sexo" style="width: 96%;">
+            <option *ngFor="let sexo of sexos" [value]="sexo">{{ sexo }}</option>
+          </select>
+        </div>
+        <div>
+          <label>Nº Cartão SUS*:</label>
+          <input formControlName="cartaoSUS" type="text" style="width: 91%;">
+        </div>
+        <div>
+          <label>Telefone*:</label>
+          <input formControlName="telefone" type="text" style="width: 91%;">
+        </div>
+      </div>
+
+      <label>Responsável:</label>
+      <input formControlName="responsavel" type="text" style="width: 97%; margin-top: -1%;">
+
+      <label>Contato Resp.:</label>
+      <input formControlName="contatoResponsavel" type="text" style="width: 97%;margin-top: -1%;">
+
+      <label>Sobre:</label>
+      <textarea formControlName="sobre" style="width: 97%;margin-top: -1%;"></textarea>
+
+      <label>Email*:</label>
+      <input formControlName="email" type="email" style="width: 70%;margin-top: -1%;">
+
+      <label>Senha*:</label>
+      <input formControlName="senha" type="password" style="width: 40%;margin-top: -1%;">
+
+      <div class="botoes">
+        <button type="submit" class="salvar">Salvar</button>
+        <button type="button" class="excluir" (click)="onExcluir()">Excluir</button>
+        <button type="button" class="cancelar" (click)="onCancelar()">Cancelar</button>
+      </div>
+    </form>
+  </div>
+</div>
+

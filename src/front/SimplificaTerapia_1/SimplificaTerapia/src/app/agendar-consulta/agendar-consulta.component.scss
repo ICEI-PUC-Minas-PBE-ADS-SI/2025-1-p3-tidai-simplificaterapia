@@ -1,0 +1,154 @@
+body {
+    font-family: 'Lexend', sans-serif;
+}
+
+.container {
+    padding: 1.5rem 8rem;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #fefefe;
+}
+
+.title {
+    font-size: 2.5rem;
+    padding-bottom: 0.5rem;
+    margin-left: 5%;
+    color: #324ba8;
+}
+
+.buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 0rem 1.5rem 0rem;
+}
+
+.btn {
+    font-weight: bold;
+    font-family: 'Lexend', sans-serif;
+    padding: 0 40px !important;
+    margin: 0 8px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    white-space: nowrap;
+    height: 45px;
+}
+
+
+.agendarConsulta {
+    padding: 0.5rem 2rem;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f1efe3;
+    border-radius: 10px;
+
+    .inputs {
+        margin-left: 10%;
+        margin-right: 10%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        align-items: flex-end;
+        row-gap: 16px;
+    }
+
+    .custom-field {
+        flex: 1;
+        min-width: 160px;
+
+        .mat-form-field-wrapper {
+            background-color: #e4e4ee;
+            border-radius: 8px;
+            padding: 0 10px;
+        }
+
+        .mat-form-field-outline,
+        .mat-form-field-outline-start,
+        .mat-form-field-outline-end,
+        .mat-form-field-outline-gap {
+            display: none !important;
+        }
+
+        .mat-form-field-label {
+            color: #555 !important;
+            font-weight: 500;
+        }
+
+        .mat-input-element,
+        .mat-select-value {
+            font-family: 'Lexend', sans-serif;
+            font-weight: 500;
+            color: #333;
+        }
+    }
+
+    .data {
+        max-width: 120px;
+    }
+
+    .tipoAtendimento {
+        min-width: 300px;
+    }
+
+    .formaPagamento {
+        min-width: 300px;
+    }
+
+    .profissional {
+        min-width: 450px;
+    }
+
+    .crm {
+        min-width: 175px;
+    }
+
+    .especialidade {
+        min-width: 165px;
+    }
+
+    .valorConsulta {
+        min-width: 200px;
+    }
+
+    .contatoMedico {
+        min-width: 200px;
+    }
+
+    .paciente {
+        min-width: 600px;
+    }
+
+    .contatoPaciente {
+        min-width: 200px;
+    }
+
+    .valor {
+        max-width: 120px;
+    }
+
+    .medico,
+    .especialidade {
+        flex: 2;
+    }
+
+    .buttons {
+        display: flex;
+        gap: 12px;
+        height: 56px;
+
+        .btn-limpar,
+        .btn-buscar {
+            height: 45px;
+            font-weight: bold;
+            font-family: 'Lexend', sans-serif;
+            padding: 0 40px !important;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            white-space: nowrap;
+            background-color: #22369b;
+            color: white;
+        }
+    }
+}

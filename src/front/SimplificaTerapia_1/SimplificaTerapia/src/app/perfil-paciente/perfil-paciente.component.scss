@@ -1,0 +1,94 @@
+.perfil-container {
+  display: flex;
+  gap: 2rem;
+  padding: 2rem;
+  background-color: white;
+  border-radius: 1rem;
+
+  .perfil-imagem {
+    img {
+      width: 300px;
+      height: auto;
+      border-radius: 200px;
+      object-fit: cover;
+    }
+  }
+
+  .perfil-formulario {
+    flex: 2 1 600px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    background-color: #f1efe3;
+    padding: 2rem;
+    border-radius: 12px;
+
+    h2 {
+      font-size: 2rem;
+      color: #1d3c78;
+      margin-bottom: 1rem;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 0.8rem;
+
+      label {
+        font-weight: 400;
+        margin-bottom: 0.2rem;
+      }
+
+      input, select, textarea {
+        padding: 0.5rem;
+        border: 1px solid #ccc;
+        border-radius: 0.5rem;
+        width: 100%;
+      }
+
+      .linha {
+        display: flex;
+        gap: 1rem;
+
+        div {
+          flex: 1;
+          display: flex;
+          flex-direction: column;
+        }
+
+        .linha div {
+          flex: 1;
+          display: flex;
+          flex-direction: column;
+        }
+      }
+
+      .botoes {
+        display: flex;
+        gap: 1rem;
+        margin-top: 1rem;
+
+        button {
+          padding: 0.5rem 1.5rem;
+          border: none;
+          border-radius: 0.5rem;
+          cursor: pointer;
+          font-weight: 600;
+
+          &.salvar {
+            background-color: #1d8f3f;
+            color: white;
+          }
+
+          &.excluir {
+            background-color: #a30000;
+            color: white;
+          }
+
+          &.cancelar {
+            background-color: #ccc;
+            color: white;
+          }
+        }
+      }
+    }
+  }
+}

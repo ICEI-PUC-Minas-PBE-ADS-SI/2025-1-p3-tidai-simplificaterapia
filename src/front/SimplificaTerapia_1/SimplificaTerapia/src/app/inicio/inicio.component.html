@@ -1,0 +1,80 @@
+<main>
+  <section class="home-section">
+    <div class="home-container">
+      <img src="assets/images/inicio1.jpg" alt="Imagem1" class="home-image">
+      <div class="home-text">
+        <h1>O jeito simples<br>de cuidar<br>de você!</h1>
+        <button onclick="window.location.href='#quem-somos';" mat-raised-button>Saiba mais</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="quem-somos-section" id="quem-somos">
+    <div class="quem-somos-container">
+      <img src="assets/images/inicio2.jpg" alt="Imagem2" class="quem-somos-image">
+      <div class="quem-somos-textos">
+          <div class="quem-somos-text">
+            <h3>Quem somos?</h3>
+            <p>No "Simplifica Terapia", acreditamos que a saúde mental deve ser acessível, descomplicada e sem barreiras.</p>
+            <p>Em um cenário marcado por uma crescente demanda por apoio psicológico, agravado pela pandemia de COVID-19, percebemos a necessidade urgente de soluções inovadoras para atender as pessoas que enfrentam desafios emocionais e psicológicos.</p>
+            <p>Nosso objetivo é proporcionar um acesso contínuo e flexível ao suporte terapêutico, transformando a forma como as pessoas buscam e recebem ajuda.</p>
+          </div>
+          <div class="nossa-missao">
+            <h3>Nossa Missão</h3>
+            <p>Oferecer uma plataforma digital que conecta usuários a terapeutas qualificados, permitindo que possam agendar e participar de sessões de terapia de forma prática, segura e confidencial.</p>
+            <p>Nosso aplicativo visa reduzir o estigma associado à saúde mental e facilitar o acesso aos cuidados psicológicos, proporcionando um ambiente acolhedor e sem julgamentos.</p>
+            <p>Acreditamos que, com mais privacidade e conveniência, podemos promover o bem-estar e melhorar a qualidade de vida dos nossos usuários.</p>
+          </div>
+          <div class="como-funciona">
+            <h3>Como Funcionamos</h3>
+            <p>O "Simplifica Terapia" é uma plataforma de terapia online que possibilita aos usuários agendarem e participarem de sessões terapêuticas de qualquer lugar e a qualquer momento.</p>
+            <p>Nossa tecnologia garante a segurança e confidencialidade dos dados, respeitando as normas de privacidade e proteção.</p>
+            <p>Nosso sistema automatiza processos administrativos, como agendamento e cobranças, permitindo que os terapeutas possam se concentrar totalmente nas necessidades dos pacientes.</p>
+          </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="footer-section">
+    <div class="footer-container">
+      <div class="subscribe-section">
+        <div class="subscribe-left">
+          <h2 class="subscribe-title">Não perca a<br>Oportunidade</h2>
+        </div>
+        <div class="subscribe-right">
+          <div class="subscribe-form">
+            <mat-form-field appearance="outline" class="input-field">
+              <mat-label style="color:white !important;">Digite seu email</mat-label>
+              <input matInput [(ngModel)]="email" type="email">
+            </mat-form-field>
+            <button mat-raised-button (click)="inscrever()" class="subscribe-button">
+              Inscrever-se
+            </button>
+          </div>
+          <div class="checkbox-container">
+            <mat-checkbox [(ngModel)]="termos" class="checkbox">
+                <p style="color:white !important;">Eu concordo com os termos de uso do Simplifica terapia</p>
+            </mat-checkbox>
+            <mat-checkbox [(ngModel)]="privacidade" class="checkbox">
+              <p style="color:white !important;">Eu confirmo que li a Política de Privacidade Do Simplifica Terapia</p>
+            </mat-checkbox>
+          </div>
+        </div>
+      </div>
+      <div class="bottom-footer">
+        <div class="social-links">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/c/cd/Facebook_logo_%28square%29.png" alt="Facebook">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/1024px-Instagram_icon.png" alt="Instagram">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/500px-LinkedIn_logo_initials.png" alt="LinkedIn">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBKe6AEffgJMyoOMlO-5-iChimIAsi3Vn5-A&s" alt="PUC Minas">
+        </div>
+        <div class="footer-text">
+          <p>©2025 Todos os direitos reservados. Simplifica Terapia® é uma marca registrada da Simplifica Soluções em Saúde Mental.</p>
+        </div>
+      </div>
+      <div class="legal-section">
+        <p>Privacidade | Termos de Uso | Aviso Legal | Política de Cookies</p>
+      </div>
+    </div>
+  </section>
+</main>

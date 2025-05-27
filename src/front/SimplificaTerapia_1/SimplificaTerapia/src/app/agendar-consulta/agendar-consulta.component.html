@@ -1,0 +1,104 @@
+<app-menu></app-menu>
+<div class="container">
+    <div class="agendarConsulta">
+        <h2 class="title">Agendar Consulta:</h2>
+        <div class="inputs">
+            <mat-form-field appearance="outline" class="custom-field">
+                <mat-label>Data*</mat-label>
+                <input matInput [matDatepicker]="datepicker">
+                <mat-datepicker #datepicker />
+                <mat-datepicker-toggle [for]="datepicker" matSuffix />
+            </mat-form-field>
+
+            <mat-form-field appearance="outline" class="custom-field">
+                <mat-label>Horário*</mat-label>
+                <input matInput [matTimepicker]="timepicker">
+                <mat-timepicker #timepicker />
+                <mat-timepicker-toggle [for]="timepicker" matSuffix />
+            </mat-form-field>
+
+            <mat-form-field appearance="outline" class="custom-field">
+                <mat-label>Duração*</mat-label>
+                <mat-select>
+                    @for (duracoes of duracoes; track duracoes) {
+                    <mat-option [value]="duracoes.value">{{duracoes.viewValue}}</mat-option>
+                    }
+                </mat-select>
+            </mat-form-field>
+
+            <mat-form-field appearance="outline" class="custom-field">
+                <mat-label>Situação*</mat-label>
+                <mat-select>
+                    @for (situacao of situacoes; track situacoes) {
+                    <mat-option [value]="situacao.value">{{situacao.viewValue}}</mat-option>
+                    }
+                </mat-select>
+            </mat-form-field>
+
+            <mat-form-field appearance="outline" class="custom-field tipoAtendimento">
+                <mat-label>Tipo de Atendimento*</mat-label>
+                <mat-select>
+                    @for (tipoAtendimento of tiposAtendimento; track tiposAtendimento) {
+                    <mat-option [value]="tipoAtendimento.value">{{tipoAtendimento.viewValue}}</mat-option>
+                    }
+                </mat-select>
+            </mat-form-field>
+
+            <mat-form-field appearance="outline" class="custom-field formaPagamento">
+                <mat-label>Forma de Pagamento*</mat-label>
+                <mat-select>
+                    @for (formaPagamento of formasPagamento; track formasPagamento) {
+                    <mat-option [value]="formaPagamento.value">{{formaPagamento.viewValue}}</mat-option>
+                    }
+                </mat-select>
+            </mat-form-field>
+
+            <mat-checkbox appearance="outline" class="custom-field">Plano de Saúde</mat-checkbox>
+
+            <mat-form-field appearance="outline" class="custom-field profissional">
+                <mat-label>Profissional</mat-label>
+                <input matInput disabled value="Alexandre Machado">
+            </mat-form-field>
+
+            <mat-form-field appearance="outline" class="custom-field crm">
+                <mat-label>CRM</mat-label>
+                <input matInput disabled value="00859970">
+            </mat-form-field>
+
+            <mat-form-field appearance="outline" class="custom-field especialidade">
+                <mat-label>Especialidade</mat-label>
+                <input matInput disabled value="Terapeuta">
+            </mat-form-field>
+
+            <mat-form-field appearance="outline" class="custom-field valorConsulta">
+                <mat-label>Valor Consulta</mat-label>
+                <input matInput disabled value="R$ 120,00">
+            </mat-form-field>
+
+            <mat-form-field appearance="outline" class="custom-field contatoMedico">
+                <mat-label>Contato Médico</mat-label>
+                <input matInput disabled value="(31) 3595-4142">
+            </mat-form-field>
+
+            <mat-form-field appearance="outline" class="custom-field paciente">
+                <mat-label>Paciente</mat-label>
+                <input matInput disabled value="Gabriel Henrique Oliveira Braga">
+            </mat-form-field>
+
+            <mat-form-field appearance="outline" class="custom-field contatoPaciente">
+                <mat-label>Contato Paciente</mat-label>
+                <input matInput disabled value="(38) 98645-2293">
+            </mat-form-field>
+
+            <mat-form-field appearance="outline" class="custom-field">
+                <mat-label>Observações</mat-label>
+                <textarea matInput placeholder="Coloque aqui suas observações..."></textarea>
+            </mat-form-field>
+        </div>
+        <div class="buttons">
+            <button mat-flat-button class="btn" routerLink="/consultas">Salvar</button>
+            <button mat-flat-button class="btn">Excluir</button>
+            <button mat-flat-button class="btn">Cancelar</button>
+        </div>
+    </div>
+</div>

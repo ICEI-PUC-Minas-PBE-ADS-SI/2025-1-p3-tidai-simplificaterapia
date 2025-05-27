@@ -1,0 +1,217 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.home-section, .quem-somos-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh; 
+  padding: 20px; 
+  color: #22369b;
+}
+
+.home-container, .quem-somos-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between; 
+  max-width: 1200px; 
+  margin: 0 auto; 
+}
+
+.home-image {
+  max-width: 50%;
+  height: auto;
+  border-radius: 30px;
+  margin: 5%;
+}
+
+.quem-somos-image {
+  max-width: 40%;
+  height: auto;
+  border-radius: 30px;
+  margin: 2%;
+}
+
+.quem-somos-textos {
+    margin-right: 15%;
+    margin-bottom: 8%;
+}
+
+.home-text, .quem-somos-text, .como-funciona, .nossa-missao {
+  flex: 1;
+  padding-left: 20px;
+}
+
+.home-text h1 {
+    font-size: 3em;
+}
+
+.home-text {
+  text-align: left; 
+}
+
+.nossa-missao,
+.como-funciona,
+.quem-somos-text {
+  text-align: justify;
+  margin-bottom: 15px;
+  width: 100%;
+  max-width: 800px;
+}
+
+.nossa-missao h3,
+.como-funciona h3,
+.quem-somos-text h3 {
+  font-size: 1.5em;
+  margin-bottom: 15px;
+}
+
+.nossa-missao p,
+.como-funciona p,
+.quem-somos-text p {
+  font-size: 0.9em;
+  line-height: 1.0;
+}
+
+.home-text button {
+  background-color: #22369b;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 1em;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+}
+
+.home-text button:hover {
+  background-color: #192875;
+}
+
+.footer-section {
+  padding: 20px;
+  background-color: #192875;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: white;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.subscribe-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.subscribe-left {
+  flex: 1;
+  text-align: left;
+}
+
+.subscribe-title {
+  font-size: 2em;
+  margin-bottom: 15px;
+}
+
+.subscribe-right {
+  flex: 1;
+  text-align: right;
+}
+
+.subscribe-form {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  justify-content: flex-end;
+}
+
+.subscribe-form mat-form-field {
+  width: 400px;
+  margin-right: 10px;
+}
+
+.subscribe-button {
+  background-color: white !important;
+  color: #192875 !important;
+  border-radius: 4px;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+}
+
+.subscribe-button:hover {
+  background-color: #f0f0f0 !important;
+}
+
+.checkbox-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.checkbox-container .checkbox {
+  margin-bottom: 5px;
+  color: white !important; 
+}
+
+.checkbox ::ng-deep .mat-checkbox-frame {
+  border-color: white; 
+}
+
+.bottom-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.social-links {
+  display: flex;
+  align-items: center;
+}
+
+.social-links img {
+  height: 40px;
+  margin-right: 20px;
+}
+
+.footer-text {
+  text-align: right;
+  font-size: 0.8em;
+}
+
+.legal-section {
+  text-align: center;
+  width: 100%;
+  padding-top: 10px;
+  font-size: 0.7em;
+}
+
+.legal-section p {
+  margin: 5px 0;
+}
+
+.legal-section a {
+  color: white !important;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+.legal-section a:hover {
+  text-decoration: underline;
+}

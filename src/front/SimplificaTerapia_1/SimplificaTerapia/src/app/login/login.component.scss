@@ -1,0 +1,135 @@
+body {
+    overflow-y: hidden;
+}
+
+.login {
+    margin: 10%;
+    background-color: white;
+    margin-bottom: 10%;
+    margin-top: 3%;
+} 
+
+.login-container {
+  display: flex;
+  height: 50vh;
+  background-color: #f4f1e9;
+  padding: 10%;
+  border-radius: 20px;
+
+  .login-image {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+
+    img {
+      width: 100%;
+      height: auto;
+      max-width: 600px;
+      border-radius: 20px 0 0 20px;
+    }
+  }
+
+  .login-form {
+    flex: 1;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .back-button {
+      font-size: 2rem;
+      color: #2b3dbb;
+      text-decoration: none;
+      margin-bottom: 0rem;
+    }
+
+    h2 {
+      font-size: 2rem;
+      color: #2b3dbb;
+      margin-bottom: 2rem;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+
+      label {
+        margin-bottom: 0.5rem;
+        font-weight: 500;
+        color: #333;
+      }
+
+      input[type='email'],
+      input[type='password'] {
+        padding: 0.75rem;
+        border: 1px solid #ccc;
+        border-radius: 20px;
+        margin-bottom: 1.5rem;
+      }
+
+      .checkbox-group {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1.5rem;
+
+        label {
+          font-size: 0.95rem;
+          color: #2b3dbb;
+
+          input {
+            margin-right: 0.5rem;
+          }
+        }
+      }
+
+      button {
+        padding: 0.75rem;
+        background-color: #2b3dbb;
+        color: #fff;
+        border: none;
+        border-radius: 20px;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: 0.3s;
+        width: 40%;
+
+        &:hover {
+          background-color: #1e2c94;
+        }
+      }
+    }
+
+    .register-link {
+      margin-top: 1.5rem;
+      font-size: 0.9rem;
+      color: #2b3dbb;
+      text-decoration: underline;
+    }
+  }
+}
+
+.alerta-sucesso {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #28a745; /* Verde sucesso */
+  color: #ffffff; /* Texto branco */
+  padding: 15px 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  font-weight: bold;
+  z-index: 1000;
+  animation: fadeOut 5s forwards;
+}
+
+/* Animação de fade out após 5 segundos */
+@keyframes fadeOut {
+  0% { opacity: 1; }
+  80% { opacity: 1; }
+  100% { opacity: 0; display: none; }
+}
+
