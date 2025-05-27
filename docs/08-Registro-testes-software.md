@@ -37,7 +37,7 @@ Para cada caso de teste definido no <a href="07-Plano-testes-software.md"> Plano
 | **Caso de teste** 	| **CT-008 – Solicitar troca de teraupeta** |
 |:---:	|:---:	|
 | Requisito associado | RF-008 - O sistema deverá permitir que os pacientes solicitem a troca de terapeuta, caso não estejam satisfeitos com o atendimento atual. |
-| Registro de evidência | [www.teste.com.br/drive/ct-08](http://www.teste.com.br/drive/ct-02) |
+| Registro de evidência | [www.teste.com.br/drive/ct-08](https://drive.google.com/file/d/1qnf8DdastqflPkAyg5yf-q6M77h5P9Vt/view?usp=sharing) |
 
 
 
