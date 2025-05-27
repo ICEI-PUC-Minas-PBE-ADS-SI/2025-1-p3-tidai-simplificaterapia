@@ -76,7 +76,7 @@ Por exemplo:-->
 | Objetivo do teste | Trocar terapeuta. |
 | Passos | - Acessar o navegador <br> - Informar o endereço do site http://localhost:4200/ <br> - Clicar no menu terapeutas" <br> - Clicar em visualizar terapeutas <br> - Clicar no ícone trocar terapeuta  <br> - Clicar em "confirmar" |
 | Critério de êxito | - Terapeuta trocado com sucesso. |
-| Responsável pela elaboração do caso de teste |  Vânia Lourençol. |
+| Responsável pela elaboração do caso de teste |  Vânia Lourenço. |
 
 
 
