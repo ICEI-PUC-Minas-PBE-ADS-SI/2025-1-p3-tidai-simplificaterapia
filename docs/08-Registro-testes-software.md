@@ -24,7 +24,7 @@ Para cada caso de teste definido no <a href="07-Plano-testes-software.md"> Plano
 | Requisito associado | RF-006 - Pacientes deverão poder acessar laudos/receitas de suas consultas de forma segura, após o término das sessões. | 
 | Registro de evidência | [www.teste.com.br/drive/ct-02](http://www.teste.com.br/drive/ct-02) |
 
-| **Caso de teste** 	| **CT-005 – Acessar Receitas eletrônicas** |
+| **Caso de teste** 	| **CT-005 – Emitir receitas eletrônicas** |
 |:---:	|:---:	|
 | Requisito associado | RF-007 - Terapeutas poderão emitir receitas eletrônicas aos pacientes, que terão acesso a essas receitas diretamente no sistema. |
 | Registro de evidência | [www.teste.com.br/drive/ct-02](http://www.teste.com.br/drive/ct-02) |
