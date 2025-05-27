@@ -44,7 +44,7 @@ Por exemplo:-->
 |:---: |:---: |
 | Requisito associado | RF-005 - Pacientes e terapeutas deverão receber lembretes automáticos sobre consultas agendadas.|
 | Objetivo do teste | Verificar se pacientes e terapeutas recebem lembretes automáticos. |
-| Passos | - Acessar o navegador <br> - Informar o endereço do site http://localhost:4200/ <br> - Clicar no ícone de noticação <br> - |
+| Passos | - Acessar o navegador <br> - Informar o endereço do site http://localhost:4200/ <br> - Clicar no ícone de notificação <br> - |
 | Critério de êxito | - Notificação visível na tela |
 | Responsável pela elaboração do caso de teste | Maria Eduarda. |
 
