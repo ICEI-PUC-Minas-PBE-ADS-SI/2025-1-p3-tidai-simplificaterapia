@@ -44,7 +44,7 @@ Por exemplo:-->
 |:---: |:---: |
 | Requisito associado | RF-006 - Pacientes deverão poder acessar laudos/receitas de suas consultas de forma segura, após o término das sessões. |
 | Objetivo do teste | Verificar se o usuário consegue acessar laudos de suas consultas. |
-| Passos | - Acessar o navegador <br> - Informar o endereço do site http://localhost:4200/ <br> - Clicar no menu "Laudos/Receitas" <br> - Clicar em "Visualizar <br> - Clinar no ícone de visualizar laudo |
+| Passos | - Acessar o navegador <br> - Informar o endereço do site http://localhost:4200/ <br> - Clicar no menu "Laudos/Receitas" <br> - Clicar em "Visualizar <br> - Clicar no ícone de visualizar laudo <br> - Clicar no ícone "revogar" - confirmar <br> - Clicar no ícone "imprimir" - confirmar <br> - Clicar no ícone "baixar" - confirmar <br> - Clicar no ícone "vizualizar"  |
 | Critério de êxito | - Laudo visível na tela. |
 | Responsável pela elaboração do caso de teste | Mariany Karla. |
 
