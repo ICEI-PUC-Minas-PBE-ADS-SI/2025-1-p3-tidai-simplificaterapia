@@ -22,7 +22,7 @@ Para cada caso de teste definido no <a href="07-Plano-testes-software.md"> Plano
 | **Caso de teste** 	| **CT-004 – Acessar laudos/receitas** 	|
 |:---:	|:---:	|
 | Requisito associado | RF-006 - Pacientes deverão poder acessar laudos/receitas de suas consultas de forma segura, após o término das sessões. | 
-| Registro de evidência | [www.teste.com.br/drive/ct-04](http://www.teste.com.br/drive/ct-02) |
+| Registro de evidência | [www.teste.com.br/drive/ct-04](https://drive.google.com/file/d/1KWgyqVDj_FMUj02pELMDTcKjI4vm9lhs/view?usp=sharing) |
 
 | **Caso de teste** 	| **CT-005 – Emitir laudos/receitas eletrônicas** |
 |:---:	|:---:	|
