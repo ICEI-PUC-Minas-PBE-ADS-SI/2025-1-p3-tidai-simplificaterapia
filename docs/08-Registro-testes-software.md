@@ -12,7 +12,7 @@ Para cada caso de teste definido no <a href="07-Plano-testes-software.md"> Plano
 | Registro de evidência | [www.teste.com.br/drive/ct-01](https://drive.google.com/file/d/1qKrJwirqPVW35sW8Bfhvo75h6fb3lEqc/view?usp=sharing)
 | **Caso de teste** 	| **CT-002 – Agendar conculta** 	|
 | Requisito associado | RF-002 - O sistema deverá possibilitar que os pacientes agendem, visualizem e cancelem sessões de terapia com terapeutas disponíveis. |
-| Registro de evidência | [www.teste.com.br/drive/ct-02](http://www.teste.com.br/drive/ct-02) |
+| Registro de evidência | [[www.teste.com.br/drive/ct-02](https://drive.google.com/file/d/1Ni09x0c0NFIV2ZY2yQ1X-hN9WiwbkgfF/view?usp=sharing)](http://www.teste.com.br/drive/ct-02) |
 
 | **Caso de teste** 	| **CT-003 – Visualizar consultas** 	|
 |:---:	|:---:	|
