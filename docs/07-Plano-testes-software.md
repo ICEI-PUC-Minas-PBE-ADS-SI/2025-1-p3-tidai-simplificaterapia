@@ -14,8 +14,7 @@ Por exemplo:-->
 |:---: |:---: |
 | Requisito associado | RF-001 - O sistema deverá permitir o cadastro e exclusão de informações de pacientes e terapeutas, incluindo dados pessoais e históricos de atendimento. |
 | Objetivo do teste | Verificar se o usuário consegue cadastrar perfil. |
-| Passos / Paciente| - Acessar o navegador <br> - Informar o endereço do site https://adota-pet.herokuapp.com/src/index.html <br> - Clica em "perfil" <br> - Escolhe a opção "Sou paciente" -  Clicar em "Cadastre" <br> - Preencher os campos obrigatórios (nome completo, UF, Município, Usuário, Data Nascimento, CPF, Nº Cartão SUS, Telefone, Email, senha, Confirmar Senha) <br>  <br> - Clicar em "Cadastrar" <br> - Informar email e senha <br> - Clica em "Entrar"
-| Passos / Médico| - Acessar o navegador <br> - Informar o endereço do site https://adota-pet.herokuapp.com/src/index.html <br> -  Escolhe a opção Sou Médico - Clicar em "Criar conta" <br> - Preencher os campos obrigatórios (nome completo, UF, Município, Usuário, CRM, CPF, Especialidade, Valor p/ hora, Formação, Email, senha, Confirmar Senha) <br>  <br> - Clicar em "Cadastrar" |
+| Passos | - Acessar o navegador <br> - Informar o endereço do site https://adota-pet.herokuapp.com/src/index.html <br> - Clica em "perfil" <br> - Escolhe a opção "Sou paciente" -  Clicar em "Cadastre" <br> - Preencher os campos obrigatórios (nome completo, UF, Município, Usuário, Data Nascimento, CPF, Nº Cartão SUS, Telefone, Email, senha, Confirmar Senha) <br>  <br> - Clicar em "Cadastrar" <br> - Informar email e senha <br> - Clica em "Entrar"
 | Critério de êxito | - O cadastro foi realizado com sucesso. |
 | Responsável pela elaboração do caso de teste | Vânia Lourenço. |
 
