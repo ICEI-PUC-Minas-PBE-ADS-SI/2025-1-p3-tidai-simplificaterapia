@@ -17,22 +17,22 @@ Para cada caso de teste definido no <a href="07-Plano-testes-software.md"> Plano
 | **Caso de teste** 	| **CT-003 – Visualizar consultas** 	|
 |:---:	|:---:	|
 | Requisito associado | RF-003 - Pacientes deverão poder visualizar suas consultas agendadas, com possibilidade de confirmar ou cancelar os atendimentos. 
-| Registro de evidência | [www.teste.com.br/drive/ct-01](http://www.teste.com.br/drive/ct-01) |
+| Registro de evidência | [www.teste.com.br/drive/ct-03](https://drive.google.com/file/d/10XACKbO74mbjMcKEnCtw_Qhdp8r7jhH9/view?usp=sharing) |
 
 | **Caso de teste** 	| **CT-004 – Acessar laudos/receitas** 	|
 |:---:	|:---:	|
 | Requisito associado | RF-006 - Pacientes deverão poder acessar laudos/receitas de suas consultas de forma segura, após o término das sessões. | 
-| Registro de evidência | [www.teste.com.br/drive/ct-02](http://www.teste.com.br/drive/ct-02) |
+| Registro de evidência | [www.teste.com.br/drive/ct-04](http://www.teste.com.br/drive/ct-02) |
 
 | **Caso de teste** 	| **CT-005 – Emitir receitas eletrônicas** |
 |:---:	|:---:	|
 | Requisito associado | RF-007 - Terapeutas poderão emitir receitas eletrônicas aos pacientes, que terão acesso a essas receitas diretamente no sistema. |
-| Registro de evidência | [www.teste.com.br/drive/ct-02](http://www.teste.com.br/drive/ct-02) |
+| Registro de evidência | [www.teste.com.br/drive/ct-05](http://www.teste.com.br/drive/ct-02) |
 
 | **Caso de teste** 	| **CT-006 – Solicitar troca de teraupeta** |
 |:---:	|:---:	|
 | Requisito associado | RF-008 - O sistema deverá permitir que os pacientes solicitem a troca de terapeuta, caso não estejam satisfeitos com o atendimento atual. |
-| Registro de evidência | [www.teste.com.br/drive/ct-02](http://www.teste.com.br/drive/ct-02) |
+| Registro de evidência | [www.teste.com.br/drive/ct-06](http://www.teste.com.br/drive/ct-02) |
 
 
 
