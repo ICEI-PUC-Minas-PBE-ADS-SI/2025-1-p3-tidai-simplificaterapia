@@ -44,16 +44,17 @@ Por exemplo:-->
 |:---: |:---: |
 | Requisito associado | RF-006 - Pacientes deverão poder acessar laudos/receitas de suas consultas de forma segura, após o término das sessões. |
 | Objetivo do teste | Verificar se o usuário consegue acessar laudos de suas consultas. |
-| Passos | - Acessar o navegador <br> - Informar o endereço do site https://adota-pet.herokuapp.com/src/index.html <br> - Clicar no menu "Laudos/Receitas" <br> - Clicar em "Visualizar <br> - Clinar no ícone de visualizar laudo |
+| Passos | - Acessar o navegador <br> - Informar o endereço do site http://localhost:4200/ <br> - Clicar no menu "Laudos/Receitas" <br> - Clicar em "Visualizar <br> - Clinar no ícone de visualizar laudo |
 | Critério de êxito | - Laudo visível na tela. |
 | Responsável pela elaboração do caso de teste | Mariany Karla. |
 
 <br>
 
-| **Caso de teste**  | **CT-005 – Emitir receitas eletrônicas**  |
+| **Caso de teste**  | **CT-005 – Emitir laudos/receitas eletrônicas**  |
 |:---: |:---: |
-| Requisito associado | RF-007 - O sistema deverá permitir que os pacientes solicitem a troca de terapeuta, caso não estejam satisfeitos com o atendimento atual. |
-| Passos | - Acessar o navegador <br> - Informar o endereço do site https://adota-pet.herokuapp.com/src/index.html <br> - Clicar no botão "Entrar" <br> - Preencher o campo de e-mail <br> - Preencher o campo de senha <br> - Clicar em "Login" |
+| Requisito associado | RF-007 - Terapeutas poderão emitir receitas eletrônicas aos pacientes, que terão acesso a essas receitas diretamente no sistema.  |
+| Objetivo do teste | Verificar se o Médico consegue emitir laudos/receitas. |
+| Passos | - Acessar o navegador <br> - Informar o endereço do site http://localhost:4200/ <br> -  Clicar no menu "Laudos/Receitas" <br> - Clicar em "Visualizar" <br> - Clicar em "Novo" <br> - Preencher os campos (código, Médico, CRM, data emissão, data vencimento e tipo) <br> - Clicar em "Confirmar" |
 | Critério de êxito | - Receita visível na tela. |
 | Responsável pela elaboração do caso de teste | Vânia Lourenço. |
 
