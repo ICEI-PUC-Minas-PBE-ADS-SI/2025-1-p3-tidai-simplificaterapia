@@ -10,6 +10,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { MenuComponent } from '../menu/menu.component';
 import { RouterModule } from '@angular/router';
+import { FormsModule } from '@angular/forms';
 
 import { MedicoService } from '../services/medico.service';
 import { Medico } from '../models/medico';
@@ -28,6 +29,7 @@ import { Medico } from '../models/medico';
     MatButtonModule,
     MatTooltipModule,
     MenuComponent,
+    FormsModule,
     RouterModule
   ],
   templateUrl: './terapeutas.component.html',
@@ -36,19 +38,24 @@ import { Medico } from '../models/medico';
 export class TerapeutasComponent implements OnInit {
   estados = ['MG', 'SP', 'RJ', 'RS'];
   sexos = ['Masculino', 'Feminino', 'Outro'];
-
   medicos: Medico[] = [];
+  filtroNome: string = '';
 
-  constructor(private medicoService: MedicoService) {}
+  constructor(private medicoService: MedicoService) { }
 
   ngOnInit(): void {
     this.carregarMedicos();
   }
 
   carregarMedicos(): void {
-    this.medicoService.getMedicos().subscribe({
+    this.medicoService.getMedicos(this.filtroNome).subscribe({
       next: (dados) => this.medicos = dados,
       error: (err) => console.error('Erro ao carregar médicos', err)
     });
   }
+
+  buscarPorNome(): void {
+    this.carregarMedicos();
+  }
 }
+
