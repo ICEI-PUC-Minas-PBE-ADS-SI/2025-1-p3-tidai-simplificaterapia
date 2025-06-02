@@ -8,7 +8,7 @@
     <div class="inputs">
       <mat-form-field appearance="outline" class="custom-field nome">
         <mat-label>Nome</mat-label>
-        <input matInput placeholder="Nome">
+        <input matInput placeholder="Nome" [(ngModel)]="filtroNome">
       </mat-form-field>
 
       <mat-form-field appearance="outline" class="custom-field uf">
@@ -42,10 +42,11 @@
         Limpar
       </button>
 
-      <button mat-flat-button color="primary" class="btn-buscar">
+      <button mat-flat-button color="primary" class="btn-buscar" (click)="buscarPorNome()">
         <mat-icon>search</mat-icon>
         Buscar
       </button>
+
     </div>
   </div>
 
@@ -74,9 +75,5 @@
     </div>
   </div>
 
-  <mat-paginator
-    [length]="100"
-    [pageSizeOptions]="[10, 50, 100]"
-    aria-label="Select page"
-  ></mat-paginator>
+  <mat-paginator [length]="100" [pageSizeOptions]="[10, 50, 100]" aria-label="Select page"></mat-paginator>
 </div>
