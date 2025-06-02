@@ -1,5 +1,6 @@
-﻿using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using SimplificaTerapia.Data;
 using SimplificaTerapia.Models;
 using SimplificaTerapia.Models.Classes;
@@ -20,11 +21,17 @@ namespace SimplificaTerapia.Controllers
 
 
         [HttpGet]
-        public IActionResult GetAllMedicos()
+        public IActionResult GetAllMedicos([FromQuery] string? nome)
         {
-            var TodosOsMedicos = dbContext.Medicos.ToList();
+            var query = dbContext.Medicos.AsQueryable();
 
-            return Ok(TodosOsMedicos);
+            if (!string.IsNullOrWhiteSpace(nome))
+            {
+                query = query.Where(m => EF.Functions.Like(m.nome_completo, $"%{nome}%"));
+            }
+
+            var resultado = query.ToList();
+            return Ok(resultado);
         }
 
 
