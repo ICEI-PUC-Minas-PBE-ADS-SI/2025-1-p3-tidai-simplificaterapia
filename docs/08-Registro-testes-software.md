@@ -22,7 +22,7 @@ Para cada caso de teste definido no <a href="07-Plano-testes-software.md"> Plano
 | **Caso de teste** 	| **CT-005 – Receber lembretes automáticos** |
 |:---:	|:---:	|
 | Requisito associado | RF-005 -  Pacientes e terapeutas deverão receber lembretes automáticos sobre consultas agendadas. |
-| Registro de evidência | [www.teste.com.br/drive/ct-05]([https://drive.google.com/file/d/1KWgyqVDj_FMUj02pELMDTcKjI4vm9lhs/view?usp=sharing](https://drive.google.com/file/d/1f9D78ylLyuiNgkEyMHcykn5Fi7gLGpie/view?usp=sharing)) |
+| Registro de evidência | [www.teste.com.br/drive/ct-05](https://drive.google.com/file/d/1KWgyqVDj_FMUj02pELMDTcKjI4vm9lhs/view?usp=sharing(https://drive.google.com/file/d/1f9D78ylLyuiNgkEyMHcykn5Fi7gLGpie/view?usp=sharing)) |
 
 | **Caso de teste** 	| **CT-006 – Acessar laudos/receitas** 	|
 |:---:	|:---:	|
