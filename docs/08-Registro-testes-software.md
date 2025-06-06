@@ -41,7 +41,7 @@ Para cada caso de teste definido no <a href="07-Plano-testes-software.md"> Plano
 
 
 
-> **Links úteis**:
+<!-- > **Links úteis**:
 > - [Screencast: entenda o que é e como gravar vídeos com ele](https://rockcontent.com/br/blog/screencast/) 
 
 ## Avaliação
@@ -49,4 +49,4 @@ Para cada caso de teste definido no <a href="07-Plano-testes-software.md"> Plano
 Discorra sobre os resultados do teste, ressaltando os pontos fortes e fracos identificados na solução. Comente como o grupo pretende abordar esses pontos nas próximas iterações. Apresente as falhas detectadas e as melhorias geradas a partir dos resultados obtidos nos testes.
 
 > **Links úteis**:
-> - [Ferramentas de Teste para JavaScript](https://geekflare.com/javascript-unit-testing/)
+> - [Ferramentas de Teste para JavaScript](https://geekflare.com/javascript-unit-testing/) -->
