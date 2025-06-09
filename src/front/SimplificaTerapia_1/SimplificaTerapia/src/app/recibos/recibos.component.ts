@@ -16,20 +16,20 @@ import { MatNativeDateModule } from '@angular/material/core';
   selector: 'app-recibos',
   imports: [
     CommonModule,
-      MatFormFieldModule,
-      MatInputModule,
-      MatSelectModule,
-      MatPaginatorModule,
-      MatIconModule,
-      MatButtonModule,
-      MenuComponent,
-      MatTooltipModule,
-      FormsModule,
-      MatDatepickerModule,
-      MatNativeDateModule
+    MatFormFieldModule,
+    MatInputModule,
+    MatSelectModule,
+    MatPaginatorModule,
+    MatIconModule,
+    MatButtonModule,
+    MenuComponent,
+    MatTooltipModule,
+    FormsModule,
+    MatDatepickerModule,
+    MatNativeDateModule,
   ],
   templateUrl: './recibos.component.html',
-  styleUrl: './recibos.component.scss'
+  styleUrl: './recibos.component.scss',
 })
 export class RecibosComponent {
   recibos = [
@@ -38,31 +38,35 @@ export class RecibosComponent {
       dataPagamento: '24/05/2025',
       valor: '130,00',
       formaPagamento: 'Pix',
-      descricao: 'Consulta psicológica online - 1 hora'
+      descricao: 'Consulta psicológica online - 1 hora',
+      nomePaciente: 'Mariany Karla Abranches de Melo'
     },
     {
       titulo: 'Recibo em Aberto',
       dataPagamento: '24/05/2025',
       valor: '130,00',
       formaPagamento: 'Pix',
-      descricao: 'Consulta psicológica online - 1 hora'
+      descricao: 'Consulta psicológica online - 1 hora',
+      nomePaciente: 'João da Silva'
     },
     {
       titulo: 'Recibo em Aberto',
       dataPagamento: '24/05/2025',
       valor: '130,00',
       formaPagamento: 'Pix',
-      descricao: 'Consulta psicológica online - 1 hora'
+      descricao: 'Consulta psicológica online - 1 hora',
+      nomePaciente: 'Maria Eduarda Ferreira Reis'
     },
     {
       titulo: 'Recibo em Aberto',
       dataPagamento: '24/05/2025',
       valor: '130,00',
       formaPagamento: 'Pix',
-      descricao: 'Consulta psicológica online - 1 hora'
-    }
+      descricao: 'Consulta psicológica online - 1 hora',
+      nomePaciente: 'Vânia Lourenço'
+    },
   ];
-  
+
   // Modais
 
   // Revogar
@@ -95,7 +99,12 @@ export class RecibosComponent {
   }
 
   confirmarImpressao() {
-    console.log("Imprimindo:", this.reciboSelecionado, "Formato:", this.formatoSelecionado);
+    console.log(
+      'Imprimindo:',
+      this.reciboSelecionado,
+      'Formato:',
+      this.formatoSelecionado
+    );
     this.modalImpressaoVisivel = false;
   }
 
@@ -109,38 +118,32 @@ export class RecibosComponent {
     this.modalBaixarVisivel = true;
   }
 
-  fecharModalBaixar() { 
-  this.modalBaixarVisivel = false;
-  this.reciboSelecionado = null;
+  fecharModalBaixar() {
+    this.modalBaixarVisivel = false;
+    this.reciboSelecionado = null;
   }
 
   confirmarBaixar() {
-    console.log("Imprimindo:", this.reciboSelecionado, "Formato:", this.formatoEscolhido);
+    console.log(
+      'Imprimindo:',
+      this.reciboSelecionado,
+      'Formato:',
+      this.formatoEscolhido
+    );
     this.modalBaixarVisivel = false;
   }
 
   // Receita médica
 
   modalVisualizacaoVisivel = false;
-  imagemRecibo = "assets/images/recibos.png";
-  zoom = 1;
 
   abrirModalVisualizacao(recibo: any) {
     this.reciboSelecionado = recibo;
     this.modalVisualizacaoVisivel = true;
-    this.zoom = 1;
   }
 
   fecharModalVisualizacao() {
     this.modalVisualizacaoVisivel = false;
     this.reciboSelecionado = null;
-  }
-
-  aumentarZoom() {
-    this.zoom += 0.1;
-  }
-
-  diminuirZoom() {
-    this.zoom = Math.max(0.1, this.zoom - 0.1);
   }
 }
