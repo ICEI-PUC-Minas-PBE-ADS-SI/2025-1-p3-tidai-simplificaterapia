@@ -166,11 +166,12 @@
     <div class="option-details" *ngIf="selectedPayment === 'boleto'">
       <p class="amount">R$ 110,00 à vista</p>
       <p>O prazo para pagamento do boleto é 25/04/2025.</p>
+
       <button mat-flat-button class="confirmar" (click)="confirmarPagamento()">Confirmar</button>
+
     </div>
   </div>
 </div>
-
 <!-- Modal de Sucesso Boleto -->
 <div *ngIf="boletoSucesso" class="modal-overlay">
   <div class="modal-content">
@@ -180,4 +181,3 @@
     <button class="btn-imprimir" (click)="imprimirBoleto()">Imprimir Boleto</button>
   </div>
 </div>
-

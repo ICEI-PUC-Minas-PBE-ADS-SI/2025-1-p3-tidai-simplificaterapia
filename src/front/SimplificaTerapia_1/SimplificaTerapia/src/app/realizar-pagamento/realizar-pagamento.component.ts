@@ -8,6 +8,7 @@ import { MatSelectModule } from '@angular/material/select';
 import { MatButtonModule } from '@angular/material/button';
 import { MenuComponent } from '../menu/menu.component';
 import { FormsModule } from '@angular/forms';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-realizar-pagamento',
@@ -65,9 +66,17 @@ export class RealizarPagamentoComponent {
   mensagemErro: string | null = null;
   mensagemSucesso: string | null = null;
 
+  constructor(private router: Router) {}
+
   fecharModal() {
-    this.mensagemErro = null;
-    this.mensagemSucesso = null;
+    if (this.mensagemSucesso) {
+      this.mensagemErro = null;
+      this.mensagemSucesso = null;
+      this.router.navigate(['/consultas']);
+    } else {
+      this.mensagemErro = null;
+      this.mensagemSucesso = null;
+    }
   }
 
   confirmarPagamento() {
@@ -103,11 +112,13 @@ export class RealizarPagamentoComponent {
 
   fecharModalBoleto() {
     this.boletoSucesso = false;
+    this.router.navigate(['/consultas']);
   }
 
   copiarCodigoPix() {
     navigator.clipboard.writeText(this.codigoPix).then(() => {
       this.mensagemSucesso = 'Código Pix copiado para a área de transferência!';
+      // this.router.navigate(['/consultas']);
     });
   }
 
@@ -209,5 +220,6 @@ export class RealizarPagamentoComponent {
       printWindow.print();
       printWindow.close();
     }
+    this.router.navigate(['/consultas']);
   }
 }
