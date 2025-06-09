@@ -24,7 +24,7 @@ export class MedicoService {
     return this.http.get<Medico>(`${this.apiUrl}/${id}`);
   }
 
-  addMedico(medico: Medico): Observable<Medico> {
+  addMedico(medico: any): Observable<any> {
     return this.http.post<Medico>(this.apiUrl, medico);
   }
 
