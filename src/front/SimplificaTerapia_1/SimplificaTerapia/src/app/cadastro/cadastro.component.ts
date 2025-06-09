@@ -4,14 +4,16 @@ import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { ReactiveFormsModule } from '@angular/forms';
 import { AlertaComponent } from '../alerta/alerta.component';
+import { HttpClientModule } from '@angular/common/http';
+import { MedicoService } from '../services/medico.service';
 
 @Component({
   selector: 'app-cadastro',
   standalone: true,
   imports: [
-    CommonModule, 
-    RouterModule, 
-    ReactiveFormsModule
+    CommonModule,
+    RouterModule,
+    ReactiveFormsModule, HttpClientModule
   ],
   templateUrl: './cadastro.component.html',
   styleUrls: ['./cadastro.component.scss'],
@@ -23,7 +25,7 @@ export class CadastroComponent {
   @ViewChild('alerta') alerta!: AlertaComponent;
   mensagemAlerta: string = 'Cadastro Realizado com sucesso!';
 
-  constructor(private fb: FormBuilder) {
+  constructor(private fb: FormBuilder, private medicoService: MedicoService) {
     this.cadastroForm = this.fb.group({
       nome: ['', Validators.required],
       uf: ['', Validators.required],
@@ -49,32 +51,57 @@ export class CadastroComponent {
   onSubmit(): void {
     if (this.cadastroForm.invalid) {
       this.cadastroForm.markAllAsTouched();
-      console.log('Formulário inválido');
       return;
     }
 
     const dadosCadastro = this.cadastroForm.value;
 
     if (dadosCadastro.senha !== dadosCadastro.confirmarSenha) {
-      console.error('As senhas não coincidem');
       this.mensagemAlerta = 'As senhas não coincidem!';
       this.alerta.exibir();
       return;
     }
 
-    console.log('Cadastro enviado com sucesso:', dadosCadastro);
-    this.mensagemAlerta = 'Cadastro realizado com sucesso!';
-    this.alerta.exibir();
+    const novoMedico = {
+      nome_completo: dadosCadastro.nome,
+      uf: dadosCadastro.uf,
+      municipio: dadosCadastro.municipio,
+      situacao: dadosCadastro.situacao,
+      crm: dadosCadastro.crm,
+      cpf: dadosCadastro.cpf,
+      rg: '', // Você pode adicionar um campo se quiser
+      sexo: dadosCadastro.sexo,
+      especialidade: dadosCadastro.especialidade,
+      valor_por_hora: parseFloat(dadosCadastro.valorHora),
+      formacao: dadosCadastro.formacao,
+      sobre: dadosCadastro.sobre,
+      email: dadosCadastro.email,
+      senha: dadosCadastro.senha,
+    };
+
+    this.medicoService.addMedico(novoMedico).subscribe({
+      next: () => {
+        this.mensagemAlerta = 'Cadastro realizado com sucesso!';
+        this.alerta.exibir();
+        this.cadastroForm.reset();
+      },
+      error: (err) => {
+        console.error('Erro ao cadastrar médico:', err);
+        this.mensagemAlerta = 'Erro ao cadastrar médico.';
+        this.alerta.exibir();
+      }
+    });
   }
 
-  isChecked(tipo: string): boolean {
-    return tipo === 'paciente'
-      ? this.cadastroForm.get('tipoPaciente')?.value
-      : this.cadastroForm.get('tipoMedico')?.value;
-  }
 
-  selecionarTipo(tipo: string): void {
-    if (tipo === 'paciente') {
+    isChecked(tipo: string): boolean {
+      return tipo === 'paciente'
+        ? this.cadastroForm.get('tipoPaciente')?.value
+        : this.cadastroForm.get('tipoMedico')?.value;
+    }
+
+    selecionarTipo(tipo: string): void {
+      if(tipo === 'paciente') {
       this.cadastroForm.patchValue({ tipoPaciente: true, tipoMedico: false });
     } else {
       this.cadastroForm.patchValue({ tipoPaciente: false, tipoMedico: true });

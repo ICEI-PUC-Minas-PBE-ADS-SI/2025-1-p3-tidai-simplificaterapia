@@ -1,12 +1,17 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { MenuComponent } from '../menu/menu.component'; 
+import { MenuComponent } from '../menu/menu.component';
+import { RouterModule } from '@angular/router'; 
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-layout',
+  standalone: true,
   imports: [
     RouterOutlet, 
-    MenuComponent
+    MenuComponent,
+    RouterModule,
+    CommonModule
   ],
   template: `
     <app-menu></app-menu>
@@ -17,4 +22,3 @@ import { MenuComponent } from '../menu/menu.component';
 export class LayoutComponent {
 
 }
-

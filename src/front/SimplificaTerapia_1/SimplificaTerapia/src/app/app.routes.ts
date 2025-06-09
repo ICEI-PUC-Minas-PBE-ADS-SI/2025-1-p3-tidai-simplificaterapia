@@ -31,6 +31,6 @@ export const routes: Routes = [
       { path: 'consultas', component: ConsultasComponent },
       { path: 'agendarconsulta', component: AgendarConsultaComponent },
       { path: 'perfilMedico', component: PerfilMedicoComponent },
-      { path: 'perfilPaciente', component: ConsultasComponent },
+      { path: 'perfilPaciente', component: PerfilPacienteComponent },
       { path: 'notificacoes', component: NotificacoesComponent },
 ];
