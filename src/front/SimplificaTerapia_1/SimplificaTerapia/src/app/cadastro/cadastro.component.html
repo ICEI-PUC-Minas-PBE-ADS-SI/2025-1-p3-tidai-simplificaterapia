@@ -10,8 +10,8 @@
       <input type="file" id="imagemInput" (change)="onImagemSelecionada($event)" accept="image/*" />
     </div>
 
-    <div class="cadastro-form">routerLink
-      <a class="back-button" ="/"><span>&larr;</span></a>
+    <div class="cadastro-form">
+      <a class="back-button" routerLink="/"><span>&larr;</span></a>
       <h2>Cadastre-se</h2>
 
       <form [formGroup]="cadastroForm" (ngSubmit)="onSubmit()">
@@ -44,22 +44,22 @@
           <input formControlName="cpf" placeholder="CPF*" />
         </div>
 
-        <!-- <div>
+        <div>
           <select formControlName="sexo" style="width: 25%;">
             <option value="Feminino">Feminino</option>
             <option value="Masculino">Masculino</option>
-          </select> -->
-          <!-- <input formControlName="especialidade" placeholder="Especialidade*" />
-          <input formControlName="valorHora" placeholder="Valor p/ hora*" /> -->
-       <!--  </div> -->
+          </select>
+          <input formControlName="especialidade" placeholder="Especialidade*" />
+          <input formControlName="valorHora" placeholder="Valor p/ hora*" />
+        </div>
 
-        <!-- <input formControlName="formacao" placeholder="Formação*" /> -->
+        <input formControlName="formacao" placeholder="Formação*" />
         <input formControlName="sobre" placeholder="Sobre" />
         <input formControlName="email" type="email" placeholder="Email*" />
         <input formControlName="senha" type="password" placeholder="Senha*" />
         <input formControlName="confirmarSenha" type="password" placeholder="Confirmar Senha*" />
 
-        <button type="submit" routerLink="/login">Cadastrar</button>
+        <button type="submit">Cadastrar</button>
       </form>
 
       <a class="register-link" routerLink="/login">Já possuo conta, ir para o Login</a>
