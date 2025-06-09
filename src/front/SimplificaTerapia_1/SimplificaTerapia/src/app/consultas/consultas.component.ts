@@ -10,7 +10,6 @@ import { MatTooltipModule } from '@angular/material/tooltip';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { ChangeDetectionStrategy } from '@angular/core';
-import { FormControl, FormGroup } from '@angular/forms';
 import { provideNativeDateAdapter } from '@angular/material/core';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { ReactiveFormsModule } from '@angular/forms';
@@ -35,31 +34,32 @@ import { MatTimepickerModule } from '@angular/material/timepicker';
     ReactiveFormsModule,
     MatCheckboxModule,
     MatTimepickerModule,
-    MatDatepickerModule
+    MatDatepickerModule,
   ],
   changeDetection: ChangeDetectionStrategy.OnPush,
   templateUrl: './consultas.component.html',
-  styleUrl: './consultas.component.scss'
+  styleUrl: './consultas.component.scss',
 })
 export class ConsultasComponent implements OnInit {
-
   marcada: boolean = false;
   editada: boolean = false;
   desmarcada: boolean = false;
   consultas = [
     {
-      data: '29/05/2025',
+      data: '08/06/2025',
       medico: 'Gabriel Araujo Alvarenga',
       duracao: '60 min',
       situacao: 'Agendada',
       valor: 'R$120,00',
+      linkTeams: 'https://teams.microsoft.com/l/meetup-join/abc123...',
     },
     {
       data: '09/04/2025',
       medico: 'Gabriel Araujo Alvarenga',
       duracao: '30 min',
-      situacao: 'Finalizada',
+      situacao: 'Agendada',
       valor: 'R$60,00',
+      linkTeams: 'https://teams.microsoft.com/l/meetup-join/abc123...',
     },
     {
       data: '23/04/2025',
@@ -86,12 +86,12 @@ export class ConsultasComponent implements OnInit {
 
   consulta = {
     data: '09/05/2025', // 09/04/2025
-    horario: '15:30',                // string: '14:00', por exemplo
-    duracao: '30 min',                // valor selecionado no select
-    situacao: 'Finalizada',               // valor selecionado
-    tipoAtendimento: 'Consulta',        // idem
-    formaPagamento: 'Pix',         // idem
-    planoSaude: false,          // checkbox
+    horario: '15:30', // string: '14:00', por exemplo
+    duracao: '30 min', // valor selecionado no select
+    situacao: 'Finalizada', // valor selecionado
+    tipoAtendimento: 'Consulta', // idem
+    formaPagamento: 'Pix', // idem
+    planoSaude: false, // checkbox
     profissional: 'Gabriel Araujo Alvarenga',
     crm: '00859970',
     especialidade: 'Terapeuta',
@@ -99,30 +99,30 @@ export class ConsultasComponent implements OnInit {
     contatoMedico: '(31) 3595-4142',
     paciente: 'Maria Eduarda Ferreira de Souza',
     contatoPaciente: '(38) 98645-2293',
-    observacoes: 'Consulta de rotina'
+    observacoes: 'Consulta de rotina',
   };
 
   duracoes = [
     { value: '30', viewValue: '30 minutos' },
     { value: '60', viewValue: '1 hora' },
-    { value: '90', viewValue: '1 hora e 30 minutos' }
+    { value: '90', viewValue: '1 hora e 30 minutos' },
   ];
 
   situacoes = [
     { value: 'agendada', viewValue: 'Agendada' },
     { value: 'cancelada', viewValue: 'Cancelada' },
-    { value: 'realizada', viewValue: 'Realizada' }
+    { value: 'realizada', viewValue: 'Realizada' },
   ];
 
   tiposAtendimento = [
     { value: 'presencial', viewValue: 'Presencial' },
-    { value: 'online', viewValue: 'Online' }
+    { value: 'online', viewValue: 'Online' },
   ];
 
   formasPagamento = [
     { value: 'boleto', viewValue: 'Boleto' },
     { value: 'cartao', viewValue: 'Cartão' },
-    { value: 'pix', viewValue: 'PIX' }
+    { value: 'pix', viewValue: 'PIX' },
   ];
 
   // Modais
@@ -132,11 +132,9 @@ export class ConsultasComponent implements OnInit {
   modalDesmarcarConsultaVisivel = false;
   consultaSelecionada: any = null;
 
-  constructor() { }
+  constructor() {}
 
-  ngOnInit(): void {
-
-  }
+  ngOnInit(): void {}
 
   desmarcar(consulta: any) {
     this.consultaSelecionada = consulta;
@@ -149,10 +147,10 @@ export class ConsultasComponent implements OnInit {
   }
 
   confirmarDesmarcamento() {
-    console.log("Cancelando:", this.consultaSelecionada);
+    console.log('Cancelando:', this.consultaSelecionada);
     this.modalDesmarcarConsultaVisivel = false;
     this.desmarcada = true;
-    this.marcada = true;  
+    this.marcada = true;
     setTimeout(() => {
       this.marcada = false;
     }, 5000);
@@ -175,10 +173,15 @@ export class ConsultasComponent implements OnInit {
   }
 
   confirmarEdicao() {
-    console.log("Imprimindo:", this.consultaSelecionada, "Formato:", this.formatoSelecionado);
+    console.log(
+      'Imprimindo:',
+      this.consultaSelecionada,
+      'Formato:',
+      this.formatoSelecionado
+    );
     this.modalEditarConsultaVisivel = false;
 
-    this.editada = true;  
+    this.editada = true;
     setTimeout(() => {
       this.editada = false;
     }, 5000);
@@ -198,4 +201,26 @@ export class ConsultasComponent implements OnInit {
     this.modalDetalhesVisivel = false;
     this.consultaSelecionada = null;
   }
+
+  abrirTeams(consulta: any) {
+    if (!consulta.linkTeams) {
+      alert('Teams não está disponível para esta consulta.');
+      return;
+    }
+    window.open(consulta.linkTeams, '_blank', 'noopener,noreferrer');
+  }
+
+  isHoje(dataConsulta: string): boolean {
+  const [dia, mes, ano] = dataConsulta.split('/').map(Number);
+  const data = new Date(ano, mes - 1, dia);
+
+  const hoje = new Date();
+
+  return (
+    data.getDate() === hoje.getDate() &&
+    data.getMonth() === hoje.getMonth() &&
+    data.getFullYear() === hoje.getFullYear()
+  );
+}
+
 }
