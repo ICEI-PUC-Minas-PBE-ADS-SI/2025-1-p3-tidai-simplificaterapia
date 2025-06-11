@@ -46,52 +46,62 @@ export class ConsultasComponent implements OnInit {
   desmarcada: boolean = false;
   consultas = [
     {
-      data: '08/06/2025',
-      medico: 'Gabriel Araujo Alvarenga',
+      data: '11/06/2025',
+      medico: 'Vitor Schmidt Ribeiro',
+      horario: '14:00',
       duracao: '60 min',
       situacao: 'Agendada',
+      formaPagamento: 'Pix',
       valor: 'R$120,00',
       linkTeams: 'https://teams.microsoft.com/l/meetup-join/abc123...',
     },
     {
-      data: '09/04/2025',
+      data: '12/04/2025',
       medico: 'Gabriel Araujo Alvarenga',
+      horario: '15:30',
       duracao: '30 min',
       situacao: 'Agendada',
-      valor: 'R$60,00',
+      valor: 'R$120,00',
+      formaPagamento: 'Cartão',
       linkTeams: 'https://teams.microsoft.com/l/meetup-join/abc123...',
     },
     {
       data: '23/04/2025',
-      medico: 'Vitória Mendes Souza',
+      medico: 'Vânia Lourenço Gonçalves',
       duracao: '120 min',
       situacao: 'Finalizada',
       valor: 'R$120,00',
+      formaPagamento: 'Cartão',
+      horario: '17:30',
     },
     {
       data: '16/05/2025',
-      medico: 'Gabriel Araujo Alvarenga',
+      medico: 'Maria Eduarda Ferreira Reais',
       duracao: '30 min',
       situacao: 'Finalizada',
       valor: 'R$60,00',
+      formaPagamento: 'Pix',
+      horario: '08:30',
     },
     {
       data: '27/04/2025',
-      medico: 'Vitória Mendes Souza',
+      medico: 'Mariany Karla Abranches de Melo',
       duracao: '120 min',
       situacao: 'Finalizada',
       valor: 'R$120,00',
+      formaPagamento: 'Boleto',
+      horario: '10:30',
     },
   ];
 
-  consulta = {
-    data: '09/05/2025', // 09/04/2025
-    horario: '15:30', // string: '14:00', por exemplo
-    duracao: '30 min', // valor selecionado no select
-    situacao: 'Finalizada', // valor selecionado
-    tipoAtendimento: 'Consulta', // idem
-    formaPagamento: 'Pix', // idem
-    planoSaude: false, // checkbox
+  consultaSelecionada: any = {
+    data: '09/05/2025',
+    horario: '15:30',
+    duracao: '30 min',
+    situacao: 'Finalizada',
+    tipoAtendimento: 'Consulta',
+    formaPagamento: 'Pix',
+    planoSaude: false,
     profissional: 'Gabriel Araujo Alvarenga',
     crm: '00859970',
     especialidade: 'Terapeuta',
@@ -127,10 +137,27 @@ export class ConsultasComponent implements OnInit {
 
   // Modais
 
+  modalDetalhesVisivel = false;
+  consulta: any = {};
+
+  verDetalhes(dadosConsulta: any) {
+    this.consultaSelecionada = { ...dadosConsulta };
+    this.consulta = {
+      ...dadosConsulta,
+      valorConsulta: dadosConsulta.valor, // mapeia 'valor' para 'valorConsulta'
+      horario: dadosConsulta.horario || 'Indisponível', // caso não tenha horário
+      formaPagamento: dadosConsulta.formaPagamento || 'Não informada',
+    };
+    this.modalDetalhesVisivel = true;
+  }
+
+  fecharModalEditar() {
+    this.modalDetalhesVisivel = false;
+  }
+
   // Desmarcar
 
   modalDesmarcarConsultaVisivel = false;
-  consultaSelecionada: any = null;
 
   constructor() {}
 
@@ -166,7 +193,7 @@ export class ConsultasComponent implements OnInit {
     this.modalEditarConsultaVisivel = true;
   }
 
-  fecharModalEditar() {
+  fecharModalDetalhes() {
     this.modalEditarConsultaVisivel = false;
     this.modalDetalhesVisivel = false;
     this.consultaSelecionada = null;
@@ -187,21 +214,6 @@ export class ConsultasComponent implements OnInit {
     }, 5000);
   }
 
-  // Detalhes
-
-  modalDetalhesVisivel = false;
-  formatoEscolhido: string = 'pdf';
-
-  verDetalhes(consulta: any) {
-    this.consultaSelecionada = consulta;
-    this.modalDetalhesVisivel = true;
-  }
-
-  fecharModalDetalhes() {
-    this.modalDetalhesVisivel = false;
-    this.consultaSelecionada = null;
-  }
-
   abrirTeams(consulta: any) {
     if (!consulta.linkTeams) {
       alert('Teams não está disponível para esta consulta.');
@@ -211,16 +223,15 @@ export class ConsultasComponent implements OnInit {
   }
 
   isHoje(dataConsulta: string): boolean {
-  const [dia, mes, ano] = dataConsulta.split('/').map(Number);
-  const data = new Date(ano, mes - 1, dia);
+    const [dia, mes, ano] = dataConsulta.split('/').map(Number);
+    const data = new Date(ano, mes - 1, dia);
 
-  const hoje = new Date();
+    const hoje = new Date();
 
-  return (
-    data.getDate() === hoje.getDate() &&
-    data.getMonth() === hoje.getMonth() &&
-    data.getFullYear() === hoje.getFullYear()
-  );
-}
-
+    return (
+      data.getDate() === hoje.getDate() &&
+      data.getMonth() === hoje.getMonth() &&
+      data.getFullYear() === hoje.getFullYear()
+    );
+  }
 }
