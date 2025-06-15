@@ -24,7 +24,7 @@ O **Simplifica Terapia** é uma plataforma digital desenvolvida para otimizar o 
 
 ## Instruções de utilização
 
-<--! Assim que a primeira versão do sistema estiver disponível, será necessário complementar com as instruções de utilização. Aqui, deverá ser descrito como instalar eventuais dependências e como executar a aplicação.-->
+<!-- Assim que a primeira versão do sistema estiver disponível, será necessário complementar com as instruções de utilização. Aqui, deverá ser descrito como instalar eventuais dependências e como executar a aplicação.-->
 
 📌 **Exemplo de Instruções**:
 - **Link de acesso à aplicação**: [https://simplifica-terapia.com](https://simplifica-terapia.com) 
@@ -69,7 +69,7 @@ O projeto **Simplifica Terapia** surge em um contexto crítico, onde a demanda p
   
 ---
 
-<--! ## 💬 **Como Contribuir** 
+<!-- ## 💬 **Como Contribuir** 
 
 Se você deseja contribuir para o projeto, siga os passos abaixo:
 
