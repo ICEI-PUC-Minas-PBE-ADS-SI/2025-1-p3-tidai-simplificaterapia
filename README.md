@@ -77,6 +77,5 @@ Se você deseja contribuir para o projeto, siga os passos abaixo:
 2. Crie uma branch com sua feature ou correção.
 3. Realize as modificações necessárias e envie um pull request. -->
 
----
 
 🌱 **Simplifica Terapia**: Ajudando você a cuidar da sua saúde mental de forma simples e acessível.
