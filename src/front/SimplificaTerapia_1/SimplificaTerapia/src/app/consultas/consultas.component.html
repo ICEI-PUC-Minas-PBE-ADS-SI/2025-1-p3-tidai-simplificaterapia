@@ -101,14 +101,13 @@
                 </button>
                 <!-- Botão para Teams só para agendadas -->
                 <button
-  *ngIf="isHoje(consulta.data)"
-  (click)="abrirTeams(consulta)"
-  title="Abrir Teams"
-  class="icones"
-  matTooltip="Abrir Teams"
->
-  <mat-icon fontIcon="groups"></mat-icon> <!-- Ícone substituto -->
-</button>
+                  *ngIf="isHoje(consulta.data)"
+                  (click)="abrirTeams(consulta)"
+                  title="Abrir Teams"
+                  class="icones"
+                  matTooltip="Abrir Teams">
+                  <mat-icon fontIcon="groups"></mat-icon> <!-- Ícone substituto -->
+                </button>
 
               </ng-container>
 
@@ -161,8 +160,7 @@
   <!-- Modal Editar Consulta-->
   <div
     class="modal-backdrop-editar-consulta"
-    *ngIf="modalEditarConsultaVisivel"
-  >
+    *ngIf="modalEditarConsultaVisivel">
     <div class="modal-box-editar-consulta">
       <h2 class="title">Editar Consulta:</h2>
       <div class="inputs-list">

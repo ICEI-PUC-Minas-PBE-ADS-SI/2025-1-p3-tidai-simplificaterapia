@@ -18,6 +18,7 @@ import { AgendarConsultaComponent } from './app/agendar-consulta/agendar-consult
 import { PerfilMedicoComponent } from './app/perfil-medico/perfil-medico.component';
 import { PerfilPacienteComponent } from './app/perfil-paciente/perfil-paciente.component';
 import { NotificacoesComponent } from './app/notificacoes/notificacoes.component';
+import { AvaliacaoComponent } from './app/avaliacao/avaliacao.component';
 
 const routes: Routes = [
   {
@@ -39,6 +40,7 @@ const routes: Routes = [
   { path: 'perfilMedico', component: PerfilMedicoComponent },
   { path: 'perfilPaciente', component: ConsultasComponent },
   { path: 'notificacoes', component: NotificacoesComponent },
+  { path: 'avaliacoes', component: AvaliacaoComponent },
 ];
 
 bootstrapApplication(AppComponent, {

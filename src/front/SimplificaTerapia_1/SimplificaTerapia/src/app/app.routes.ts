@@ -12,6 +12,7 @@ import { AgendarConsultaComponent } from './agendar-consulta/agendar-consulta.co
 import { PerfilMedicoComponent } from './perfil-medico/perfil-medico.component';
 import { PerfilPacienteComponent } from './perfil-paciente/perfil-paciente.component';
 import { NotificacoesComponent } from './notificacoes/notificacoes.component';
+import { AvaliacaoComponent } from './avaliacao/avaliacao.component';
 
 export const routes: Routes = [
     {
@@ -33,4 +34,5 @@ export const routes: Routes = [
       { path: 'perfilMedico', component: PerfilMedicoComponent },
       { path: 'perfilPaciente', component: PerfilPacienteComponent },
       { path: 'notificacoes', component: NotificacoesComponent },
+      { path: 'avaliacoes', component: AvaliacaoComponent },
 ];

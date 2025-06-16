@@ -1,0 +1,143 @@
+<app-menu></app-menu>
+
+<div class="container">
+  <h2 class="title">Avaliações dos Profissionais:</h2>
+
+  <div class="filtro">
+    <label class="filtro-label">Filtro:</label>
+    <div class="filtro-inputs">
+      <mat-form-field appearance="outline" class="campo-personalizado campo-grande">
+        <mat-label>Nome</mat-label>
+        <input matInput placeholder="Nome" />
+      </mat-form-field>
+
+      <mat-form-field appearance="outline" class="campo-personalizado campo-grande">
+        <mat-label>Email</mat-label>
+        <input matInput placeholder="Email" />
+      </mat-form-field>
+
+      <mat-form-field appearance="outline" class="campo-personalizado campo-pequeno">
+        <mat-label>CRM</mat-label>
+        <input matInput placeholder="CRM" />
+      </mat-form-field>
+
+      <mat-form-field appearance="outline" class="campo-personalizado campo-pequeno">
+        <mat-label>CPF</mat-label>
+        <input matInput placeholder="CPF" />
+      </mat-form-field>
+    </div>
+
+    <div class="filtro-botoes">
+      <button mat-stroked-button class="btn-limpar">
+        <mat-icon>close</mat-icon>
+        Limpar
+      </button>
+
+      <button mat-flat-button color="primary" class="btn-buscar">
+        <mat-icon>search</mat-icon>
+        Buscar
+      </button>
+    </div>
+  </div>
+
+  <div class="fazer-avaliacao">
+      <button mat-stroked-button class="btn-avaliacao" (click)="abrirModalAvaliacao(null)">
+        <mat-icon>rate_review</mat-icon>
+        Fazer Avaliação
+      </button>
+  </div>
+
+  <div class="card" (click)="toggleExpanded()" *ngFor="let avaliacao of avaliacoes">
+    <div class="header">
+      <div class="info">
+        <h2 class="titulo"><strong>Médico(a):</strong></h2>
+        <p><strong class="dados">Nome:</strong> {{ avaliacao.nome }}</p>
+        <p><strong class="dados">Email:</strong> {{ avaliacao.email }}</p>
+        <p><strong class="dados">CRM:</strong> {{ avaliacao.crm }}</p>
+        <p><strong class="dados">CPF:</strong> {{ avaliacao.cpf }}</p>
+      </div>
+
+      <div class="avaliacao">
+        <p class="titulo">Avaliação dos Pacientes:</p>
+        <div class="nota">
+          <span class="media">{{ avaliacao.nota }}</span>&nbsp;
+          <mat-icon class="star">star</mat-icon>&nbsp;
+          <span class="total">({{ avaliacao.quantidadeAvaliacoes }} avaliações)</span>
+        </div>
+        <div class="barras">
+          <div *ngFor="let estrela of [5,4,3,2,1]">
+            <span class="star"><strong style="margin-bottom: 5%;">{{ estrela }}</strong> <mat-icon>star</mat-icon></span>
+            <div class="barra"></div>
+          </div>
+        </div>
+      </div>
+
+      <img class="foto" src="assets/images/login.png" alt="Foto médico">
+    </div>
+
+    <div *ngIf="expanded" class="avaliacoes">
+      <div class="comentario" *ngFor="let paciente of avaliacao.avaliacoesPacientes">
+        <mat-divider></mat-divider>
+        <div class="cabecalho">&nbsp;
+          <mat-icon>person</mat-icon>
+          <span class="nome">{{ paciente.nomePaciente }}</span>
+          <span class="estrelas">
+          <mat-icon *ngFor="let s of [].constructor(paciente.quantidadeEstrelas)" color="warn">star</mat-icon>
+          <mat-icon *ngFor="let s of [].constructor(5 - paciente.quantidadeEstrelas)">star_border</mat-icon>
+          </span><span class="estrelas">
+            <mat-icon *ngFor="let s in paciente.quantidadeEstrelas" color="warn">star</mat-icon>
+          </span>
+          <span class="data"> {{ paciente.dataAvaliacao }} </span>
+        </div>
+        <p class="texto">
+          Comentário do paciente sobre o atendimento com o terapeuta. Aqui vai o feedback deixado.
+        </p>
+      </div>
+    </div>
+  </div> 
+    <mat-paginator
+    [length]="100"
+    [pageSizeOptions]="[10, 50, 100]"
+    aria-label="Select page"
+  ></mat-paginator>
+</div> 
+
+<!-- Modal Avaliação Médico -->
+<div class="modal-backdrop-avaliacao" *ngIf="modalAvaliacaoVisivel">
+  <div class="modal-box-avaliacao">
+    <h2 class="title">Avaliar Profissional:</h2>
+
+    <mat-form-field appearance="outline" class="campo-medico">
+    <mat-label>Profissional</mat-label>
+    <input matInput [value]="'Gabriel Alvarenga Araujo'" disabled />
+  </mat-form-field>
+
+    <form (ngSubmit)="enviarAvaliacao()" #formAvaliacao="ngForm" class="form-avaliacao">
+      <div class="estrelas">
+        <mat-icon *ngFor="let estrela of [1,2,3,4,5]" 
+                  [ngClass]="{'ativa': estrela <= avaliacaoEstrelas}"
+                  (click)="avaliacaoEstrelas = estrela">
+          {{ estrela <= avaliacaoEstrelas ? 'star' : 'star_border' }}
+        </mat-icon>
+      </div>
+
+      <mat-form-field appearance="outline" class="campo-comentario">
+        <mat-label>Comentário</mat-label>
+        <textarea
+          matInput
+          [(ngModel)]="comentarioAvaliacao"
+          name="comentario"
+          placeholder="Escreva sua avaliação aqui..."
+          required
+        ></textarea>
+      </mat-form-field>
+
+      <div class="modal-buttons">
+        <button class="cancelar" type="button" (click)="fecharModalAvaliacao()">Cancelar</button>
+        <button class="confirmar" type="submit" [disabled]="!formAvaliacao.valid">Enviar</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+

@@ -1,0 +1,331 @@
+.container {
+  padding: 2rem;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fefefe;
+}
+
+.title {
+  font-size: 1.5rem;
+  margin-left: 5%;
+  color: #324ba8;
+  margin-bottom: 1rem;
+}
+
+.card {
+  background: #f5f2e8;
+  padding: 1rem;
+  margin: 2rem 3rem;
+  border-radius: 1rem;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+
+  &:hover {
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  }
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+
+    .info {
+      flex: 1;
+
+      .titulo {
+        font-weight: bold;
+        color: #2e44a1;
+        margin-bottom: 0.5rem;
+      }
+
+      .dados {
+        color: #2e44a1;
+        margin-left: 3%;
+      }
+    }
+
+    .avaliacao {
+      flex: 1;
+
+      .nota {
+        display: flex;
+        align-items: center;
+        font-size: 1.5rem;
+
+        .media {
+          font-weight: bold;
+          color: #f2ac1e;
+        }
+
+        .star {
+          color: #f2ac1e;
+        }
+
+        .total {
+          margin-left: 0.5rem;
+          font-size: 0.9rem;
+        }
+      }
+
+      .barras {
+        margin-top: 0.5rem;
+
+        div {
+          display: flex;
+          align-items: center;
+          font-size: 0.85rem;
+
+          .barra {
+            background: #2e44a1;
+            height: 6px;
+            width: 60%;
+            margin-left: 0.5rem;
+            border-radius: 4px;
+          }
+
+          .star {
+            color: #f2ac1e;
+          }
+        }
+      }
+
+      .titulo {
+        font-weight: bold;
+        color: #2e44a1;
+        margin-bottom: 0.5rem;
+      }
+    }
+
+    .foto {
+      width: 15%;
+      height: 75%;
+      border-radius: 50%;
+      margin: 1%;
+      object-fit: cover;
+    }
+  }
+
+  .avaliacoes {
+    margin-top: 2rem;
+
+    .comentario {
+      margin-bottom: 1rem;
+
+      .cabecalho {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        font-size: 0.9rem;
+        margin-top: 2%;
+        color: #2e44a1;
+
+        .estrelas {
+          display: flex;
+          align-items: center;
+          color: #f2ac1e;
+        }
+
+        .data {
+          margin-left: auto;
+          font-size: 0.8rem;
+          color: gray;
+          margin-right: 1%;
+        }
+      }
+
+      .texto {
+        margin-left: 2rem;
+        font-size: 0.95rem;
+      }
+    }
+  }
+}
+
+.btn-avaliacao {
+  height: 45px;
+  font-family: 'Lexend', sans-serif;
+  padding: 0 20px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  white-space: nowrap;
+  background-color: #22369b;
+  color: white !important;
+}
+
+.filtro {
+  background-color: #f1efe3;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+
+  .filtro-label {
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 15px;
+    display: block;
+    color: #22369b;
+  }
+
+  .filtro-inputs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: flex-end;
+    row-gap: 16px;
+  }
+
+  .campo-personalizado {
+    .mat-form-field-flex {
+      background-color: #e4e4ee;
+      border-radius: 8px;
+      padding: 0 10px;
+    }
+
+    .mat-form-field-outline,
+    .mat-form-field-outline-start,
+    .mat-form-field-outline-end,
+    .mat-form-field-outline-gap {
+      display: none;
+    }
+
+    .mat-form-field-label {
+      color: #555;
+      font-weight: 500;
+    }
+
+    .mat-input-element {
+      font-family: 'Lexend', sans-serif;
+      font-weight: 500;
+      color: #333;
+    }
+  }
+
+  .campo-grande {
+    flex: 2;
+    min-width: 180px;
+  }
+
+  .campo-pequeno {
+    flex: 1;
+    min-width: 110px;
+  }
+
+  .filtro-botoes {
+    display: flex;
+    gap: 12px;
+    height: 56px;
+    margin-top: 20px;
+
+    .btn-limpar,
+    .btn-buscar {
+      height: 45px;
+      font-weight: bold;
+      font-family: 'Lexend', sans-serif;
+      padding: 0 40px;
+      border-radius: 20px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      white-space: nowrap;
+      background-color: #22369b;
+      color: white;
+    }
+  }
+}
+
+.modal-backdrop-avaliacao {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-box-avaliacao {
+  background-color: #fffaf0;
+  padding: 30px 40px;
+  border-radius: 20px;
+  max-width: 450px;
+  width: 90%;
+  text-align: center;
+  font-family: 'Segoe UI', sans-serif;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+
+  .title {
+    font-size: 22px;
+    color: #1e1e8f;
+    margin-bottom: 20px;
+  }
+
+  .campo-medico {
+    width: 100%;
+    margin-bottom: 20px;
+
+    .mat-form-field-wrapper {
+      background-color: #e4e4ee;
+      border-radius: 8px;
+      padding: 0 10px;
+    }
+  }
+
+  .estrelas {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+
+    mat-icon {
+      font-size: 36px;
+      color: #ccc;
+      cursor: pointer;
+      transition: color 0.3s;
+
+      &.ativa {
+        color: #ffd700;
+      }
+    }
+  }
+
+  .campo-comentario {
+    width: 100%;
+
+    .mat-form-field-wrapper {
+      background-color: #e4e4ee;
+      border-radius: 8px;
+      padding: 0 10px;
+    }
+  }
+
+  .modal-buttons {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+    gap: 10px;
+
+    .cancelar,
+    .confirmar {
+      padding: 10px 20px;
+      border-radius: 30px;
+      border: none;
+      cursor: pointer;
+      font-size: 14px;
+      font-weight: bold;
+      color: white;
+    }
+
+    .cancelar {
+      background-color: #888;
+    }
+
+    .confirmar {
+      background-color: #1e1e8f;
+    }
+  }
+}
+
