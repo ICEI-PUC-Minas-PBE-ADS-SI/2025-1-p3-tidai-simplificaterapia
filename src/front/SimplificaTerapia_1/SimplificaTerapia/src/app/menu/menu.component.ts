@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
-import { MatMenuModule, MatMenuTrigger } from '@angular/material/menu';
+import { MatMenuModule } from '@angular/material/menu';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { CommonModule } from '@angular/common';
-import { RouterModule } from '@angular/router';
+import { RouterModule, Router } from '@angular/router';
 import { LoginStateService } from '../login-state.service';
 import { NotificacoesComponent } from '../notificacoes/notificacoes.component';
 
@@ -26,19 +26,29 @@ import { NotificacoesComponent } from '../notificacoes/notificacoes.component';
   styleUrls: ['./menu.component.scss']
 })
 export class MenuComponent {
-  constructor(public loginState: LoginStateService) {}
+  mostrarAlerta: boolean = false;
+  showNotifications = false;
+  usuarioLogado: any = null;
 
-   mostrarAlerta: boolean = false;
-   showNotifications = false;
+  constructor(public loginState: LoginStateService, private router: Router) {}
 
-  ngOnInit(){
-    if (this.loginState.logado == true){
-      this.mostrarAlerta = true;
-  
-      setTimeout(() => {
-        this.mostrarAlerta = false;
-      }, 5000);
+  ngOnInit() {
+    const usuario = localStorage.getItem('usuarioLogado');
+    if (usuario) {
+      this.usuarioLogado = JSON.parse(usuario);
     }
+
+    if (this.loginState.logado) {
+      this.mostrarAlerta = true;
+      setTimeout(() => this.mostrarAlerta = false, 5000);
+    }
+  }
+
+  logout() {
+    this.loginState.logout();
+    this.usuarioLogado = null;
+    localStorage.removeItem('usuarioLogado');
+    this.router.navigate(['/login']);
   }
 
   get Logado(): boolean {
