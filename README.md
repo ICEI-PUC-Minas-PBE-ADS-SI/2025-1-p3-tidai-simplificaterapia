@@ -24,10 +24,10 @@ O **Simplifica Terapia** é uma plataforma digital desenvolvida para otimizar o 
 
 ## Instruções de utilização
 
-Assim que a primeira versão do sistema estiver disponível, será necessário complementar com as instruções de utilização. Aqui, deverá ser descrito como instalar eventuais dependências e como executar a aplicação.
+<!-- Assim que a primeira versão do sistema estiver disponível, será necessário complementar com as instruções de utilização. Aqui, deverá ser descrito como instalar eventuais dependências e como executar a aplicação.-->
 
 📌 **Exemplo de Instruções**:
-- **Link de acesso à aplicação**: [https://simplifica-terapia.com](https://simplifica-terapia.com) `EXEMPLO LINK`
+- **Link de acesso à aplicação**: [https://simplifica-terapia.com](https://simplifica-terapia.com) 
 - **Usuário de teste**: `admin`  
 - **Senha de teste**: `admin123`
 
@@ -69,14 +69,13 @@ O projeto **Simplifica Terapia** surge em um contexto crítico, onde a demanda p
   
 ---
 
-## 💬 **Como Contribuir**
+<!-- ## 💬 **Como Contribuir** 
 
 Se você deseja contribuir para o projeto, siga os passos abaixo:
 
 1. Fork o repositório.
 2. Crie uma branch com sua feature ou correção.
-3. Realize as modificações necessárias e envie um pull request.
+3. Realize as modificações necessárias e envie um pull request. -->
 
----
 
 🌱 **Simplifica Terapia**: Ajudando você a cuidar da sua saúde mental de forma simples e acessível.

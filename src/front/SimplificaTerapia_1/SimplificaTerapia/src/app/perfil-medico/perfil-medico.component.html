@@ -10,7 +10,7 @@
     <form [formGroup]="perfilForm" (ngSubmit)="onSubmit()">
       <div class="form-group">
         <label>Nome Completo*:</label><br>
-        <input formControlName="nomeCompleto" type="text" class="nomeCompleto"/>
+        <input formControlName="nome_completo" type="text" class="nomeCompleto"/>
       </div>
 
       <div class="form-row">
@@ -71,7 +71,7 @@
           <label>Valor p/ hora*:</label>
           <div class="input-valor">
             <span>R$</span>
-            <input formControlName="valorHora" type="number" />
+            <input formControlName="valor_por_hora" type="number" />
           </div>
         </div>
       </div>

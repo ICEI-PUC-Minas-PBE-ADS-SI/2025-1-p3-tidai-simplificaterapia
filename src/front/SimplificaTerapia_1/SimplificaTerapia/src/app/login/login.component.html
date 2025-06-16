@@ -1,56 +1,37 @@
 <div class="login">
-    <div class="login-container">
-      <div class="login-image">
-        <img src="assets/images/login.png" alt="ImagemPerfil" />
-      </div>
-    
-      <div class="login-form">
-        <a class="back-button" routerLink="/"><span matTooltip="Voltar">&larr;</span></a>
-        <h2>Faça seu Login</h2>
-    
-      <form  (ngSubmit)="onSubmit()">
+  <div class="login-container">
+    <div class="login-image">
+      <img src="assets/images/login.png" alt="ImagemPerfil" />
+    </div>
+
+    <div class="login-form">
+      <a class="back-button" routerLink="/"><span matTooltip="Voltar">&larr;</span></a>
+      <h2>Faça seu Login</h2>
+
+      <form (ngSubmit)="onSubmit()" [formGroup]="loginForm">
         <div class="checkbox-group">
           <label>
-            <input 
-              type="checkbox"
-              name="tipo"
-              value="paciente"
-              [checked]="isChecked('paciente')"
-              (change)="selecionarTipo('paciente')"
-            />
+            <input type="checkbox" value="paciente" [checked]="isChecked('paciente')" (change)="selecionarTipo('paciente')" />
             Sou paciente
           </label>
-
           <label>
-            <input 
-              type="checkbox"
-              name="tipo"
-              value="medico"
-              [checked]="isChecked('medico')"
-              (change)="selecionarTipo('medico')"
-        />
+            <input type="checkbox" value="medico" [checked]="isChecked('medico')" (change)="selecionarTipo('medico')" />
             Sou médico
           </label>
         </div>
-    
-          <label for="email">Seu e-mail:</label>
-          <input id="email" type="email" formControlName="email" required />
-    
-          <label for="senha">Sua senha:</label>
-          <input id="senha" type="password" formControlName="senha" required />
-    
-    
-          <button type="submit" (click)="onSubmit()">Entrar</button>
+
+        <label for="email">Seu e-mail:</label>
+        <input id="email" type="email" formControlName="Email" required />
+
+        <label for="senha">Sua senha:</label>
+        <input id="senha" type="password" formControlName="Senha" required />
+
+        <button type="submit">Entrar</button>
       </form>
-    
-        <a class="register-link" routerLink="/cadastro">Ainda não tem uma conta? Cadastre-se</a>
-      </div>
+
+      <div *ngIf="mostrarErro" class="erro-login">Email ou senha inválidos</div>
+
+      <a class="register-link" routerLink="/cadastro">Ainda não tem uma conta? Cadastre-se</a>
     </div>
+  </div>
 </div>
-
-<!-- <div
-  *ngIf="mostrarAlerta"
-  class="alerta-sucesso">
-  Cadastro realizado com sucesso!
-</div> -->
-

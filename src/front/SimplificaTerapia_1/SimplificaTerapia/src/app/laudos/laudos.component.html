@@ -87,6 +87,118 @@
     </div>
   </div>
 
+  <!-- Botão de novo laudo apenas para médicos -->
+  <button
+    mat-flat-button
+    color="primary"
+    class="btn-novo"
+    (click)="abrirModalNovoLaudo()"
+  >
+    <mat-icon>add</mat-icon>
+    Novo
+  </button>
+
+  <div class="modal-backdrop" *ngIf="modalNovoLaudoVisivel">
+    <div class="modal-box novo-laudo-modal">
+      <h3>Novo Laudo</h3>
+      <form #novoLaudoForm="ngForm">
+        <!-- Médico -->
+        <mat-form-field appearance="outline" class="custom-field">
+          <mat-label>Médico(a)</mat-label>
+          <input
+            matInput
+            [(ngModel)]="novoLaudo.medico"
+            name="medico"
+            required
+          />
+        </mat-form-field>
+
+        <!-- CRM -->
+        <mat-form-field appearance="outline" class="custom-field">
+          <mat-label>CRM</mat-label>
+          <input matInput [(ngModel)]="novoLaudo.crm" name="crm" required />
+        </mat-form-field>
+
+        <!-- Paciente -->
+        <mat-form-field appearance="outline" class="custom-field">
+          <mat-label>Paciente</mat-label>
+          <input
+            matInput
+            [(ngModel)]="novoLaudo.paciente"
+            name="paciente"
+            required
+          />
+        </mat-form-field>
+
+        <!-- Data Emissão -->
+        <mat-form-field appearance="outline" class="custom-field">
+          <mat-label>Data Emissão</mat-label>
+          <input
+            matInput
+            [matDatepicker]="dp1"
+            [(ngModel)]="novoLaudo.dataEmissao"
+            name="dataEmissao"
+            required
+          />
+          <mat-datepicker-toggle matSuffix [for]="dp1"></mat-datepicker-toggle>
+          <mat-datepicker #dp1></mat-datepicker>
+        </mat-form-field>
+
+        <!-- Data Vencimento -->
+        <mat-form-field appearance="outline" class="custom-field">
+          <mat-label>Data Vencimento</mat-label>
+          <input
+            matInput
+            [matDatepicker]="dp2"
+            [(ngModel)]="novoLaudo.dataVencimento"
+            name="dataVencimento"
+            required
+          />
+          <mat-datepicker-toggle matSuffix [for]="dp2"></mat-datepicker-toggle>
+          <mat-datepicker #dp2></mat-datepicker>
+        </mat-form-field>
+
+        <!-- Tipo -->
+        <mat-form-field appearance="outline" class="custom-field">
+          <mat-label>Tipo</mat-label>
+          <mat-select [(ngModel)]="novoLaudo.tipo" name="tipo" required>
+            <mat-option value="médico">Médico</mat-option>
+            <mat-option value="psicológico">Psicológico</mat-option>
+          </mat-select>
+        </mat-form-field>
+
+        <!-- Medicamentos -->
+        <mat-form-field appearance="outline" class="custom-field full-width">
+          <mat-label>Medicamentos</mat-label>
+          <textarea
+            matInput
+            rows="3"
+            [(ngModel)]="novoLaudo.medicamentos"
+            name="medicamentos"
+            required
+          ></textarea>
+        </mat-form-field>
+
+        <div class="modal-buttons">
+          <button
+            class="cancelar"
+            type="button"
+            (click)="fecharModalNovoLaudo()"
+          >
+            Cancelar
+          </button>
+          <button
+            class="confirmar"
+            type="button"
+            (click)="confirmarNovoLaudo()"
+          >
+            Salvar
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
   <div class="laudos-container">
     <div class="laudo-card" *ngFor="let laudo of laudos">
       <h3>Receita Médica:</h3>
