@@ -1,285 +1,284 @@
 h2 {
-    font-family: 'Lexend', sans-serif;
-    font-size: 24px;
-    color: #22369b;
-    margin: 20px 0 10px 10px;
-    margin-bottom: 20px;
-    margin-top: 20px;
+  font-family: "Lexend", sans-serif;
+  font-size: 24px;
+  color: #22369b;
+  margin: 20px 0 10px 10px;
+  margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 .filtros-container {
-    background-color: #f1efe3;
-    border-radius: 15px;
-    padding: 20px;
-    margin-bottom: 30px; 
-    
-      .filtro-label {
-        font-size: 20px;
-        margin-bottom: 15px;
-        display: block;
-        color: #22369b;
-        margin-left: 2%;
-      }
-      
-      .inputs {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 20px; 
-        align-items: flex-end;
-        row-gap: 16px;
-      }
-      
-      .custom-field {
-        flex: 1;
-        min-width: 160px;
-        
-        .mat-form-field-wrapper {
-          background-color: #f1efe3;
-          border-radius: 8px;
-          padding: 0 10px;
-        }
-        
-        .mat-form-field-outline,
-        .mat-form-field-outline-start,
-        .mat-form-field-outline-end,
-        .mat-form-field-outline-gap {
-          display: none !important;
-        }
-        
-        .mat-form-field-label {
-          color: #555 !important;
-          font-weight: 500;
-        }
-        
-        .mat-input-element,
-        .mat-select-value {
-          font-family: 'Lexend', sans-serif;
-          font-weight: 500;
-          color: #333;
-        }
-      }
-    
-      
-    .validade {
-        max-width: 180px;
+  background-color: #f1efe3;
+  border-radius: 15px;
+  padding: 20px;
+  margin-bottom: 30px;
+
+  .filtro-label {
+    font-size: 20px;
+    margin-bottom: 15px;
+    display: block;
+    color: #22369b;
+    margin-left: 2%;
+  }
+
+  .inputs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: flex-end;
+    row-gap: 16px;
+  }
+
+  .custom-field {
+    flex: 1;
+    min-width: 160px;
+
+    .mat-form-field-wrapper {
+      background-color: #f1efe3;
+      border-radius: 8px;
+      padding: 0 10px;
     }
 
-    .tipo {
-        max-width: 180px;
+    .mat-form-field-outline,
+    .mat-form-field-outline-start,
+    .mat-form-field-outline-end,
+    .mat-form-field-outline-gap {
+      display: none !important;
     }
 
-    .medico {
-        flex: 2;
+    .mat-form-field-label {
+      color: #555 !important;
+      font-weight: 500;
     }
 
-    .buttons {
-        display: flex;
-        gap: 12px;
-        height: 56px;
-        margin-top: 20px;
-
-        .btn-limpar,
-        .btn-buscar {
-            height: 45px;
-            font-weight: bold;
-            font-family: 'Lexend', sans-serif;
-            padding: 0 40px !important;
-            border-radius: 20px;
-            display: flex;
-            align-items: center;
-            gap: 6px;
-            white-space: nowrap;
-            background-color: #22369b;
-            color: white;
-        }
+    .mat-input-element,
+    .mat-select-value {
+      font-family: "Lexend", sans-serif;
+      font-weight: 500;
+      color: #333;
     }
+  }
+
+  .validade {
+    max-width: 180px;
+  }
+
+  .tipo {
+    max-width: 180px;
+  }
+
+  .medico {
+    flex: 2;
+  }
+
+  .buttons {
+    display: flex;
+    gap: 12px;
+    height: 56px;
+    margin-top: 20px;
+
+    .btn-limpar,
+    .btn-buscar {
+      height: 45px;
+      font-weight: bold;
+      font-family: "Lexend", sans-serif;
+      padding: 0 40px !important;
+      border-radius: 20px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      white-space: nowrap;
+      background-color: #22369b;
+      color: white;
+    }
+  }
 }
 
 .laudos-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    padding: 0 10px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  padding: 0 10px;
 }
 
 .laudo-card {
-    background-color: #f1efe3;
-    border-radius: 15px;
-    padding: 20px;
-    font-family: 'Arial', sans-serif;
-    font-size: 15px;
-    color: #000;
+  background-color: #f1efe3;
+  border-radius: 15px;
+  padding: 20px;
+  font-family: "Arial", sans-serif;
+  font-size: 15px;
+  color: #000;
 }
 
 .laudo-card h3 {
-    margin-top: 0;
-    color: #1e1e8f;
+  margin-top: 0;
+  color: #1e1e8f;
 }
 
 .laudo-card p {
-    margin: 5px 0;
+  margin: 5px 0;
 }
 
 .laudo-card strong {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .acoes {
-    margin-top: 10px;
-    display: flex;
-    gap: 10px;
-    justify-content: flex-start;
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+  justify-content: flex-start;
 }
 
 .acoes button {
-    background: none;
-    border: none;
-    font-size: 22px;
-    cursor: pointer;
-    color: #1e1e8f;
-    transition: transform 0.2s ease;
+  background: none;
+  border: none;
+  font-size: 22px;
+  cursor: pointer;
+  color: #1e1e8f;
+  transition: transform 0.2s ease;
 }
 
 .acoes button:hover {
-    transform: scale(1.2);
+  transform: scale(1.2);
 }
 
 .conteudo-principal {
-    padding: 0 60px;
+  padding: 0 60px;
 }
 
 @media (max-width: 768px) {
-    .conteudo-principal {
-        padding: 0 20px;
-    }
+  .conteudo-principal {
+    padding: 0 20px;
+  }
 
-    .laudos-container {
-        grid-template-columns: 1fr;
-    }
+  .laudos-container {
+    grid-template-columns: 1fr;
+  }
 }
 
 .paginator-footer {
-    bottom: 20px;
-    right: 20px;
-    z-index: 1000;
-    padding: 10px;
-    border-radius: 8px;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  padding: 10px;
+  border-radius: 8px;
 }
 
 .modal-backdrop {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: 2000;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .modal-box {
-    background-color: #fffaf0;
-    padding: 30px;
-    border-radius: 20px;
-    text-align: center;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
-    max-width: 400px;
-    width: 90%;
-    font-family: Arial, sans-serif;
+  background-color: #fffaf0;
+  padding: 30px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  max-width: 400px;
+  width: 90%;
+  font-family: Arial, sans-serif;
 }
 
 .modal-box h3 {
-    font-size: 20px;
-    color: #22369b;
-    margin-bottom: 15px;
+  font-size: 20px;
+  color: #22369b;
+  margin-bottom: 15px;
 }
 
 .modal-box p {
-    font-size: 16px;
-    color: #333;
-    margin-bottom: 25px;
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 25px;
 }
 
 .modal-buttons {
-    display: flex;
-    justify-content: space-evenly;
-    gap: 15px;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 15px;
 }
 
 .modal-buttons .cancelar,
 .modal-buttons .confirmar {
-    padding: 10px 20px;
-    border-radius: 30px;
-    border: none;
-    cursor: pointer;
-    font-size: 16px;
-    font-weight: bold;
-    color: white;
+  padding: 10px 20px;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
 }
 
 .modal-buttons .cancelar {
-    background-color: #22369b;
+  background-color: #22369b;
 }
 
 .modal-buttons .confirmar {
-    background-color: #22369b;
+  background-color: #22369b;
 }
 
 .modal-backdrop.visualizacao {
-    background-color: rgba(0, 0, 0, 0.8);
-    z-index: 3000;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 3000;
 }
 
 .visualizacao-box {
-    background-color: #fdfaf3;
-    border-radius: 12px;
-    padding: 20px;
-    max-width: 90vw;
-    max-height: 90vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    overflow: hidden;
-    position: relative;
+  background-color: #fdfaf3;
+  border-radius: 12px;
+  padding: 20px;
+  max-width: 90vw;
+  max-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
 }
 
 .visualizacao-box h3 {
-    margin: 0 0 10px;
-    color: #22369b;
-    font-family: 'Arial', sans-serif;
+  margin: 0 0 10px;
+  color: #22369b;
+  font-family: "Arial", sans-serif;
 }
 
 .toolbar {
-    position: absolute;
-    top: 10px;
-    right: 15px;
-    display: flex;
-    gap: 10px;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  display: flex;
+  gap: 10px;
 }
 
 .toolbar button {
-    background: none;
-    border: none;
-    font-size: 24px;
-    cursor: pointer;
-    color: #22369b;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #22369b;
 }
 
 .visualizacao-documento {
-    overflow: auto;
-    max-height: 80vh;
-    border: 1px solid #ccc;
-    padding: 10px;
-    background-color: white;
+  overflow: auto;
+  max-height: 80vh;
+  border: 1px solid #ccc;
+  padding: 10px;
+  background-color: white;
 }
 
 .visualizacao-documento img {
-    max-width: 100%;
-    transition: transform 0.3s ease;
-    display: block;
-    margin: auto;
+  max-width: 100%;
+  transition: transform 0.3s ease;
+  display: block;
+  margin: auto;
 }
 
 .alerta-sucesso {
@@ -291,7 +290,7 @@ h2 {
   color: #ffffff; /* Texto branco */
   padding: 15px 30px;
   border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   font-weight: bold;
   z-index: 1000;
   animation: fadeOut 5s forwards;
@@ -299,21 +298,28 @@ h2 {
 
 /* Animação de fade out após 5 segundos */
 @keyframes fadeOut {
-  0% { opacity: 1; }
-  80% { opacity: 1; }
-  100% { opacity: 0; display: none; }
+  0% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+  }
 }
 
 .visualizacao-documento {
   max-width: 600px;
   margin: 30px auto;
-  font-family: 'Arial', sans-serif;
+  font-family: "Arial", sans-serif;
   color: #333;
   background: #fdfdfd;
   border: 1px solid #ccc;
   padding: 20px 30px 30px;
   border-radius: 8px;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
   position: relative;
 }
 
@@ -351,12 +357,13 @@ h2 {
   font-size: 20px;
   text-align: center;
   margin: 20px 0 10px;
-  color: #007BFF;
+  color: #007bff;
   text-transform: uppercase;
   letter-spacing: 1.5px;
 }
 
-.data-local, .paciente {
+.data-local,
+.paciente {
   margin: 10px 0;
   font-size: 15px;
 }
@@ -380,7 +387,8 @@ h2 {
   font-weight: bold;
 }
 
-.cpf, .carimbo {
+.cpf,
+.carimbo {
   font-size: 13px;
   color: #555;
   margin: 2px 0;
@@ -394,3 +402,148 @@ h2 {
   letter-spacing: 2px;
 }
 
+.btn-novo {
+  margin-top: 0px;
+  margin-bottom: 20px;
+  display: inline-flex;
+  align-items: center;
+  height: 45px;
+  font-weight: bold;
+  font-family: "Lexend", sans-serif;
+  padding: 0 40px !important;
+  border-radius: 20px;
+  gap: 6px;
+  white-space: nowrap;
+  background-color: #22369b !important;
+  color: white;
+}
+
+.novo-laudo-modal {
+  max-width: 700px;
+
+  h3 {
+    font-family: "Lexend", sans-serif;
+    font-size: 22px;
+    color: #22369b;
+    margin-bottom: 20px;
+  }
+
+  .form-novo-laudo {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .form-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 16px;
+  }
+
+  .custom-field {
+    width: 100%;
+
+    .mat-form-field-wrapper {
+      background-color: #f1efe3;
+      border-radius: 8px;
+      padding: 0 10px;
+    }
+
+    .mat-input-element,
+    .mat-select-value {
+      font-family: "Lexend", sans-serif;
+      font-weight: 500;
+      color: #333;
+    }
+
+    textarea {
+      resize: vertical;
+      font-family: "Lexend", sans-serif;
+    }
+  }
+
+  .modal-buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 20px;
+
+    .cancelar,
+    .confirmar {
+      font-family: "Lexend", sans-serif;
+      padding: 10px 20px;
+      border-radius: 25px;
+      font-weight: bold;
+      font-size: 15px;
+      border: none;
+      cursor: pointer;
+      color: white;
+    }
+
+    .cancelar {
+      background-color: #6c757d;
+    }
+
+    .confirmar {
+      background-color: #22369b;
+    }
+  }
+}
+
+// Garante que os overlays do Angular Material apareçam acima de qualquer modal
+.cdk-overlay-container {
+  z-index: 1000 !important;
+}
+
+// Opcionalmente: garanta que seu backdrop/modal não ultrapasse isso
+.modal-backdrop {
+  z-index: 900;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.modal-box {
+  z-index: 950;
+  position: relative;
+  background: white;
+  padding: 24px;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+}
+
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.modal-box {
+  background: #fff;
+  border-radius: 10px;
+  padding: 2rem;
+  width: 90%;
+  max-width: 600px;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 600px) {
+  .modal-box {
+    width: 95%;
+    padding: 1rem;
+  }
+}

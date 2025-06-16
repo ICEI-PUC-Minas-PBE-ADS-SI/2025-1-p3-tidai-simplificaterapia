@@ -32,7 +32,6 @@ import { MatNativeDateModule } from '@angular/material/core';
   templateUrl: './laudos.component.html',
   styleUrls: ['./laudos.component.scss'],
 })
-
 export class LaudosComponent implements OnInit {
   revogarr: boolean = false;
   Imprimir: boolean = false;
@@ -74,7 +73,7 @@ export class LaudosComponent implements OnInit {
       crm: '123456/MG',
       cpf: '123.456.789-00',
       tipo: 'médico',
-       dataVencimento: '20/06/2025',
+      dataVencimento: '20/06/2025',
       dataEmissao: '25/04/2025',
     },
     {
@@ -93,7 +92,7 @@ export class LaudosComponent implements OnInit {
       crm: '123456/MG',
       cpf: '123.456.789-00',
       tipo: 'médico',
-       dataVencimento: '20/06/2025',
+      dataVencimento: '20/06/2025',
       dataEmissao: '25/04/2025',
     },
   ];
@@ -198,5 +197,64 @@ export class LaudosComponent implements OnInit {
 
   fecharModalVisualizacao() {
     this.modalVisualizacaoVisivel = false;
+  }
+
+  modalNovoLaudoVisivel = false;
+
+  novoLaudo = {
+    medico: '',
+    crm: '',
+    paciente: '',
+    dataEmissao: '',
+    dataVencimento: '',
+    tipo: '',
+    medicamentos: '',
+  };
+
+  abrirModalNovoLaudo() {
+    this.modalNovoLaudoVisivel = true;
+    this.novoLaudo = {
+      medico: '',
+      crm: '',
+      paciente: '',
+      dataEmissao: '',
+      dataVencimento: '',
+      tipo: '',
+      medicamentos: '',
+    };
+  }
+
+  fecharModalNovoLaudo() {
+    this.modalNovoLaudoVisivel = false;
+  }
+
+  confirmarNovoLaudo() {
+    const formatarData = (data: any) => {
+      if (!data) return '';
+      return new Date(data).toLocaleDateString('pt-BR');
+    };
+    const novo = {
+      ...this.novoLaudo,
+      codigo: this.laudos.length + 1,
+      clinica: 'Simplifica Terapia',
+      endereco: 'Rua da Saúde, 123 - Centro',
+      email: 'contato@simplificaterapia.com',
+      telefone: '(31) 1234-5678',
+      cidade: 'Betim',
+      data: new Date().toLocaleDateString('pt-BR', {
+        day: '2-digit',
+        month: 'long',
+        year: 'numeric',
+      }),
+      produto: 'Produto Exemplo',
+      quantidade: '10 unidades',
+      modoUso: 'Usar conforme orientação médica',
+      cpf: '000.000.000-00',
+      dataEmissao: formatarData(this.novoLaudo.dataEmissao),
+      dataVencimento: formatarData(this.novoLaudo.dataVencimento),
+    };
+
+    this.laudos.unshift(novo);
+    this.modalNovoLaudoVisivel = false;
   }
 }
