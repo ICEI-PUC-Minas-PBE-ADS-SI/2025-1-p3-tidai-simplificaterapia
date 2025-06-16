@@ -73,6 +73,7 @@ export class ConsultasComponent implements OnInit {
       valor: 'R$120,00',
       formaPagamento: 'Cartão',
       horario: '17:30',
+      tipoAtendimento: 'Retorno',
     },
     {
       data: '16/05/2025',
@@ -82,6 +83,7 @@ export class ConsultasComponent implements OnInit {
       valor: 'R$60,00',
       formaPagamento: 'Pix',
       horario: '08:30',
+      tipoAtendimento: 'Retorno',
     },
     {
       data: '27/04/2025',
@@ -91,6 +93,7 @@ export class ConsultasComponent implements OnInit {
       valor: 'R$120,00',
       formaPagamento: 'Boleto',
       horario: '10:30',
+      tipoAtendimento: 'Primeira consulta',
     },
   ];
 
@@ -147,6 +150,7 @@ export class ConsultasComponent implements OnInit {
       valorConsulta: dadosConsulta.valor, // mapeia 'valor' para 'valorConsulta'
       horario: dadosConsulta.horario || 'Indisponível', // caso não tenha horário
       formaPagamento: dadosConsulta.formaPagamento || 'Não informada',
+      tiposAtendimento: dadosConsulta.tipoAtendimento || 'Não informada'
     };
     this.modalDetalhesVisivel = true;
   }
