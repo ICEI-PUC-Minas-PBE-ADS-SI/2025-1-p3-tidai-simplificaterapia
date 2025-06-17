@@ -1,18 +1,22 @@
 import { Injectable } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Injectable({
   providedIn: 'root'
 })
 export class LoginStateService {
-  logado: boolean = false;
+  constructor(private router: Router) {}
 
-  constructor() {
-    const usuario = localStorage.getItem('usuarioLogado');
-    this.logado = !!usuario;
+  logout(): void {
+    localStorage.removeItem('usuarioLogado');
+    this.router.navigate(['/login']);
   }
 
-  logout() {
-    this.logado = false;
-    localStorage.removeItem('usuarioLogado');
+  isLogado(): boolean {
+    return !!localStorage.getItem('usuarioLogado');
+  }
+
+  get logado(): boolean {
+    return this.isLogado();
   }
 }
