@@ -149,5 +149,4 @@ Essas restrições estabelecem os limites e diretrizes para o desenvolvimento do
 
 ## Diagrama de casos de uso
 
-(![Diagrama de caso de uso (1)](https://github.com/user-attachments/assets/ba31cda5-0b44-4a74-8731-d1c9043def02)
-)
+![Diagrama de caso de uso (1)](https://github.com/user-attachments/assets/ba31cda5-0b44-4a74-8731-d1c9043def02)
