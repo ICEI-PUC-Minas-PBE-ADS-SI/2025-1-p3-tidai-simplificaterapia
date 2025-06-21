@@ -7,7 +7,8 @@ Definição de como o software é estruturado em termos dos componentes que faze
 ![Arquitetura da Solução](images/arquitetura.png) -->
 A construção da arquitetura do Simplifica Terapia foi fundamentada no projeto de interface previamente desenvolvido, garantindo que todos os componentes da solução fossem planejados para oferecer uma experiência prática, segura e acessível para pacientes e terapeutas.
 
-🧩 ### Arquitetura da Solução
+### Arquitetura da Solução
+
 A solução foi estruturada em três grandes camadas:
 
 > - Front-end: Responsável pela interação do usuário com o sistema.
@@ -206,7 +207,7 @@ Para desenvolver a plataforma Simplifica Terapia, foram escolhidas tecnologias m
 
 A qualidade do Simplifica Terapia será avaliada com base no modelo ISO/IEC 25010:2011, que define características fundamentais para garantir que o software atenda às necessidades dos usuários.
 
-✨ ### Subcaracterísticas Adotadas e Justificativas
+### Subcaracterísticas Adotadas e Justificativas
 
 | **Característica** |	**Subcaracterística** |	**Justificativa**
 | Usabilidade	       | Facilidade de uso     |	A interface precisa ser intuitiva para pacientes e terapeutas, mesmo os com pouca experiência digital.
@@ -216,7 +217,7 @@ A qualidade do Simplifica Terapia será avaliada com base no modelo ISO/IEC 2501
 | Manutenibilidade   |	Modificabilidade      |	A estrutura do código deve permitir atualizações e correções com facilidade.
 | Portabilidade	     | Adaptabilidade        | O sistema precisa funcionar bem em diferentes dispositivos e navegadores.
 
-🔐 ### Boas Práticas Aplicadas
+### Boas Práticas Aplicadas
 Validação de entrada (no front e back-end) para evitar erros e falhas de segurança.
 
 > - Criptografia de senhas com hashing.
