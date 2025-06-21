@@ -1,48 +1,142 @@
-# Registro de testes de usabilidade
+#  Registro de Testes de Usabilidade – Simplifica Terapia
 
-<span style="color:red">Pré-requisitos: <a href="04-Projeto-interface.md"> Projeto de interface</a></span>, <a href="09-Plano-testes-usabilidade.md"> Plano de testes de usabilidade</a>
+**Pré-requisitos:** Projeto de interface, Plano de testes de usabilidade
 
-Após realizar os testes de usabilidade, obtém-se um relatório a partir das análises realizadas. O registro de testes de usabilidade é um relatório que contém as evidências dos testes e os relatos dos usuários participantes, baseado no <a href="09-Plano-testes-usabilidade.md"> Plano de testes de usabilidade</a> desenvolvido para os casos de uso desta etapa.
+---
 
-Cenário 1: Você é uma pessoa que deseja comprar um iPhone. Encontre no site um iPhone e veja detalhes de localização e contato da loja que o está anunciando.
+##  Cenário 1: Cadastro de novo paciente
 
-| Usuário | Taxa de sucesso | Satisfação subjetiva | Tempo para conclusão do cenário |
-|---------|-----------------|----------------------|---------------------------------|
-| 1       | SIM             | 5                    | 27,87 segundos                  |
-| 2       | SIM             | 5                    | 17,11 segundos                  |
-| 3       | SIM             | 5                    | 39,09 segundos                  |
-|  |  |  |  |
-| **Média**     | 0%           | 0                | 0 segundos                           |
-| **Tempo para conclusão pelo especialista** | SIM | 5 | 8,66 segundos |
+**Descrição:** Você é um novo paciente e deseja se cadastrar na plataforma.
 
+| Participante | Taxa de Sucesso | Satisfação Subjetiva | Tempo para conclusão |
+|-------------|-----------------|----------------------|-----------------------|
+| 1 (Paciente) | SIM             | 4                    | 26,3 segundos         |
+| 2 (Paciente) | SIM             | 3                    | 35,1 segundos         |
 
-Comentários dos usuários: Achei o site muito bom e intuitivo. Não tive dificuldades e acho que ficou bem intuitivo.
+**Tempo do especialista:** 12,8 segundos  
+**Comentários:** Ambos os participantes conseguiram realizar o cadastro, porém um deles relatou dificuldade em entender que o campo de confirmação de senha era obrigatório — o erro só foi indicado após tentar enviar o formulário. Sugere-se exibir avisos de validação em tempo real e reposicionar o botão de envio para maior visibilidade.
 
+---
 
-Cenário 2: Você é uma pessoa que deseja comprar um smartphone até R$ 2.000,00. Encontre no site smartphones nessa faixa de preço.
+##  Cenário 2: Agendamento de sessão
 
-| Usuário | Taxa de sucesso | Satisfação subjetiva | Tempo para conclusão do cenário |
-|---------|-----------------|----------------------|---------------------------------|
-| 1       | SIM             | 5                    | 22,54 segundos                          |
-| 2       | SIM             | 5                    | 31,42 segundos                          |
-| 3       | SIM             | 5                    | 36,21 segundos                          |
-|  |  |  |  |
-| **Média**     | 0%           | 0                | 0 segundos                           |
-| **Tempo para conclusão pelo especialista** | SIM | 5 | 13,57 segundos |
+**Descrição:** Você é um paciente e deseja agendar uma nova sessão com o seu terapeuta.
 
-Comentários dos usuários: O site é fácil de acessar, mas algumas páginas poderiam  redirecionar a gente automaticamente para outras. Senti a falta de mais opções de filtros,  tanto na hora da pesquisa, quanto depois dela, nos resultados.
+| Participante | Taxa de Sucesso | Satisfação Subjetiva | Tempo para conclusão |
+|-------------|-----------------|----------------------|-----------------------|
+| 1 (Paciente) | SIM             | 5                    | 21,4 segundos         |
+| 2 (Paciente) | SIM             | 4                    | 28,9 segundos         |
 
+**Tempo do especialista:** 10,2 segundos  
+**Comentários:** Um participante teve dúvida sobre o botão de confirmação final.
 
+---
 
-## Avaliação 
+##  Cenário 3: Pagamento de consulta
 
-Tomando como base os resultados obtidos, foi possível verificar que a aplicação web apresenta um desempenho satisfatório quanto à taxa de sucesso na interação dos usuários, uma vez que os cenários propostos foram concluídos com êxito.
+**Descrição:** Você é um paciente e precisa realizar o pagamento de uma consulta agendada.
 
-Além disso, a aplicação também alcançou um elevado nível de satisfação subjetiva dos usuários durante a realização dos cenários propostos. Isso é evidenciado pelas médias das avaliações em cada cenário, que variaram entre 4 (bom) e 5 (excelente).
+| Participante | Taxa de Sucesso | Satisfação Subjetiva | Tempo para conclusão |
+|-------------|-----------------|----------------------|-----------------------|
+| 1 (Paciente) | SIM             | 5                    | 29,7 segundos         |
+| 2 (Paciente) | SIM             | 4                    | 33,0 segundos         |
 
-Em relação ao tempo de conclusão de cada tarefa/cenário, observou-se uma discrepância significativa entre a média de tempo dos usuários e o tempo do especialista/desenvolvedor em todos os cenários. Essa diferença, até certo ponto, é esperada, dado que o desenvolvedor já possui conhecimento prévio de toda a interface da aplicação, do posicionamento dos elementos, da lógica de organização das páginas, etc.
+**Tempo do especialista:** 13,5 segundos  
+**Comentários:** Tela de pagamento considerada simples, mas faltou feedback visual após a confirmação.
 
-No entanto, considerando que a diferença foi expressiva (por exemplo, 113 segundos — média dos usuários — contra 25 segundos — especialista — no cenário três), e levando em conta os comentários feitos por alguns usuários, foram identificadas oportunidades para melhorias na usabilidade da aplicação.
+---
 
-> **Links úteis**:
-> - [Ferramentas de testes de usabilidade](https://www.usability.gov/how-to-and-tools/resources/templates.html)
+##  Cenário 4: Visualização de laudo ou receita
+
+**Descrição:** Você deseja visualizar um laudo ou receita que o seu terapeuta emitiu.
+
+| Participante | Taxa de Sucesso | Satisfação Subjetiva | Tempo para conclusão |
+|-------------|-----------------|----------------------|-----------------------|
+| 1 (Paciente) | SIM             | 5                    | 24,1 segundos         |
+| 2 (Paciente) | SIM             | 4                    | 22,9 segundos         |
+
+**Tempo do especialista:** 11,3 segundos  
+**Comentários:** Participantes encontraram a opção com facilidade, mas sugerem nomear melhor a seção.
+
+---
+
+##  Cenário 5: Visualizar detalhes de sessão anterior
+
+**Descrição:** Você deseja visualizar os detalhes de uma sessão já realizada.
+
+| Participante | Taxa de Sucesso | Satisfação Subjetiva | Tempo para conclusão |
+|-------------|-----------------|----------------------|-----------------------|
+| 1 (Paciente) | SIM             | 5                    | 20,8 segundos         |
+| 2 (Paciente) | SIM             | 5                    | 19,6 segundos         |
+
+**Tempo do especialista:** 9,8 segundos  
+**Comentários:** Nenhuma dificuldade relatada.
+
+---
+
+##  Cenário 6: Cadastro de terapeuta
+
+**Descrição:** Você deseja se cadastrar como terapeuta na plataforma.
+
+| Participante | Taxa de Sucesso | Satisfação Subjetiva | Tempo para conclusão |
+|-------------|-----------------|----------------------|-----------------------|
+| 3 (Terapeuta) | SIM             | 5                    | 33,5 segundos         |
+| 4 (Terapeuta) | SIM             | 4                    | 37,0 segundos         |
+
+**Tempo do especialista:** 15,7 segundos  
+**Comentários:** Formulário completo e claro. Sugestão: adicionar validação automática do CRP.
+
+---
+
+##  Cenário 7: Emissão de laudo ou receita
+
+**Descrição:** Você deseja registrar um laudo ou receita para um paciente atendido.
+
+| Participante | Taxa de Sucesso | Satisfação Subjetiva | Tempo para conclusão |
+|-------------|-----------------|----------------------|-----------------------|
+| 3 (Terapeuta) | SIM             | 5                    | 30,2 segundos         |
+| 4 (Terapeuta) | SIM             | 4                    | 32,6 segundos         |
+
+**Tempo do especialista:** 14,0 segundos  
+**Comentários:** Processo direto, mas seria interessante ter um botão de "pré-visualizar".
+
+---
+
+##  Cenário 8: Visualizar agendamentos do dia
+
+**Descrição:** Você deseja visualizar os agendamentos do dia.
+
+| Participante | Taxa de Sucesso | Satisfação Subjetiva | Tempo para conclusão |
+|-------------|-----------------|----------------------|-----------------------|
+| 3 (Terapeuta) | SIM             | 5                    | 19,9 segundos         |
+| 4 (Terapeuta) | SIM             | 5                    | 20,3 segundos         |
+
+**Tempo do especialista:** 9,2 segundos  
+**Comentários:** Agenda clara. Um participante sugeriu incluir filtro por horário.
+
+---
+
+##  Cenário 9: Cancelar consulta
+
+**Descrição:** Você deseja cancelar uma consulta previamente marcada.
+
+| Participante | Taxa de Sucesso | Satisfação Subjetiva | Tempo para conclusão |
+|-------------|-----------------|----------------------|-----------------------|
+| 3 (Terapeuta) | SIM             | 4                    | 27,8 segundos         |
+| 4 (Terapeuta) | SIM             | 5                    | 26,4 segundos         |
+
+**Tempo do especialista:** 12,5 segundos  
+**Comentários:** Cancelamento simples, mas poderia ter confirmação em destaque para evitar erros.
+
+---
+
+##  Avaliação Geral
+
+- Todos os participantes conseguiram completar os cenários com sucesso (**100% de taxa de sucesso**).
+- A **satisfação subjetiva** variou entre 4 e 5, refletindo uma experiência considerada **boa ou excelente**.
+- O tempo médio dos usuários foi superior ao dos especialistas, o que é **esperado**, mas nenhum tempo excedeu o aceitável.
+- Foram registradas sugestões de melhorias, como:
+  - Maior destaque para botões de confirmação;
+  - Feedback visual após ações importantes (ex: confirmação de pagamento);
+  - Opção de pré-visualizar documentos antes de salvar.
+
