@@ -35,7 +35,7 @@ A escolha dos participantes buscou simular, dentro das limitações do projeto, 
 
 ---
 
-## 🛠 Ferramentas Utilizadas
+##  Ferramentas Utilizadas
 
 - Cronômetro para aferição de tempo;
 - Planilha estruturada para registro de dados;
@@ -44,7 +44,7 @@ A escolha dos participantes buscou simular, dentro das limitações do projeto, 
 
 ---
 
-## 📏 Métricas Coletadas
+##  Métricas Coletadas
 
 | Métrica               | Descrição                                                                 |
 |-----------------------|---------------------------------------------------------------------------|
