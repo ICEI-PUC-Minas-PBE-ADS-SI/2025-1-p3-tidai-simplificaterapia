@@ -16,7 +16,7 @@
 
 ---
 
-## ✅ Cenário 2: Agendamento de sessão
+##  Cenário 2: Agendamento de sessão
 
 **Descrição:** Você é um paciente e deseja agendar uma nova sessão com o seu terapeuta.
 
@@ -30,7 +30,7 @@
 
 ---
 
-## ✅ Cenário 3: Pagamento de consulta
+##  Cenário 3: Pagamento de consulta
 
 **Descrição:** Você é um paciente e precisa realizar o pagamento de uma consulta agendada.
 
@@ -44,7 +44,7 @@
 
 ---
 
-## ✅ Cenário 4: Visualização de laudo ou receita
+##  Cenário 4: Visualização de laudo ou receita
 
 **Descrição:** Você deseja visualizar um laudo ou receita que o seu terapeuta emitiu.
 
@@ -58,7 +58,7 @@
 
 ---
 
-## ✅ Cenário 5: Visualizar detalhes de sessão anterior
+##  Cenário 5: Visualizar detalhes de sessão anterior
 
 **Descrição:** Você deseja visualizar os detalhes de uma sessão já realizada.
 
@@ -72,7 +72,7 @@
 
 ---
 
-## ✅ Cenário 6: Cadastro de terapeuta
+##  Cenário 6: Cadastro de terapeuta
 
 **Descrição:** Você deseja se cadastrar como terapeuta na plataforma.
 
@@ -86,7 +86,7 @@
 
 ---
 
-## ✅ Cenário 7: Emissão de laudo ou receita
+##  Cenário 7: Emissão de laudo ou receita
 
 **Descrição:** Você deseja registrar um laudo ou receita para um paciente atendido.
 
@@ -100,7 +100,7 @@
 
 ---
 
-## ✅ Cenário 8: Visualizar agendamentos do dia
+##  Cenário 8: Visualizar agendamentos do dia
 
 **Descrição:** Você deseja visualizar os agendamentos do dia.
 
@@ -114,7 +114,7 @@
 
 ---
 
-## ✅ Cenário 9: Cancelar consulta
+##  Cenário 9: Cancelar consulta
 
 **Descrição:** Você deseja cancelar uma consulta previamente marcada.
 
@@ -128,7 +128,7 @@
 
 ---
 
-## 🔍 Avaliação Geral
+##  Avaliação Geral
 
 - **Taxa média de sucesso geral:** ~94%
 - **Satisfação subjetiva média:** Entre 3 e 5 pontos
