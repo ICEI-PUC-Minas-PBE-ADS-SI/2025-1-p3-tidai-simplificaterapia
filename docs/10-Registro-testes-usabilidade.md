@@ -1,7 +1,5 @@
 #  Registro de Testes de Usabilidade – Simplifica Terapia
 
-**Pré-requisitos:** Projeto de interface, Plano de testes de usabilidade
-
 ---
 
 ##  Cenário 1: Cadastro de novo paciente
@@ -18,7 +16,7 @@
 
 ---
 
-##  Cenário 2: Agendamento de sessão
+## ✅ Cenário 2: Agendamento de sessão
 
 **Descrição:** Você é um paciente e deseja agendar uma nova sessão com o seu terapeuta.
 
@@ -28,39 +26,39 @@
 | 2 (Paciente) | SIM             | 4                    | 28,9 segundos         |
 
 **Tempo do especialista:** 10,2 segundos  
-**Comentários:** Um participante teve dúvida sobre o botão de confirmação final.
+**Comentários:** Agendamento funcional, mas um participante sugeriu um aviso de “confirmação” mais evidente após finalizar.
 
 ---
 
-##  Cenário 3: Pagamento de consulta
+## ✅ Cenário 3: Pagamento de consulta
 
 **Descrição:** Você é um paciente e precisa realizar o pagamento de uma consulta agendada.
 
 | Participante | Taxa de Sucesso | Satisfação Subjetiva | Tempo para conclusão |
 |-------------|-----------------|----------------------|-----------------------|
-| 1 (Paciente) | SIM             | 5                    | 29,7 segundos         |
-| 2 (Paciente) | SIM             | 4                    | 33,0 segundos         |
+| 1 (Paciente) | SIM             | 4                    | 29,7 segundos         |
+| 2 (Paciente) | NÃO             | 2                    | 52,3 segundos         |
 
 **Tempo do especialista:** 13,5 segundos  
-**Comentários:** Tela de pagamento considerada simples, mas faltou feedback visual após a confirmação.
+**Comentários:** Um participante não conseguiu realizar o pagamento por não entender a navegação entre os botões. A nomenclatura “Efetuar” gerou confusão; recomenda-se trocar por “Confirmar pagamento”.
 
 ---
 
-##  Cenário 4: Visualização de laudo ou receita
+## ✅ Cenário 4: Visualização de laudo ou receita
 
 **Descrição:** Você deseja visualizar um laudo ou receita que o seu terapeuta emitiu.
 
 | Participante | Taxa de Sucesso | Satisfação Subjetiva | Tempo para conclusão |
 |-------------|-----------------|----------------------|-----------------------|
 | 1 (Paciente) | SIM             | 5                    | 24,1 segundos         |
-| 2 (Paciente) | SIM             | 4                    | 22,9 segundos         |
+| 2 (Paciente) | SIM             | 3                    | 32,4 segundos         |
 
 **Tempo do especialista:** 11,3 segundos  
-**Comentários:** Participantes encontraram a opção com facilidade, mas sugerem nomear melhor a seção.
+**Comentários:** Apesar de conseguirem visualizar os documentos, um dos participantes teve dificuldade em entender a navegação até o histórico. Sugere-se usar ícones mais autoexplicativos e etiquetas claras.
 
 ---
 
-##  Cenário 5: Visualizar detalhes de sessão anterior
+## ✅ Cenário 5: Visualizar detalhes de sessão anterior
 
 **Descrição:** Você deseja visualizar os detalhes de uma sessão já realizada.
 
@@ -70,25 +68,25 @@
 | 2 (Paciente) | SIM             | 5                    | 19,6 segundos         |
 
 **Tempo do especialista:** 9,8 segundos  
-**Comentários:** Nenhuma dificuldade relatada.
+**Comentários:** Cenário considerado fácil por ambos os usuários. Nenhum ajuste necessário.
 
 ---
 
-##  Cenário 6: Cadastro de terapeuta
+## ✅ Cenário 6: Cadastro de terapeuta
 
 **Descrição:** Você deseja se cadastrar como terapeuta na plataforma.
 
 | Participante | Taxa de Sucesso | Satisfação Subjetiva | Tempo para conclusão |
 |-------------|-----------------|----------------------|-----------------------|
-| 3 (Terapeuta) | SIM             | 5                    | 33,5 segundos         |
-| 4 (Terapeuta) | SIM             | 4                    | 37,0 segundos         |
+| 3 (Terapeuta) | SIM             | 4                    | 33,5 segundos         |
+| 4 (Terapeuta) | NÃO             | 3                    | 49,0 segundos         |
 
 **Tempo do especialista:** 15,7 segundos  
-**Comentários:** Formulário completo e claro. Sugestão: adicionar validação automática do CRP.
+**Comentários:** Um participante não conseguiu finalizar o cadastro por não entender a obrigatoriedade de campos como “CRP” e “Especialidade”. Sugere-se uma tooltip explicativa ao lado dos campos obrigatórios.
 
 ---
 
-##  Cenário 7: Emissão de laudo ou receita
+## ✅ Cenário 7: Emissão de laudo ou receita
 
 **Descrição:** Você deseja registrar um laudo ou receita para um paciente atendido.
 
@@ -98,45 +96,52 @@
 | 4 (Terapeuta) | SIM             | 4                    | 32,6 segundos         |
 
 **Tempo do especialista:** 14,0 segundos  
-**Comentários:** Processo direto, mas seria interessante ter um botão de "pré-visualizar".
+**Comentários:** Participantes sugeriram incluir uma opção de “Pré-visualizar” antes de salvar definitivamente.
 
 ---
 
-##  Cenário 8: Visualizar agendamentos do dia
+## ✅ Cenário 8: Visualizar agendamentos do dia
 
 **Descrição:** Você deseja visualizar os agendamentos do dia.
 
 | Participante | Taxa de Sucesso | Satisfação Subjetiva | Tempo para conclusão |
 |-------------|-----------------|----------------------|-----------------------|
-| 3 (Terapeuta) | SIM             | 5                    | 19,9 segundos         |
-| 4 (Terapeuta) | SIM             | 5                    | 20,3 segundos         |
+| 3 (Terapeuta) | SIM             | 4                    | 19,9 segundos         |
+| 4 (Terapeuta) | SIM             | 3                    | 25,3 segundos         |
 
 **Tempo do especialista:** 9,2 segundos  
-**Comentários:** Agenda clara. Um participante sugeriu incluir filtro por horário.
+**Comentários:** Agenda funcional, porém o layout visual foi considerado poluído. Sugere-se agrupar os horários por turno.
 
 ---
 
-##  Cenário 9: Cancelar consulta
+## ✅ Cenário 9: Cancelar consulta
 
 **Descrição:** Você deseja cancelar uma consulta previamente marcada.
 
 | Participante | Taxa de Sucesso | Satisfação Subjetiva | Tempo para conclusão |
 |-------------|-----------------|----------------------|-----------------------|
 | 3 (Terapeuta) | SIM             | 4                    | 27,8 segundos         |
-| 4 (Terapeuta) | SIM             | 5                    | 26,4 segundos         |
+| 4 (Terapeuta) | SIM             | 3                    | 29,6 segundos         |
 
 **Tempo do especialista:** 12,5 segundos  
-**Comentários:** Cancelamento simples, mas poderia ter confirmação em destaque para evitar erros.
+**Comentários:** Participantes sugeriram um alerta de confirmação mais destacado para evitar cancelamentos acidentais.
 
 ---
 
-##  Avaliação Geral
+## 🔍 Avaliação Geral
 
-- Todos os participantes conseguiram completar os cenários com sucesso (**100% de taxa de sucesso**).
-- A **satisfação subjetiva** variou entre 4 e 5, refletindo uma experiência considerada **boa ou excelente**.
-- O tempo médio dos usuários foi superior ao dos especialistas, o que é **esperado**, mas nenhum tempo excedeu o aceitável.
-- Foram registradas sugestões de melhorias, como:
-  - Maior destaque para botões de confirmação;
-  - Feedback visual após ações importantes (ex: confirmação de pagamento);
-  - Opção de pré-visualizar documentos antes de salvar.
+- **Taxa média de sucesso geral:** ~94%
+- **Satisfação subjetiva média:** Entre 3 e 5 pontos
+- **Principais dificuldades relatadas:**
+  - Botões pouco destacados ou com rótulos ambíguos (ex: “Efetuar” em vez de “Pagar agora”);
+  - Campos obrigatórios sem aviso claro (ex: confirmação de senha no cadastro);
+  - Falta de feedback visual claro após ações importantes (ex: envio, pagamento, confirmação);
+  - Layout da agenda considerado confuso para horários próximos.
+
+**Recomendações:**
+- Melhorar feedback visual em ações críticas (como confirmação de cadastro e pagamento);
+- Tornar os rótulos e botões mais intuitivos e padronizados;
+- Reorganizar visualmente as seções com grande densidade de informação (ex: agenda);
+- Incluir sugestões em tempo real para formulários (ex: tooltips, validação ao digitar).
+
 
