@@ -59,10 +59,11 @@ A escolha dos participantes buscou simular, dentro das limitações do projeto, 
 
 | Nº | Descrição do Cenário |
 |----|------------------------|
-| 1  | Você é um paciente e deseja agendar uma nova sessão com o seu terapeuta. Acesse o sistema e realize o agendamento. |
-| 2  | Você é um paciente e precisa realizar o pagamento de uma consulta agendada. Acesse o sistema e conclua o pagamento. |
-| 3  | Você deseja visualizar um laudo ou receita que o seu terapeuta emitiu. Acesse o sistema e localize esse documento. |
-| 4  | Você deseja visualizar os detalhes de uma sessão já realizada. Acesse o sistema e localize as informações do atendimento. |
+| 1  | Você é um novo paciente e deseja se cadastrar na plataforma. Acesse a tela de cadastro, preencha os dados pessoais obrigatórios e finalize o processo para criar sua conta. |
+| 2  | Você é um paciente e deseja agendar uma nova sessão com o seu terapeuta. Acesse o sistema e realize o agendamento. |
+| 3  | Você é um paciente e precisa realizar o pagamento de uma consulta agendada. Acesse o sistema e conclua o pagamento. |
+| 4  | Você deseja visualizar um laudo ou receita que o seu terapeuta emitiu. Acesse o sistema e localize esse documento. |
+| 5  | Você deseja visualizar os detalhes de uma sessão já realizada. Acesse o sistema e localize as informações do atendimento. |
 
 
 ---
@@ -71,10 +72,10 @@ A escolha dos participantes buscou simular, dentro das limitações do projeto, 
 
 | Nº | Descrição do Cenário |
 |----|------------------------|
-| 5  | Você deseja se cadastrar como terapeuta na plataforma. Acesse a tela de cadastro, preencha as informações obrigatórias e finalize o processo.|
-| 6  | Você deseja registrar um laudo ou receita para um paciente atendido. Crie e salve o documento no sistema. |
-| 7  | Você é um terapeuta e deseja visualizar os recibos de atendimentos anteriores. Acesse o sistema e localize os documentos emitidos. |
+| 6  | Você deseja se cadastrar como terapeuta na plataforma. Acesse a tela de cadastro, preencha as informações obrigatórias e finalize o processo.|
+| 7  | Você deseja registrar um laudo ou receita para um paciente atendido. Crie e salve o documento no sistema. |
 | 8  | Você é um terapeuta e deseja visualizar os agendamentos do dia. Acesse a agenda e confira os próximos atendimentos. |
+| 9  | Você deseja cancelar uma consulta previamente marcada. Acesse a agenda e realize o cancelamento. |
 
 
 
