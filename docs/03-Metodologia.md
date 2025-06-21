@@ -47,14 +47,14 @@ Quanto à gerência de issues, o projeto adota a seguinte convenção para etiqu
 - `enhancement`: uma funcionalidade precisa ser melhorada
 - `feature`: uma nova funcionalidade precisa ser introduzida
 
-Discuta como a configuração do projeto foi feita na ferramenta de versionamento escolhida. Exponha como a gestão de tags, merges, commits e branches é realizada. Discuta também como a gestão de issues foi feita.
+<!-- Discuta como a configuração do projeto foi feita na ferramenta de versionamento escolhida. Exponha como a gestão de tags, merges, commits e branches é realizada. Discuta também como a gestão de issues foi feita.
 
 > **Links úteis**:
 > - [Tutorial GitHub](https://guides.github.com/activities/hello-world/)
 > - [Git e GitHub](https://www.youtube.com/playlist?list=PLHz_AreHm4dm7ZULPAmadvNhH6vk9oNZA)
 > - [Comparando fluxos de trabalho](https://www.atlassian.com/br/git/tutorials/comparing-workflows)
 > - [Understanding the GitHub flow](https://guides.github.com/introduction/flow/)
-> - [The gitflow workflow - in less than 5 mins](https://www.youtube.com/watch?v=1SXpE08hvGs)
+> - [The gitflow workflow - in less than 5 mins](https://www.youtube.com/watch?v=1SXpE08hvGs) -->
 
 ## Planejamento do projeto
 
@@ -69,10 +69,10 @@ Discuta como a configuração do projeto foi feita na ferramenta de versionament
 - Documentação: Vânia Lourenço, Mariany Karla e André Marcus 
 
 #### Sprint 2
-- _Scrum master_: AlunaY
-- Desenvolvedor _front-end_: AlunoX
-- Desenvolvedor _back-end_: AlunoK
-- Testes: AlunaZ
+- _Scrum master_: Maria Eduarda
+- Desenvolvedor _front-end_: Maria Eduarda e Mariany Karla 
+- Desenvolvedor _back-end_: André Marcus, Vânia Lourenço e Vitor Schmidt
+- Testes: Vânia Lourenço, Mariany Karla e Maria Eduarda
 
 ###  Quadro de tarefas
 
@@ -84,10 +84,10 @@ Atualizado em: 21/04/2024
 
 | Responsável   | Tarefa/Requisito | Iniciado em    | Prazo      | Status | Terminado em    |
 | :----         |    :----         |      :----:    | :----:     | :----: | :----:          |
-| Vânia         | Introdução | 01/02/2024     | 07/02/2024 | ✔️    | 05/02/2024      |
-| AlunaZ        | Objetivos    | 03/02/2024     | 10/02/2024 | 📝    |                 |
-| AlunoY        | Histórias de usuário  | 01/01/2024     | 07/01/2005 | ⌛     |                 |
-| Mariany       | Personas 1  |    01/01/2024        | 12/02/2005 | ❌    |       |
+| Vânia         | Introdução | 10/03/2024     | 20/03/2025 | ✔️    | 20/03/2025      |
+| Vânia        | Objetivos    | 10/03/2025     | 20/03/2025 | ✔️    |   20/03/2025    |
+| Mariany       | Histórias de usuário  | 10/03/2025     | 20/03/2025 | ✔️     | 20/03/2025  |
+| Mariany       | Personas 1  |    10/03/2025        | 20/03/2025 | ✔️    | 20/03/2025      |
 
 #### Sprint 2
 
@@ -95,10 +95,10 @@ Atualizado em: 21/04/2024
 
 | Responsável   | Tarefa/Requisito | Iniciado em    | Prazo      | Status | Terminado em    |
 | :----         |    :----         |      :----:    | :----:     | :----: | :----:          |
-| AlunaX        | Página inicial   | 01/02/2024     | 07/03/2024 | ✔️    | 05/02/2024      |
-| AlunaZ        | CSS unificado    | 03/02/2024     | 10/03/2024 | 📝    |                 |
-| AlunoY        | Página de login  | 01/02/2024     | 07/03/2024 | ⌛     |                 |
-| AlunoK        | Script de login  |  01/01/2024    | 12/03/2024 | ❌    |       |
+| Maria Eduarda | Página inicial   | 12/03/2025     | 15/05/2024 | ✔️     | 05/02/2024      |
+| Maria Eduarda | CSS unificado    | 18/03/2025     | 20/05/2024 | ✔️     | 20/05/2024      |
+| Mariany Karla | Página de login  | 05/04/2025     | 26/05/2025 | ✔️     | 26/05/2025      |
+| Mariany Karla | Script de login  | 16/04/2025     | 28/06/2025 | ✔️     | 28/06/2025      |
 
 
 Legenda:
@@ -108,7 +108,7 @@ Legenda:
 - ❌: não iniciado
 
 
-> **Links úteis**:
+<!-- > **Links úteis**:
 > - [11 passos essenciais para implantar Scrum no seu projeto](https://mindmaster.com.br/scrum-11-passos/)
 > - [Scrum em 9 minutos](https://www.youtube.com/watch?v=XfvQWnRgxG0)
 > - [Os papéis do Scrum e a verdade sobre cargos nessa técnica](https://www.atlassian.com/br/agile/scrum/roles)
@@ -136,5 +136,5 @@ Exemplo: os artefatos do projeto são desenvolvidos a partir de diversas platafo
 | Documentos do projeto               | GitHub                             | http://....                            |
 | Projeto de interface                | Figma                              | http://....                            |
 | Gerenciamento do projeto            | GitHub Projects                    | http://....                            |
-| Hospedagem                          | Vercel                             | http://....                            |
+| Hospedagem                          | Vercel                             | http://....                            | -->
  
