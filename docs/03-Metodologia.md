@@ -60,7 +60,7 @@ Quanto à gerência de issues, o projeto adota a seguinte convenção para etiqu
 
 ###  Divisão de papéis
 
-<!--> Apresente a divisão de papéis entre os membros do grupo em cada Sprint. O desejável é que, em cada Sprint, o aluno assuma papéis diferentes na equipe. Siga o modelo do exemplo abaixo:-->
+<!-- Apresente a divisão de papéis entre os membros do grupo em cada Sprint. O desejável é que, em cada Sprint, o aluno assuma papéis diferentes na equipe. Siga o modelo do exemplo abaixo:-->
 
 #### Sprint 1
 - _Scrum master_: Maria Eduarda e Vitor Schmidt
