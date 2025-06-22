@@ -85,9 +85,9 @@ Atualizado em: 22/06/2025
 | Responsável   | Tarefa/Requisito | Iniciado em    | Prazo      | Status | Terminado em    |
 | :----         |    :----         |      :----:    | :----:     | :----: | :----:          |
 | Vânia         | Introdução | 10/03/2024     | 20/03/2025 | ✔️    | 20/03/2025      |
-| Vânia        | Objetivos    | 10/03/2025     | 20/03/2025 | ✔️    |   20/03/2025    |
-| Mariany       | Histórias de usuário  | 10/03/2025     | 20/03/2025 | ✔️     | 20/03/2025  |
-| Mariany       | Personas 1  |    10/03/2025        | 20/03/2025 | ✔️    | 20/03/2025      |
+| Vânia         | Objetivos    | 10/03/2025     | 20/03/2025 | ✔️    |   20/03/2025    |
+| Mariany Karla | Histórias de usuário  | 10/03/2025     | 20/03/2025 | ✔️    | 20/03/2025  |
+| Mariany Karla | Personas 1  |    10/03/2025        | 20/03/2025 | ✔️    | 20/03/2025      |
 
 #### Sprint 2
 
