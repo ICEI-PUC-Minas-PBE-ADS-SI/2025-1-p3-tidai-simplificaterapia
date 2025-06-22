@@ -80,7 +80,7 @@ Quanto à gerência de issues, o projeto adota a seguinte convenção para etiqu
 
 #### Sprint 1
 
-Atualizado em: 21/04/2024
+Atualizado em: 22/06/2025
 
 | Responsável   | Tarefa/Requisito | Iniciado em    | Prazo      | Status | Terminado em    |
 | :----         |    :----         |      :----:    | :----:     | :----: | :----:          |
@@ -91,7 +91,7 @@ Atualizado em: 21/04/2024
 
 #### Sprint 2
 
-Atualizado em: 21/04/2024
+Atualizado em: 22/06/2025
 
 | Responsável   | Tarefa/Requisito | Iniciado em    | Prazo      | Status | Terminado em    |
 | :----         |    :----         |      :----:    | :----:     | :----: | :----:          |
