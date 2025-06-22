@@ -34,6 +34,8 @@ Exemplo:
 
 - LAKATOS, Eva Maria; MARCONI, Marina de Andrade. Fundamentos de metodologia científica. 5. ed. São Paulo: Atlas, 2003.
 
+- BATISTA, Nayanne. Angular: o que é, para que serve e um Guia para iniciar no framework JavaScript. Alura, 13 set. 2023.
+
   
 <!-- > **Links úteis**:
 > - [Padrão PUC Minas de normalização ABNT](http://portal.pucminas.br/biblioteca/documentos/GUIA-COMPLETO-ABNT-Elaborar-formatar-trabalho-cientificoNOVO.pdf)
