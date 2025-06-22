@@ -20,20 +20,26 @@ namespace SimplificaTerapia.Controllers
         }
 
 
-        [HttpGet]
-        public IActionResult GetAllMedicos([FromQuery] string? nome)
+        [HttpGet] 
+        public async Task<IActionResult> GetAllMedicos(
+        [FromQuery] string? nome,
+        [FromQuery] string? uf,
+        [FromQuery] string? sexo)
         {
             var query = dbContext.Medicos.AsQueryable();
-
+        
             if (!string.IsNullOrWhiteSpace(nome))
-            {
                 query = query.Where(m => EF.Functions.Like(m.nome_completo, $"%{nome}%"));
-            }
-
-            var resultado = query.ToList();
+        
+            if (!string.IsNullOrWhiteSpace(uf))
+                query = query.Where(m => m.uf == uf);
+        
+            if (!string.IsNullOrWhiteSpace(sexo))
+                query = query.Where(m => m.sexo == sexo);
+        
+            var resultado = await query.ToListAsync();
             return Ok(resultado);
         }
-
 
         [HttpGet]
         [Route("{id:int}")]
