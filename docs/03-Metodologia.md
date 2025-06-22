@@ -95,8 +95,8 @@ Atualizado em: 22/06/2025
 
 | Responsável   | Tarefa/Requisito | Iniciado em    | Prazo      | Status | Terminado em    |
 | :----         |    :----         |      :----:    | :----:     | :----: | :----:          |
-| Maria Eduarda | Página inicial   | 12/03/2025     | 15/05/2024 | ✔️     | 15/05/2025      |
-| Maria Eduarda | CSS unificado    | 18/03/2025     | 20/05/2024 | ✔️     | 20/05/2024      |
+| Maria Eduarda | Página inicial   | 12/03/2025     | 15/05/2025 | ✔️     | 15/05/2025      |
+| Maria Eduarda | CSS unificado    | 18/03/2025     | 20/05/2025 | ✔️     | 20/05/2025      |
 | Mariany Karla | Página de login  | 05/04/2025     | 26/05/2025 | ✔️     | 26/05/2025      |
 | Mariany Karla | Script de login  | 16/04/2025     | 28/06/2025 | ✔️     | 28/06/2025      |
 
