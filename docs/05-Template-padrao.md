@@ -10,7 +10,7 @@ A estrutura das telas foi desenvolvida com foco na web, priorizando uma interfac
 
 A paleta de cores foi pensada para transmitir acolhimento e simplicidade. O azul remete à confiança e equilíbrio, sendo comum em contextos de saúde. O uso das cores escolhidas torna a interface mais limpa, acessível e centrada no conteúdo terapêutico.
 
-![Uso das cores](https://github.com/user-attachments/assets/13bcb6a4-ae22-4854-883b-b39d1a978e06)
+![Uso das cores](https://github.com/user-attachments/assets/81213245-842b-4d5c-b985-a4e770e8fa23)
 
 ## Iconografia
 
