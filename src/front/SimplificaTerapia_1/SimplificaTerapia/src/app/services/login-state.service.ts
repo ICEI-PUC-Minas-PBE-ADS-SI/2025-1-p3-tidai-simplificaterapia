@@ -9,6 +9,7 @@ export class LoginStateService {
 
   logout(): void {
     localStorage.removeItem('usuarioLogado');
+    localStorage.removeItem('userId');
     this.router.navigate(['/login']);
   }
 
