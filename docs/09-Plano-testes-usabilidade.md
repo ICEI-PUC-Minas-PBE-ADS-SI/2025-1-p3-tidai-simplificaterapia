@@ -1,7 +1,5 @@
 # Plano de testes de usabilidade
 
-<span style="color:red">Pré-requisitos: <a href="04-Projeto-interface.md"> Projeto de interface</a></span>, <a href="07-Plano-testes-software.md"> Plano de testes de software</a>
-
 ##  Objetivo
 
 O objetivo deste plano é avaliar a usabilidade da plataforma **Simplifica Terapia**, garantindo que psicólogos, terapeutas e pacientes consigam utilizar o sistema de forma intuitiva, eficiente e satisfatória.
