@@ -1,11 +1,11 @@
-import { Component, ViewChild } from '@angular/core';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { Component, OnInit } from '@angular/core';
+import { FormBuilder, FormGroup, Validators, FormControl } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { ReactiveFormsModule } from '@angular/forms';
-import { AlertaComponent } from '../alerta/alerta.component';
-import { HttpClientModule } from '@angular/common/http';
+
 import { MedicoService } from '../services/medico.service';
+import { PacienteService } from '../services/paciente.service';
 
 @Component({
   selector: 'app-cadastro',
@@ -13,99 +13,147 @@ import { MedicoService } from '../services/medico.service';
   imports: [
     CommonModule,
     RouterModule,
-    ReactiveFormsModule, HttpClientModule
+    ReactiveFormsModule
   ],
   templateUrl: './cadastro.component.html',
   styleUrls: ['./cadastro.component.scss'],
 })
-export class CadastroComponent {
-  cadastroForm: FormGroup;
+export class CadastroComponent implements OnInit {
+  cadastroForm!: FormGroup;
   imagemPreview: string | ArrayBuffer | null = null;
+  tipoUsuarioSelecionado: 'paciente' | 'medico' = 'paciente';
 
-  @ViewChild('alerta') alerta!: AlertaComponent;
-  mensagemAlerta: string = 'Cadastro Realizado com sucesso!';
+  constructor(
+    private fb: FormBuilder,
+    private medicoService: MedicoService,
+    private pacienteService: PacienteService
+  ) {}
 
-  constructor(private fb: FormBuilder, private medicoService: MedicoService) {
+  ngOnInit(): void {
+    this.inicializarFormulario();
+  }
+
+  inicializarFormulario(): void {
     this.cadastroForm = this.fb.group({
       nome: ['', Validators.required],
       uf: ['', Validators.required],
       municipio: ['', Validators.required],
-      situacao: ['Ativo', Validators.required],
-      usuario: ['', Validators.required],
-      crm: ['', Validators.required],
       cpf: ['', Validators.required],
       sexo: ['Feminino', Validators.required],
-      especialidade: ['', Validators.required],
-      valorHora: ['', Validators.required],
-      formacao: ['', Validators.required],
       sobre: [''],
       email: ['', [Validators.required, Validators.email]],
-      senha: ['', Validators.required],
+      senha: ['', [Validators.required, Validators.minLength(6)]],
       confirmarSenha: ['', Validators.required],
-      tipoPaciente: [true],
-      tipoMedico: [false],
       imagem: [null],
     });
+    this.atualizarCamposPorTipo('paciente');
+  }
+
+  selecionarTipo(tipo: 'paciente' | 'medico'): void {
+    if (this.tipoUsuarioSelecionado !== tipo) {
+      this.tipoUsuarioSelecionado = tipo;
+      this.atualizarCamposPorTipo(tipo);
+    }
+  }
+
+  isChecked(tipo: string): boolean {
+    return this.tipoUsuarioSelecionado === tipo;
+  }
+
+  private atualizarCamposPorTipo(tipo: 'paciente' | 'medico'): void {
+    const medicoControls = ['crm', 'especialidade', 'valorHora', 'formacao', 'situacao'];
+    const pacienteControls = ['rg', 'data_nascimento'];
+
+    if (tipo === 'paciente') {
+      medicoControls.forEach(ctrl => this.cadastroForm.removeControl(ctrl));
+      this.cadastroForm.addControl('rg', new FormControl(''));
+      this.cadastroForm.addControl('data_nascimento', new FormControl('', Validators.required));
+    } else {
+      pacienteControls.forEach(ctrl => this.cadastroForm.removeControl(ctrl));
+      this.cadastroForm.addControl('crm', new FormControl('', Validators.required));
+      this.cadastroForm.addControl('especialidade', new FormControl('', Validators.required));
+      this.cadastroForm.addControl('valorHora', new FormControl('', [Validators.required, Validators.pattern(/^\d+(\.\d{1,2})?$/)]));
+      this.cadastroForm.addControl('formacao', new FormControl('', Validators.required));
+      this.cadastroForm.addControl('situacao', new FormControl('Ativo', Validators.required));
+    }
   }
 
   onSubmit(): void {
     if (this.cadastroForm.invalid) {
       this.cadastroForm.markAllAsTouched();
+      alert('Por favor, preencha todos os campos obrigatórios (*).');
       return;
     }
 
-    const dadosCadastro = this.cadastroForm.value;
-
-    if (dadosCadastro.senha !== dadosCadastro.confirmarSenha) {
-      this.mensagemAlerta = 'As senhas não coincidem!';
-      this.alerta.exibir();
+    const dados = this.cadastroForm.value;
+    if (dados.senha !== dados.confirmarSenha) {
+      alert('As senhas não coincidem!');
       return;
     }
 
-    const novoMedico = {
-      nome_completo: dadosCadastro.nome,
-      uf: dadosCadastro.uf,
-      municipio: dadosCadastro.municipio,
-      situacao: dadosCadastro.situacao,
-      crm: dadosCadastro.crm,
-      cpf: dadosCadastro.cpf,
-      rg: '', // Você pode adicionar um campo se quiser
-      sexo: dadosCadastro.sexo,
-      especialidade: dadosCadastro.especialidade,
-      valor_por_hora: parseFloat(dadosCadastro.valorHora),
-      formacao: dadosCadastro.formacao,
-      sobre: dadosCadastro.sobre,
-      email: dadosCadastro.email,
-      senha: dadosCadastro.senha,
+    if (this.tipoUsuarioSelecionado === 'paciente') {
+      this.cadastrarPaciente(dados);
+    } else {
+      this.cadastrarMedico(dados);
+    }
+  }
+
+  private cadastrarPaciente(dados: any): void {
+    const novoPaciente = {
+      nome_completo: dados.nome,
+      uf: dados.uf,
+      municipio: dados.municipio,
+      situacao: 'Ativo',
+      data_nascimento: dados.data_nascimento,
+      cpf: dados.cpf,
+      rg: dados.rg,
+      sexo: dados.sexo,
+      sobre: dados.sobre,
+      email: dados.email,
+      senha: dados.senha
     };
 
-    this.medicoService.addMedico(novoMedico).subscribe({
+    this.pacienteService.adicionarPaciente(novoPaciente).subscribe({
       next: () => {
-        this.mensagemAlerta = 'Cadastro realizado com sucesso!';
-        this.alerta.exibir();
+        alert('Paciente cadastrado com sucesso!');
         this.cadastroForm.reset();
+        this.selecionarTipo('paciente');
       },
       error: (err) => {
-        console.error('Erro ao cadastrar médico:', err);
-        this.mensagemAlerta = 'Erro ao cadastrar médico.';
-        this.alerta.exibir();
+        console.error('Erro ao cadastrar paciente:', err);
+        alert('Ocorreu um erro ao cadastrar o paciente.');
       }
     });
   }
 
+  private cadastrarMedico(dados: any): void {
+    const novoMedico = {
+      nome_completo: dados.nome,
+      uf: dados.uf,
+      municipio: dados.municipio,
+      situacao: dados.situacao,
+      crm: dados.crm,
+      cpf: dados.cpf,
+      sexo: dados.sexo,
+      especialidade: dados.especialidade,
+      valor_por_hora: parseFloat(dados.valorHora),
+      formacao: dados.formacao,
+      sobre: dados.sobre,
+      email: dados.email,
+      senha: dados.senha,
+    };
 
-    isChecked(tipo: string): boolean {
-      return tipo === 'paciente'
-        ? this.cadastroForm.get('tipoPaciente')?.value
-        : this.cadastroForm.get('tipoMedico')?.value;
-    }
-
-    selecionarTipo(tipo: string): void {
-      if(tipo === 'paciente') {
-      this.cadastroForm.patchValue({ tipoPaciente: true, tipoMedico: false });
-    } else {
-      this.cadastroForm.patchValue({ tipoPaciente: false, tipoMedico: true });
-    }
+    this.medicoService.addMedico(novoMedico).subscribe({
+      next: () => {
+        alert('Médico cadastrado com sucesso!');
+        this.cadastroForm.reset();
+        this.selecionarTipo('paciente');
+      },
+      error: (err) => {
+        console.error('Erro ao cadastrar médico:', err);
+        alert('Ocorreu um erro ao cadastrar o médico.');
+      }
+    });
   }
 
   onImagemSelecionada(event: Event): void {
