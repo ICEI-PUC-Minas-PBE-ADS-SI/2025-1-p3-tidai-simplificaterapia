@@ -2,28 +2,18 @@
 
 ## Estrutura das telas
 
-A estrutura das telas foi pensada para a interação com interfaces mobile, a ideia é ser uma interface bastante simples e intuitiva, sem muita informação e elementos supérfluos.
+A estrutura das telas foi desenvolvida com foco na web, priorizando uma interface simples, intuitiva e livre de elementos excessivos.
 
 ![Estrutura das telas](https://github.com/user-attachments/assets/fe735726-e7dd-4d75-b695-fbcbed46ba4f)
 
-
 ## Uso das Cores
 
-A escolha de cores também é pensada para a simplificação, o uso do vermelho é tradicional para representar marcas relacionadas à comida, o uso de apenas quatro cores ajuda a simplificar a aplicação, destacar as fotos das comidas quando elas aparecerem enquanto permite a representação suficiente de cores para os elementos necessários.
+A paleta de cores foi pensada para transmitir acolhimento e simplicidade. O azul remete à confiança e equilíbrio, sendo comum em contextos de saúde. O uso das cores escolhidas torna a interface mais limpa, acessível e centrada no conteúdo terapêutico.
 
-
+![Uso das cores](https://github.com/user-attachments/assets/13bcb6a4-ae22-4854-883b-b39d1a978e06)
 
 ## Iconografia
 
-Os ícones utilizados são próprios, vetorizados no figma, desenhados com o foco em formas sólidas e simples, permitindo maior contraste com as cores sólidas do projeto.
+Os ícones foram escolhidos para facilitar a navegação e melhorar a usabilidade do sistema pelos usuários.
 
-
-
-## Componentes utilizados
-
-O projeto utiliza componentes do bootstrap, como a navbar, os cards, afim de fornecer um visual coeso e responsabilidade
-
-
-## Responsividade
-
-As classes bootstrap para controle de grid e flex são utilizadas para garantir a responsividade das páginas
+![Iconografia](https://github.com/user-attachments/assets/84099e88-6bd8-473b-8682-a29823e1d8c0)
