@@ -7,7 +7,7 @@ namespace SimplificaTerapia.Models.Classes
         [Key]
         public int Id { get; set; }
 
-        public string? data_consulta { get; set; }
+        public DateTime? data_consulta { get; set; }
         public string? horario { get; set; }
         public string? duracao { get; set; }
         public string? situacao { get; set; }
