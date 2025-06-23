@@ -1,4 +1,4 @@
-#  Registro de Testes de Usabilidade – Simplifica Terapia
+#  Registro de Testes de Usabilidade 
 
 ---
 
