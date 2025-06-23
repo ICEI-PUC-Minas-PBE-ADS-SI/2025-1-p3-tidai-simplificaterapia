@@ -11,16 +11,16 @@ export class PacienteService {
 
   constructor(private http: HttpClient) {}
 
+  adicionarPaciente(paciente: any): Observable<Paciente> {
+    return this.http.post<Paciente>(this.apiUrl, paciente);
+  }
+
   getPacientes(): Observable<Paciente[]> {
     return this.http.get<Paciente[]>(this.apiUrl);
   }
 
   getPaciente(id: number): Observable<Paciente> {
     return this.http.get<Paciente>(`${this.apiUrl}/${id}`);
-  }
-
-  adicionarPaciente(paciente: Paciente): Observable<Paciente> {
-    return this.http.post<Paciente>(this.apiUrl, paciente);
   }
 
   atualizarPaciente(id: number, paciente: Paciente): Observable<Paciente> {
