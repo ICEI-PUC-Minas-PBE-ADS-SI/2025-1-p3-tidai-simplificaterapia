@@ -28,23 +28,27 @@
         </div>
 
         <input formControlName="nome" placeholder="Nome Completo*" />
-
         <div class="row">
           <input formControlName="uf" placeholder="UF*" />
           <input formControlName="municipio" placeholder="Município*" />
-          <select formControlName="situacao">
+          <select *ngIf="tipoUsuarioSelecionado === 'medico'" formControlName="situacao">
             <option value="Ativo">Ativo</option>
             <option value="Inativo">Inativo</option>
           </select>
         </div>
 
         <div class="row">
-          <input formControlName="usuario" placeholder="Usuário*" />
-          <input formControlName="crm" placeholder="RG*" />
+          <input *ngIf="tipoUsuarioSelecionado === 'paciente'" formControlName="rg" placeholder="RG" />
+          <input *ngIf="tipoUsuarioSelecionado === 'medico'" formControlName="crm" placeholder="CRM*" />
+
           <input formControlName="cpf" placeholder="CPF*" />
         </div>
 
-        <div>
+        <div *ngIf="tipoUsuarioSelecionado === 'paciente'" class="row">
+            <input type="text" onfocus="(this.type='date')" onblur="(this.type='text')" formControlName="data_nascimento" placeholder="Data de Nascimento*" style="width: 100%;"/>
+        </div>
+
+        <div *ngIf="tipoUsuarioSelecionado === 'medico'" class="row">
           <select formControlName="sexo" style="width: 25%;">
             <option value="Feminino">Feminino</option>
             <option value="Masculino">Masculino</option>
@@ -52,14 +56,15 @@
           <input formControlName="especialidade" placeholder="Especialidade*" />
           <input formControlName="valorHora" placeholder="Valor p/ hora*" />
         </div>
-
-        <input formControlName="formacao" placeholder="Formação*" />
-        <input formControlName="sobre" placeholder="Sobre" />
+        <input *ngIf="tipoUsuarioSelecionado === 'medico'" formControlName="formacao" placeholder="Formação*" />
+        
+        <input formControlName="sobre" placeholder="Sobre" rows="3"/>
+        
         <input formControlName="email" type="email" placeholder="Email*" />
         <input formControlName="senha" type="password" placeholder="Senha*" />
         <input formControlName="confirmarSenha" type="password" placeholder="Confirmar Senha*" />
 
-        <button type="submit">Cadastrar</button>
+        <button type="submit" [disabled]="cadastroForm.invalid">Cadastrar</button>
       </form>
 
       <a class="register-link" routerLink="/login">Já possuo conta, ir para o Login</a>
