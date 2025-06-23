@@ -5,7 +5,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { CommonModule } from '@angular/common';
-import { RouterModule } from '@angular/router';
+import { RouterModule, Router } from '@angular/router';
 import { LoginStateService } from '../login-state.service';
 import { NotificacoesComponent } from '../notificacoes/notificacoes.component';
 
@@ -30,7 +30,7 @@ export class MenuComponent implements OnInit {
   showNotifications = false;
   usuarioLogado: any = null;
 
-  constructor(public loginState: LoginStateService) {}
+  constructor(public loginState: LoginStateService, private router: Router) { }
 
   ngOnInit() {
     const usuario = localStorage.getItem('usuarioLogado');
@@ -44,14 +44,27 @@ export class MenuComponent implements OnInit {
     }
   }
 
-  /*
   logout() {
     this.loginState.logout();
+
+    localStorage.removeItem('usuarioLogado');
+    localStorage.removeItem('userId');
+    this.router.navigate(['/login']);
+
   }
-  */
 
- get Logado(): boolean {
-  return this.loginState.logado;
-}
 
+  irParaPerfil() {
+    if (!this.usuarioLogado?.tipo) return;
+
+    if (this.usuarioLogado.tipo === 'paciente') {
+      this.router.navigate(['/perfilPaciente']);
+    } else if (this.usuarioLogado.tipo === 'medico') {
+      this.router.navigate(['/perfilMedico']);
+    }
+  }
+
+  get Logado(): boolean {
+    return this.loginState.logado;
+  }
 }
