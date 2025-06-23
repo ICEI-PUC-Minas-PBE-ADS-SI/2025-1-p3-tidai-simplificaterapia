@@ -41,13 +41,24 @@
       <button mat-icon-button matTooltip="Agenda" routerLink="/perfilMedico" *ngIf="Logado">
         <mat-icon>calendar_month</mat-icon>
       </button>
+
       <button mat-icon-button matTooltip="Notificações" *ngIf="Logado" (click)="showNotifications = !showNotifications">
-        <mat-icon class="notification-icon">
-          notifications
-        </mat-icon>
-        <span class="badge">2</span> <!-- MUDAR PARA O NUMERO DE NOTIFICAÇÕES -->
+        <mat-icon class="notification-icon">notifications</mat-icon>
+        <span class="badge">2</span>
       </button>
-      <button mat-icon-button matTooltip="Perfil" routerLink="/login">
+
+      <!-- Ícone de perfil com menu suspenso -->
+      <button mat-icon-button [matMenuTriggerFor]="perfilMenu" matTooltip="Perfil" *ngIf="Logado">
+        <mat-icon>account_circle</mat-icon>
+      </button>
+
+      <mat-menu #perfilMenu="matMenu">
+        <button mat-menu-item (click)="irParaPerfil()">Meu Perfil</button>
+        <button mat-menu-item (click)="logout()">Logout</button>
+      </mat-menu>
+
+      <!-- Ícone perfil para usuário que não está logado -->
+      <button mat-icon-button matTooltip="Login" *ngIf="!Logado" routerLink="/login">
         <mat-icon>account_circle</mat-icon>
       </button>
     </div>
@@ -55,4 +66,3 @@
 </div>
 
 <app-notificacoes *ngIf="showNotifications"></app-notificacoes>
-
