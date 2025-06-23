@@ -60,6 +60,69 @@ namespace SimplificaTerapia.Controllers
         }
 
 
+
+        [HttpGet("paciente/{idPaciente}")]
+        public IActionResult GetConsultasPorPaciente(int idPaciente)
+        {
+            var consultas = dbContext.Consultas
+                .Include(c => c.med)
+                .Include(c => c.pac)
+                .Where(c => c.id_paciente == idPaciente)
+                .Select(c => new
+                {
+                    c.Id,
+                    c.data_consulta,
+                    c.horario,
+                    c.duracao,
+                    c.situacao,
+                    c.tipo_atendimento,
+                    c.forma_pagamento,
+                    c.plano_saude,
+                    c.valor,
+                    c.observacoes,
+                    Medico_Nome = c.med.nome_completo,
+                    Paciente_Nome = c.pac.nome_completo,
+                    c.id_medico,
+                    c.id_paciente
+                })
+                .ToList();
+
+            return Ok(consultas);
+        }
+
+        
+
+        [HttpGet("medico/{idMedico}")]
+        public IActionResult GetConsultasPorMedico(int idMedico)
+        {
+            var consultas = dbContext.Consultas
+                .Include(c => c.med)
+                .Include(c => c.pac)
+                .Where(c => c.id_medico == idMedico)
+                .Select(c => new
+                {
+                    c.Id,
+                    c.data_consulta,
+                    c.horario,
+                    c.duracao,
+                    c.situacao,
+                    c.tipo_atendimento,
+                    c.forma_pagamento,
+                    c.plano_saude,
+                    c.valor,
+                    c.observacoes,
+                    Medico_Nome = c.med.nome_completo,
+                    Paciente_Nome = c.pac.nome_completo,
+                    c.id_medico,
+                    c.id_paciente
+                })
+                .ToList();
+
+            return Ok(consultas);
+        }
+
+
+
         [HttpPost]
         public IActionResult CriaConsulta(AddConsultasDto dto)
         {
