@@ -3,125 +3,40 @@
 <div class="container">
   <h2 class="title">Consultas:</h2>
 
-  <!-- Filtro -->
-
   <div class="filtro">
-    <label class="filtro-label">Filtro:</label>
-    <div class="inputs">
-      <mat-form-field appearance="outline" class="custom-field periodo">
-        <mat-label>Período</mat-label>
-        <mat-date-range-input [rangePicker]="picker">
-          <input matStartDate placeholder="Início" />
-          <input matEndDate placeholder="Fim" />
-        </mat-date-range-input>
-        <mat-datepicker-toggle
-          matIconSuffix
-          [for]="picker"
-        ></mat-datepicker-toggle>
-        <mat-date-range-picker #picker></mat-date-range-picker>
-      </mat-form-field>
-
-      <mat-form-field appearance="outline" class="custom-field medico">
-        <mat-label>Médico</mat-label>
-        <input matInput placeholder="Médico" />
-      </mat-form-field>
-
-      <mat-form-field appearance="outline" class="custom-field especialidade">
-        <mat-label>Especialidade</mat-label>
-        <input matInput placeholder="Especialidade" />
-      </mat-form-field>
-
-      <mat-form-field appearance="outline" class="custom-field valor">
-        <mat-label>Valor R$</mat-label>
-        <input matInput placeholder="Valor" />
-      </mat-form-field>
-    </div>
-
-    <div class="buttons">
-      <button mat-stroked-button class="btn-limpar">
-        <mat-icon>close</mat-icon>
-        Limpar
-      </button>
-
-      <button mat-flat-button color="primary" class="btn-buscar">
-        <mat-icon>search</mat-icon>
-        Buscar
-      </button>
-    </div>
   </div>
-
-  <!-- Cards -->
 
   <div class="consultas-container">
     <div class="consulta-card" *ngFor="let consulta of consultas">
-      <div
-        *ngIf="
-          consulta.situacao === 'Agendada' || consulta.situacao === 'Finalizada'
-        "
-      >
+      <div *ngIf="consulta.situacao === 'Agendada' || consulta.situacao === 'Finalizada' || consulta.situacao === 'Cancelada'">
         <div class="card-content">
           <div class="dados">
             <p><strong>Data:</strong> {{ consulta.data }}</p>
             <p><strong>Médico(a):</strong> {{ consulta.medico }}</p>
             <p><strong>Duração:</strong> {{ consulta.duracao }}</p>
+            <p><strong>Horário:</strong> {{ consulta.horario }}</p>
             <p><strong>Situação:</strong> {{ consulta.situacao }}</p>
             <p><strong>Valor:</strong> {{ consulta.valor }}</p>
           </div>
-
           <div class="fotoAcoes">
             <div class="foto">
-              <img
-                class="profile"
-                src="assets/images/login.png"
-                alt="Foto Terapeuta"
-              />
+              <img class="profile" src="assets/images/login.png" alt="Foto Terapeuta" />
             </div>
             <div class="acoes">
-              <ng-container
-                *ngIf="consulta.situacao === 'Agendada'; else finalizada"
-              >
-                <button
-                  (click)="desmarcar(consulta)"
-                  title="Desmarcar"
-                  class="icones"
-                  matTooltip="Desmarcar"
-                >
-                  <mat-icon
-                    aria-hidden="false"
-                    fontIcon="event_busy"
-                  ></mat-icon>
+              <ng-container *ngIf="consulta.situacao === 'Agendada'; else finalizadaOuCancelada">
+                <button (click)="desmarcar(consulta)" title="Desmarcar" class="icones" matTooltip="Desmarcar">
+                  <mat-icon fontIcon="event_busy"></mat-icon>
                 </button>
-                <button
-                  (click)="editarConsulta(consulta)"
-                  title="Editar"
-                  class="icones"
-                  matTooltip="Editar"
-                >
-                  <mat-icon aria-hidden="false" fontIcon="edit"></mat-icon>
+                <button (click)="editarConsulta(consulta)" title="Editar" class="icones" matTooltip="Editar">
+                  <mat-icon fontIcon="edit"></mat-icon>
                 </button>
-                <!-- Botão para Teams só para agendadas -->
-                <button
-                  *ngIf="isHoje(consulta.data)"
-                  (click)="abrirTeams(consulta)"
-                  title="Abrir Teams"
-                  class="icones"
-                  matTooltip="Abrir Teams">
-                  <mat-icon fontIcon="groups"></mat-icon> <!-- Ícone substituto -->
+                <button *ngIf="isHoje(consulta.data)" (click)="abrirTeams(consulta)" title="Abrir Teams" class="icones" matTooltip="Abrir Teams">
+                  <mat-icon fontIcon="groups"></mat-icon>
                 </button>
-
               </ng-container>
-
-              <ng-template #finalizada>
-                <button
-                  (click)="verDetalhes(consulta)"
-                  title="Detalhes"
-                  class="icones"
-                  matTooltip="Detalhes"
-                >
-                  <mat-icon
-                    aria-hidden="false"
-                    fontIcon="zoom_out_map"
-                  ></mat-icon>
+              <ng-template #finalizadaOuCancelada>
+                <button (click)="verDetalhes(consulta)" title="Detalhes" class="icones" matTooltip="Detalhes">
+                  <mat-icon fontIcon="zoom_out_map"></mat-icon>
                 </button>
               </ng-template>
             </div>
@@ -131,307 +46,24 @@
     </div>
   </div>
 
-  <!-- Paginator -->
+  <mat-paginator [length]="consultas.length" [pageSizeOptions]="[10, 20, 50]" aria-label="Select page"></mat-paginator>
 
-  <mat-paginator
-    [length]="100"
-    [pageSizeOptions]="[10, 50, 100]"
-    aria-label="Select page"
-  ></mat-paginator>
+  <app-editar-consulta 
+      *ngIf="modalEditarConsultaVisivel"
+      [consultaParaEditar]="consultaSelecionada"
+      (fechar)="fecharModalEditar()"
+      (salvar)="confirmarEdicao($event)">
+  </app-editar-consulta>
 
-  <!-- Modais -->
-
-  <!-- Modal Desmarcar Consulta-->
   <div class="modal-backdrop" *ngIf="modalDesmarcarConsultaVisivel">
     <div class="modal-box">
       <h3>Desmarcar Consulta?</h3>
-      <p>Tem certeza que deseja desmarcar consulta?</p>
+      <p>Tem certeza que deseja desmarcar esta consulta?</p>
       <div class="modal-buttons">
-        <button class="cancelar" (click)="fecharModalDesmarcar()">
-          Cancelar
-        </button>
-        <button class="confirmar" (click)="confirmarDesmarcamento()">
-          Confirmar
-        </button>
+        <button class="cancelar" (click)="fecharModalDesmarcar()">Cancelar</button>
+        <button class="confirmar" (click)="confirmarDesmarcamento()">Confirmar</button>
       </div>
     </div>
   </div>
 
-  <!-- Modal Editar Consulta-->
-  <div
-    class="modal-backdrop-editar-consulta"
-    *ngIf="modalEditarConsultaVisivel">
-    <div class="modal-box-editar-consulta">
-      <h2 class="title">Editar Consulta:</h2>
-      <div class="inputs-list">
-        <mat-form-field appearance="outline" class="custom-field">
-          <mat-label>29/05/2025</mat-label>
-          <input matInput />
-          <mat-datepicker-toggle matSuffix />
-        </mat-form-field>
-
-        <mat-form-field appearance="outline" class="custom-field">
-          <mat-label>09:00</mat-label>
-          <input matInput [matTimepicker]="timepicker" />
-          <mat-timepicker #timepicker />
-          <mat-timepicker-toggle [for]="timepicker" matSuffix />
-        </mat-form-field>
-
-        <mat-form-field appearance="outline" class="custom-field">
-          <mat-label>60 min</mat-label>
-          <mat-select>
-            @for (duracoes of duracoes; track duracoes) {
-            <mat-option [value]="duracoes.value">{{
-              duracoes.viewValue
-            }}</mat-option>
-            }
-          </mat-select>
-        </mat-form-field>
-
-        <mat-form-field appearance="outline" class="custom-field">
-          <mat-label>Agendada</mat-label>
-          <mat-select>
-            @for (situacao of situacoes; track situacoes) {
-            <mat-option [value]="situacao.value">{{
-              situacao.viewValue
-            }}</mat-option>
-            }
-          </mat-select>
-        </mat-form-field>
-
-        <mat-form-field
-          appearance="outline"
-          class="custom-field tipoAtendimento"
-        >
-          <mat-label>Rotina</mat-label>
-          <mat-select>
-            @for (tipoAtendimento of tiposAtendimento; track tiposAtendimento) {
-            <mat-option [value]="tipoAtendimento.value">{{
-              tipoAtendimento.viewValue
-            }}</mat-option>
-            }
-          </mat-select>
-        </mat-form-field>
-
-        <mat-form-field
-          appearance="outline"
-          class="custom-field formaPagamento"
-        >
-          <mat-label>Pix</mat-label>
-          <mat-select>
-            @for (formaPagamento of formasPagamento; track formasPagamento) {
-            <mat-option [value]="formaPagamento.value">{{
-              formaPagamento.viewValue
-            }}</mat-option>
-            }
-          </mat-select>
-        </mat-form-field>
-
-        <mat-checkbox appearance="outline" class="custom-field planoSaude"
-          >Plano de Saúde</mat-checkbox
-        >
-
-        <mat-form-field appearance="outline" class="custom-field profissional">
-          <mat-label>Profissional</mat-label>
-          <input matInput disabled value="Gabriel Araujo Alvarenga" />
-        </mat-form-field>
-
-        <mat-form-field appearance="outline" class="custom-field crm">
-          <mat-label>CRM</mat-label>
-          <input matInput disabled value="00859970" />
-        </mat-form-field>
-
-        <mat-form-field appearance="outline" class="custom-field especialidade">
-          <mat-label>Especialidade</mat-label>
-          <input matInput disabled value="Terapeuta" />
-        </mat-form-field>
-
-        <mat-form-field appearance="outline" class="custom-field valorConsulta">
-          <mat-label>Valor Consulta</mat-label>
-          <input matInput disabled value="R$ 120,00" />
-        </mat-form-field>
-
-        <mat-form-field appearance="outline" class="custom-field contatoMedico">
-          <mat-label>Contato Médico</mat-label>
-          <input matInput disabled value="(31) 3595-4142" />
-        </mat-form-field>
-
-        <mat-form-field appearance="outline" class="custom-field paciente">
-          <mat-label>Paciente</mat-label>
-          <input matInput disabled value="Maria Eduarda Ferreira de Souza" />
-        </mat-form-field>
-
-        <mat-form-field
-          appearance="outline"
-          class="custom-field contatoPaciente"
-        >
-          <mat-label>Contato Paciente</mat-label>
-          <input matInput disabled value="(38) 98645-2293" />
-        </mat-form-field>
-
-        <mat-form-field appearance="outline" class="custom-field observacoes">
-          <mat-label>Observações</mat-label>
-          <textarea
-            matInput
-            placeholder="Coloque aqui suas observações..."
-          ></textarea>
-        </mat-form-field>
-      </div>
-      <div class="modal-buttons">
-        <button class="cancelar" (click)="fecharModalEditar()">Cancelar</button>
-        <button class="confirmar" (click)="confirmarEdicao()">Salvar</button>
-      </div>
-    </div>
-  </div>
-
-  <!-- Modal Detalhes Consulta-->
-  <div class="modal-backdrop-editar-consulta" *ngIf="modalDetalhesVisivel">
-    <div class="modal-box-editar-consulta">
-      <h2 class="title">Consulta:</h2>
-      <div class="inputs-list">
-        <mat-form-field appearance="outline" class="custom-field">
-          <mat-label>Data*</mat-label>
-          <input matInput disabled [(ngModel)]="consulta.data" name="data" />
-        </mat-form-field>
-
-        <mat-form-field appearance="outline" class="custom-field">
-          <mat-label>Horário*</mat-label>
-          <input
-            matInput
-            disabled
-            [(ngModel)]="consulta.horario"
-            name="horario"
-          />
-          <mat-timepicker #timepicker></mat-timepicker>
-        </mat-form-field>
-
-        <mat-form-field appearance="fill">
-          <mat-label>Duração</mat-label>
-          <input matInput [value]="consulta.duracao" name="duracao" disabled />
-        </mat-form-field>
-
-        <mat-form-field appearance="fill">
-          <mat-label>Situação</mat-label>
-          <input
-            matInput
-            [value]="consulta.situacao"
-            name="situacao"
-            disabled
-          />
-        </mat-form-field>
-
-        <mat-form-field appearance="fill">
-          <mat-label>Tipo de Atendimento</mat-label>
-          <input
-            matInput
-            [value]="consulta.tipoAtendimento"
-            name="tipoAtendimento"
-            disabled
-          />
-        </mat-form-field>
-
-        <mat-form-field appearance="fill">
-          <mat-label>Forma de Pagamento</mat-label>
-          <input
-            matInput
-            [value]="consulta.formaPagamento"
-            name="formaPagamento"
-            disabled
-          />
-        </mat-form-field>
-
-        <mat-checkbox
-          appearance="outline"
-          class="custom-field planoSaude"
-          [(ngModel)]="consulta.planoSaude"
-          name="planoSaude"
-          disabled
-        >
-          Plano de Saúde
-        </mat-checkbox>
-
-        <mat-form-field appearance="outline" class="custom-field profissional">
-          <mat-label>Profissional</mat-label>
-          <input
-            matInput
-            disabled
-            [(ngModel)]="consulta.profissional"
-            name="profissional"
-          />
-        </mat-form-field>
-
-        <mat-form-field appearance="outline" class="custom-field crm">
-          <mat-label>CRM</mat-label>
-          <input matInput disabled [(ngModel)]="consulta.crm" name="crm" />
-        </mat-form-field>
-
-        <mat-form-field appearance="outline" class="custom-field especialidade">
-          <mat-label>Especialidade</mat-label>
-          <input
-            matInput
-            disabled
-            [(ngModel)]="consulta.especialidade"
-            name="especialidade"
-          />
-        </mat-form-field>
-
-        <mat-form-field appearance="outline" class="custom-field valorConsulta">
-          <mat-label>Valor Consulta</mat-label>
-          <input
-            matInput
-            disabled
-            [(ngModel)]="consulta.valorConsulta"
-            name="valorConsulta"
-          />
-        </mat-form-field>
-
-        <mat-form-field appearance="outline" class="custom-field contatoMedico">
-          <mat-label>Contato Médico</mat-label>
-          <input
-            matInput
-            disabled
-            [(ngModel)]="consulta.contatoMedico"
-            name="contatoMedico"
-          />
-        </mat-form-field>
-
-        <mat-form-field appearance="outline" class="custom-field paciente">
-          <mat-label>Paciente</mat-label>
-          <input
-            matInput
-            disabled
-            [(ngModel)]="consulta.paciente"
-            name="paciente"
-          />
-        </mat-form-field>
-
-        <mat-form-field
-          appearance="outline"
-          class="custom-field contatoPaciente"
-        >
-          <mat-label>Contato Paciente</mat-label>
-          <input
-            matInput
-            disabled
-            [(ngModel)]="consulta.contatoPaciente"
-            name="contatoPaciente"
-          />
-        </mat-form-field>
-
-        <mat-form-field appearance="outline" class="custom-field observacoes">
-          <mat-label>Observações</mat-label>
-          <textarea
-            matInput
-            [(ngModel)]="consulta.observacoes"
-            name="observacoes"
-            placeholder="Coloque aqui suas observações..."
-            disabled
-          ></textarea>
-        </mat-form-field>
-      </div>
-      <div class="modal-buttons">
-        <button class="cancelar" (click)="fecharModalEditar()">Fechar</button>
-      </div>
-    </div>
-  </div>
 </div>
