@@ -15,6 +15,14 @@ export class ConsultaService {
     return this.http.get<Consulta[]>(this.apiUrl);
   }
 
+  getConsultasPorPaciente(idPaciente: number): Observable<Consulta[]> {
+    return this.http.get<Consulta[]>(`${this.apiUrl}/paciente/${idPaciente}`);
+  }
+
+  getConsultasPorMedico(idMedico: number): Observable<Consulta[]> {
+    return this.http.get<Consulta[]>(`${this.apiUrl}/medico/${idMedico}`);
+  }
+
   getConsulta(id: number): Observable<Consulta> {
     return this.http.get<Consulta>(`${this.apiUrl}/${id}`);
   }
