@@ -12,7 +12,7 @@
 | 2 (Paciente) | SIM             | 3                    | 35,1 segundos         |
 
 **Tempo do especialista:** 12,8 segundos  
-**Comentários:** Ambos os participantes conseguiram realizar o cadastro, porém um deles relatou dificuldade em entender que o campo de confirmação de senha era obrigatório — o erro só foi indicado após tentar enviar o formulário. Sugere-se exibir avisos de validação em tempo real e reposicionar o botão de envio para maior visibilidade.
+**Comentários:** Ambos os participantes conseguiram realizar o cadastro, porém um deles relatou dificuldade em entender que o campo de confirmação de senha era obrigatório — o erro só foi indicado após tentar enviar o formulário. Sugere-se exibir avisos de validação em tempo real e reposicionar o botão de cadastrar para maior visibilidade.
 
 ---
 
@@ -82,7 +82,7 @@
 | 4 (Terapeuta) | NÃO             | 3                    | 49,0 segundos         |
 
 **Tempo do especialista:** 15,7 segundos  
-**Comentários:** Um participante não conseguiu finalizar o cadastro por não entender a obrigatoriedade de campos como “CRP” e “Especialidade”. Sugere-se uma tooltip explicativa ao lado dos campos obrigatórios.
+**Comentários:** Um participante não conseguiu finalizar o cadastro por não entender a obrigatoriedade de campos como “CRM” e “Especialidade”. Sugere-se uma tooltip explicativa ao lado dos campos obrigatórios.
 
 ---
 
