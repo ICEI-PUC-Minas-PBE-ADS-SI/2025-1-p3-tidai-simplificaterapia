@@ -1,0 +1,51 @@
+<div class="modal-backdrop">
+    <div class="modal-box">
+
+        <h2 class="title">Editar Consulta</h2>
+
+        <form [formGroup]="editForm" (ngSubmit)="salvarEdicao()" class="edit-form">
+
+            <mat-form-field appearance="outline">
+                <mat-label>Data da Consulta</mat-label>
+                <input matInput [matDatepicker]="picker" formControlName="data_consulta">
+                <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+                <mat-datepicker #picker></mat-datepicker>
+            </mat-form-field>
+
+            <mat-form-field appearance="outline">
+                <mat-label>Horário</mat-label>
+                <input matInput type="time" formControlName="horario">
+            </mat-form-field>
+
+            <mat-form-field appearance="outline">
+                <mat-label>Duração (em min)</mat-label>
+                <input matInput type="number" formControlName="duracao">
+            </mat-form-field>
+
+            <mat-form-field appearance="outline">
+                <mat-label>Situação</mat-label>
+                <mat-select formControlName="situacao">
+                    <mat-option *ngFor="let situacao of situacoes" [value]="situacao">
+                        {{ situacao }}
+                    </mat-option>
+                </mat-select>
+            </mat-form-field>
+
+            <mat-form-field appearance="outline" class="full-width">
+                <mat-label>Observações</mat-label>
+                <textarea matInput formControlName="observacoes" rows="3"></textarea>
+            </mat-form-field>
+
+
+            <div class="modal-buttons">
+                <button mat-stroked-button type="button" (click)="fecharModal()" class="cancelar-btn">
+                    Cancelar
+                </button>
+                <button mat-flat-button color="primary" type="submit" class="salvar-btn">
+                    Salvar Alterações
+                </button>
+            </div>
+
+        </form>
+    </div>
+</div>
