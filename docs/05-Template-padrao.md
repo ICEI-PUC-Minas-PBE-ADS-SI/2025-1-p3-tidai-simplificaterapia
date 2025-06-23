@@ -16,4 +16,4 @@ A paleta de cores foi pensada para transmitir acolhimento e simplicidade. O azul
 
 Os ícones foram escolhidos para facilitar a navegação e melhorar a usabilidade do sistema pelos usuários.
 
-![Iconografia](https://github.com/user-attachments/assets/84099e88-6bd8-473b-8682-a29823e1d8c0)
+![Iconografia](https://github.com/user-attachments/assets/1cf3478f-efb4-4986-9ab2-332035e86e50)
