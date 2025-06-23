@@ -200,7 +200,7 @@ Para desenvolver a plataforma Simplifica Terapia, foram escolhidas tecnologias m
 
 > - Front-end (React): hospedado gratuitamente na plataforma Vercel, com suporte a CI/CD, deploy automático ao fazer push no GitHub.
 > - Back-end (C# + DevExpress): hospedado na Render, com conexão segura ao banco de dados.
-> - Banco de Dados: instância MySQL em nuvem com acesso restrito.
+> - Banco de Dados: instância SQL Server em nuvem com acesso restrito.
 > - Repositório e versionamento: todo o código fonte é hospedado no GitHub, garantindo versionamento, colaboração e rastreabilidade.
 
 ## Qualidade de software
