@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { MenuComponent } from '../menu/menu.component';
+import { CommonModule } from '@angular/common';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { map } from 'rxjs/operators';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatSelectModule } from '@angular/material/select';
@@ -7,14 +9,14 @@ import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { MatTooltipModule } from '@angular/material/tooltip';
-import { CommonModule } from '@angular/common';
-import { FormsModule } from '@angular/forms';
-import { ChangeDetectionStrategy } from '@angular/core';
 import { provideNativeDateAdapter } from '@angular/material/core';
 import { MatDatepickerModule } from '@angular/material/datepicker';
-import { ReactiveFormsModule } from '@angular/forms';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatTimepickerModule } from '@angular/material/timepicker';
+import { MenuComponent } from '../menu/menu.component';
+import { EditarConsultaComponent } from '../components/editar-consulta/editar-consulta.component';
+import { ConsultaService } from '../services/consulta.service';
+import { Consulta } from '../models/consulta';
 
 @Component({
   selector: 'app-consultas',
@@ -22,220 +24,165 @@ import { MatTimepickerModule } from '@angular/material/timepicker';
   providers: [provideNativeDateAdapter()],
   imports: [
     CommonModule,
+    FormsModule,
+    ReactiveFormsModule,
+    MenuComponent,
+    EditarConsultaComponent,
     MatFormFieldModule,
     MatInputModule,
     MatSelectModule,
     MatPaginatorModule,
     MatIconModule,
     MatButtonModule,
-    MenuComponent,
     MatTooltipModule,
-    FormsModule,
-    ReactiveFormsModule,
+    MatDatepickerModule,
     MatCheckboxModule,
     MatTimepickerModule,
-    MatDatepickerModule,
   ],
-  changeDetection: ChangeDetectionStrategy.OnPush,
   templateUrl: './consultas.component.html',
   styleUrl: './consultas.component.scss',
 })
 export class ConsultasComponent implements OnInit {
-  marcada: boolean = false;
-  editada: boolean = false;
-  desmarcada: boolean = false;
-  consultas = [
-    {
-      data: '11/06/2025',
-      medico: 'Vitor Schmidt Ribeiro',
-      horario: '14:00',
-      duracao: '60 min',
-      situacao: 'Agendada',
-      formaPagamento: 'Pix',
-      valor: 'R$120,00',
-      linkTeams: 'https://teams.microsoft.com/l/meetup-join/abc123...',
-    },
-    {
-      data: '12/04/2025',
-      medico: 'Gabriel Araujo Alvarenga',
-      horario: '15:30',
-      duracao: '30 min',
-      situacao: 'Agendada',
-      valor: 'R$120,00',
-      formaPagamento: 'Cartão',
-      linkTeams: 'https://teams.microsoft.com/l/meetup-join/abc123...',
-    },
-    {
-      data: '23/04/2025',
-      medico: 'Vânia Lourenço Gonçalves',
-      duracao: '120 min',
-      situacao: 'Finalizada',
-      valor: 'R$120,00',
-      formaPagamento: 'Cartão',
-      horario: '17:30',
-      tipoAtendimento: 'Retorno',
-    },
-    {
-      data: '16/05/2025',
-      medico: 'Maria Eduarda Ferreira Reais',
-      duracao: '30 min',
-      situacao: 'Finalizada',
-      valor: 'R$60,00',
-      formaPagamento: 'Pix',
-      horario: '08:30',
-      tipoAtendimento: 'Retorno',
-    },
-    {
-      data: '27/04/2025',
-      medico: 'Mariany Karla Abranches de Melo',
-      duracao: '120 min',
-      situacao: 'Finalizada',
-      valor: 'R$120,00',
-      formaPagamento: 'Boleto',
-      horario: '10:30',
-      tipoAtendimento: 'Primeira consulta',
-    },
-  ];
+  consultas: any[] = [];
+  consultaSelecionada: any = {};
 
-  consultaSelecionada: any = {
-    data: '09/05/2025',
-    horario: '15:30',
-    duracao: '30 min',
-    situacao: 'Finalizada',
-    tipoAtendimento: 'Consulta',
-    formaPagamento: 'Pix',
-    planoSaude: false,
-    profissional: 'Gabriel Araujo Alvarenga',
-    crm: '00859970',
-    especialidade: 'Terapeuta',
-    valorConsulta: 'R$ 60,00',
-    contatoMedico: '(31) 3595-4142',
-    paciente: 'Maria Eduarda Ferreira de Souza',
-    contatoPaciente: '(38) 98645-2293',
-    observacoes: 'Consulta de rotina',
-  };
-
-  duracoes = [
-    { value: '30', viewValue: '30 minutos' },
-    { value: '60', viewValue: '1 hora' },
-    { value: '90', viewValue: '1 hora e 30 minutos' },
-  ];
-
-  situacoes = [
-    { value: 'agendada', viewValue: 'Agendada' },
-    { value: 'cancelada', viewValue: 'Cancelada' },
-    { value: 'realizada', viewValue: 'Realizada' },
-  ];
-
-  tiposAtendimento = [
-    { value: 'presencial', viewValue: 'Presencial' },
-    { value: 'online', viewValue: 'Online' },
-  ];
-
-  formasPagamento = [
-    { value: 'boleto', viewValue: 'Boleto' },
-    { value: 'cartao', viewValue: 'Cartão' },
-    { value: 'pix', viewValue: 'PIX' },
-  ];
-
-  // Modais
+  tipoUsuarioLogado: string = '';
 
   modalDetalhesVisivel = false;
-  consulta: any = {};
+  modalDesmarcarConsultaVisivel = false;
+  modalEditarConsultaVisivel = false;
 
-  verDetalhes(dadosConsulta: any) {
-    this.consultaSelecionada = { ...dadosConsulta };
-    this.consulta = {
-      ...dadosConsulta,
-      valorConsulta: dadosConsulta.valor, // mapeia 'valor' para 'valorConsulta'
-      horario: dadosConsulta.horario || 'Indisponível', // caso não tenha horário
-      formaPagamento: dadosConsulta.formaPagamento || 'Não informada',
-      tiposAtendimento: dadosConsulta.tipoAtendimento || 'Não informada'
-    };
+  constructor(private consultaService: ConsultaService) {}
+
+  ngOnInit(): void {
+    const usuarioString = localStorage.getItem('usuarioLogado');
+    if (usuarioString) {
+      const usuario = JSON.parse(usuarioString);
+      this.tipoUsuarioLogado = usuario.tipo;
+    }
+
+    this.carregarConsultas();
+  }
+
+  carregarConsultas(): void {
+    const idUsuario = localStorage.getItem('userId');
+
+    if (!idUsuario) {
+      alert('Usuário não identificado. Por favor, faça o login novamente.');
+      return;
+    }
+
+    let busca$: any;
+
+    if (this.tipoUsuarioLogado === 'paciente') {
+      console.log('Buscando consultas para o PACIENTE com ID:', idUsuario);
+      busca$ = this.consultaService.getConsultasPorPaciente(parseInt(idUsuario, 10));
+    } 
+    else if (this.tipoUsuarioLogado === 'medico') {
+      console.log('Buscando consultas para o MÉDICO com ID:', idUsuario);
+      busca$ = this.consultaService.getConsultasPorMedico(parseInt(idUsuario, 10));
+    } 
+    else {
+      console.error('Tipo de usuário desconhecido:', this.tipoUsuarioLogado);
+      return;
+    }
+
+
+    busca$.pipe(
+      map((consultasDaApi: any[]) => {
+        return consultasDaApi.map(apiItem => ({
+          data: new Date(apiItem.data_consulta).toLocaleDateString('pt-BR'),
+          medico: apiItem.medico_Nome,
+          paciente: apiItem.paciente_Nome,
+          horario: apiItem.horario,
+          duracao: `${apiItem.duracao}`,
+          situacao: apiItem.situacao,
+          valor: apiItem.valor.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' }),
+          dadosOriginais: apiItem,
+        }));
+      })
+    ).subscribe({
+      next: (consultasFormatadas: any[]) => {
+        this.consultas = consultasFormatadas;
+      },
+      error: (err: any) => {
+        console.error('Erro ao carregar consultas:', err);
+        alert('Não foi possível carregar as consultas.');
+      }
+    });
+  }
+
+  verDetalhes(consultaClicada: any): void {
+    this.consultaSelecionada = { ...consultaClicada, ...consultaClicada.dadosOriginais };
     this.modalDetalhesVisivel = true;
   }
 
-  fecharModalEditar() {
-    this.modalDetalhesVisivel = false;
-  }
-
-  // Desmarcar
-
-  modalDesmarcarConsultaVisivel = false;
-
-  constructor() {}
-
-  ngOnInit(): void {}
-
-  desmarcar(consulta: any) {
-    this.consultaSelecionada = consulta;
-    this.modalDesmarcarConsultaVisivel = true;
-  }
-
-  fecharModalDesmarcar() {
-    this.modalDesmarcarConsultaVisivel = false;
-    this.consultaSelecionada = null;
-  }
-
-  confirmarDesmarcamento() {
-    console.log('Cancelando:', this.consultaSelecionada);
-    this.modalDesmarcarConsultaVisivel = false;
-    this.desmarcada = true;
-    this.marcada = true;
-    setTimeout(() => {
-      this.marcada = false;
-    }, 5000);
-  }
-
-  // Editar
-
-  modalEditarConsultaVisivel = false;
-  formatoSelecionado: string = 'pdf';
-
-  editarConsulta(consulta: any) {
-    this.consultaSelecionada = consulta;
+  editarConsulta(consultaClicada: any): void {
+    this.consultaSelecionada = consultaClicada;
     this.modalEditarConsultaVisivel = true;
   }
 
-  fecharModalDetalhes() {
-    this.modalEditarConsultaVisivel = false;
+  desmarcar(consultaClicada: any): void {
+    this.consultaSelecionada = consultaClicada;
+    this.modalDesmarcarConsultaVisivel = true;
+  }
+
+  fecharModalDetalhes(): void {
     this.modalDetalhesVisivel = false;
-    this.consultaSelecionada = null;
   }
 
-  confirmarEdicao() {
-    console.log(
-      'Imprimindo:',
-      this.consultaSelecionada,
-      'Formato:',
-      this.formatoSelecionado
-    );
+  fecharModalEditar(): void {
     this.modalEditarConsultaVisivel = false;
-
-    this.editada = true;
-    setTimeout(() => {
-      this.editada = false;
-    }, 5000);
   }
 
-  abrirTeams(consulta: any) {
-    if (!consulta.linkTeams) {
-      alert('Teams não está disponível para esta consulta.');
-      return;
-    }
-    window.open(consulta.linkTeams, '_blank', 'noopener,noreferrer');
+  fecharModalDesmarcar(): void {
+    this.modalDesmarcarConsultaVisivel = false;
+  }
+
+  confirmarEdicao(dadosEditados: any): void {
+    const id = dadosEditados.id;
+    this.consultaService.atualizarConsulta(id, dadosEditados).subscribe({
+      next: () => {
+        alert('Consulta atualizada com sucesso!');
+        this.carregarConsultas();
+      },
+      error: (err) => {
+        console.error('Erro ao atualizar consulta', err);
+        alert('Falha ao atualizar a consulta.');
+      }
+    });
+    this.fecharModalEditar();
+  }
+
+  confirmarDesmarcamento(): void {
+    const idParaExcluir = this.consultaSelecionada.dadosOriginais.id;
+    this.consultaService.excluirConsulta(idParaExcluir).subscribe({
+      next: () => {
+        alert('Consulta desmarcada/excluída com sucesso!');
+        this.carregarConsultas();
+      },
+      error: (err) => {
+        console.error('Erro ao desmarcar consulta', err);
+        alert('Falha ao desmarcar a consulta.');
+      }
+    });
+    this.fecharModalDesmarcar();
   }
 
   isHoje(dataConsulta: string): boolean {
     const [dia, mes, ano] = dataConsulta.split('/').map(Number);
     const data = new Date(ano, mes - 1, dia);
-
     const hoje = new Date();
+    hoje.setHours(0, 0, 0, 0);
+    return data.getTime() === hoje.getTime();
+  }
 
-    return (
-      data.getDate() === hoje.getDate() &&
-      data.getMonth() === hoje.getMonth() &&
-      data.getFullYear() === hoje.getFullYear()
-    );
+  abrirTeams(consulta: any): void {
+    const link = consulta.dadosOriginais.linkTeams;
+    if (!link) {
+      alert('Link para o Teams não disponível para esta consulta.');
+      return;
+    }
+    window.open(link, '_blank', 'noopener,noreferrer');
   }
 }
