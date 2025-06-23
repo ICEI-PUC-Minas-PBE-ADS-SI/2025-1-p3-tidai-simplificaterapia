@@ -44,9 +44,11 @@ export class MenuComponent implements OnInit {
     }
   }
 
+  /*
   logout() {
     this.loginState.logout();
   }
+  */
 
  get Logado(): boolean {
   return this.loginState.logado;

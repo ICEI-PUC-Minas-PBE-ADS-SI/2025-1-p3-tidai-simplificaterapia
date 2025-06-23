@@ -22,21 +22,32 @@ namespace SimplificaTerapia.Controllers
 
         [HttpGet] 
         public async Task<IActionResult> GetAllMedicos(
-        [FromQuery] string? nome,
-        [FromQuery] string? uf,
-        [FromQuery] string? sexo)
+            [FromQuery] string? nome,
+            [FromQuery] string? uf,
+            [FromQuery] string? sexo,
+            [FromQuery] string? especialidade,
+            [FromQuery] string? valor)
         {
             var query = dbContext.Medicos.AsQueryable();
-        
+
             if (!string.IsNullOrWhiteSpace(nome))
                 query = query.Where(m => EF.Functions.Like(m.nome_completo, $"%{nome}%"));
-        
+
             if (!string.IsNullOrWhiteSpace(uf))
                 query = query.Where(m => m.uf == uf);
-        
+
             if (!string.IsNullOrWhiteSpace(sexo))
                 query = query.Where(m => m.sexo == sexo);
-        
+
+            if (!string.IsNullOrWhiteSpace(especialidade))
+                query = query.Where(m => EF.Functions.Like(m.especialidade, $"%{especialidade}%"));
+
+            if (!string.IsNullOrWhiteSpace(valor))
+            {
+                if (decimal.TryParse(valor, out var valorNum))
+                    query = query.Where(m => m.valor_por_hora == valorNum);
+            }
+
             var resultado = await query.ToListAsync();
             return Ok(resultado);
         }

@@ -13,31 +13,31 @@
 
       <mat-form-field appearance="outline" class="custom-field uf">
         <mat-label>UF</mat-label>
-        <mat-select>
+        <mat-select [(ngModel)]="filtroUf">
           <mat-option *ngFor="let uf of estados" [value]="uf">{{ uf }}</mat-option>
         </mat-select>
       </mat-form-field>
 
       <mat-form-field appearance="outline" class="custom-field sexo">
         <mat-label>Sexo</mat-label>
-        <mat-select>
+        <mat-select [(ngModel)]="filtroSexo">
           <mat-option *ngFor="let sexo of sexos" [value]="sexo">{{ sexo }}</mat-option>
         </mat-select>
       </mat-form-field>
 
       <mat-form-field appearance="outline" class="custom-field especialidade">
         <mat-label>Especialidade</mat-label>
-        <input matInput placeholder="Especialidade">
+        <input matInput placeholder="Especialidade" [(ngModel)]="filtroEspecialidade">
       </mat-form-field>
 
       <mat-form-field appearance="outline" class="custom-field valor">
         <mat-label>Valor R$</mat-label>
-        <input matInput placeholder="Valor">
+        <input matInput placeholder="Valor" [(ngModel)]="filtroValor">
       </mat-form-field>
     </div>
 
     <div class="buttons">
-      <button mat-stroked-button class="btn-limpar">
+      <button mat-stroked-button class="btn-limpar" (click)="limparFiltros()">
         <mat-icon>close</mat-icon>
         Limpar
       </button>

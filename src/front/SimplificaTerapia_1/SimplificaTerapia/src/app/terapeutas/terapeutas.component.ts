@@ -40,6 +40,10 @@ export class TerapeutasComponent implements OnInit {
   sexos = ['Masculino', 'Feminino', 'Outro'];
   medicos: Medico[] = [];
   filtroNome: string = '';
+  filtroUf: string = '';
+  filtroSexo: string = '';
+  filtroEspecialidade: string = '';
+  filtroValor: string = '';
 
   constructor(private medicoService: MedicoService) { }
 
@@ -48,13 +52,28 @@ export class TerapeutasComponent implements OnInit {
   }
 
   carregarMedicos(): void {
-    this.medicoService.getMedicos(this.filtroNome).subscribe({
+    this.medicoService.getMedicos(
+      this.filtroNome,
+      this.filtroUf,
+      this.filtroSexo,
+      this.filtroEspecialidade,
+      this.filtroValor
+    ).subscribe({
       next: (dados) => this.medicos = dados,
       error: (err) => console.error('Erro ao carregar médicos', err)
     });
   }
 
   buscarPorNome(): void {
+    this.carregarMedicos();
+  }
+
+  limparFiltros(): void {
+    this.filtroNome = '';
+    this.filtroUf = '';
+    this.filtroSexo = '';
+    this.filtroEspecialidade = '';
+    this.filtroValor = '';
     this.carregarMedicos();
   }
 }

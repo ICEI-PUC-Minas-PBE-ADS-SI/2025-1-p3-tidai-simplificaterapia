@@ -1,5 +1,21 @@
 [
   {
+    "ContainingType": "AuthController",
+    "Method": "Login",
+    "RelativePath": "api/Auth/login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "login",
+        "Type": "SimplificaTerapia.Models.LoginDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "SimplificaTerapia.Controllers.ConsultasController",
     "Method": "GetAllConsultas",
     "RelativePath": "api/Consultas",
@@ -85,7 +101,33 @@
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
-    "Parameters": [],
+    "Parameters": [
+      {
+        "Name": "nome",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "uf",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "sexo",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "especialidade",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "valor",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
     "ReturnTypes": []
   },
   {

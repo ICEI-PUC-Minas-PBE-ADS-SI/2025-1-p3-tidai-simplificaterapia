@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Notebook\\Downloads\\SimplificaTerapia\\SimplificaTerapia_API\\SimplificaTerapia.csproj": {}
+    "C:\\Users\\vitor\\Documentos\\SimplificaTerapia\\2025-1-p3-tidai-simplificaterapia\\src\\back\\SimplificaTerapia\\SimplificaTerapia_API\\SimplificaTerapia.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Notebook\\Downloads\\SimplificaTerapia\\SimplificaTerapia_API\\SimplificaTerapia.csproj": {
+    "C:\\Users\\vitor\\Documentos\\SimplificaTerapia\\2025-1-p3-tidai-simplificaterapia\\src\\back\\SimplificaTerapia\\SimplificaTerapia_API\\SimplificaTerapia.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Notebook\\Downloads\\SimplificaTerapia\\SimplificaTerapia_API\\SimplificaTerapia.csproj",
+        "projectUniqueName": "C:\\Users\\vitor\\Documentos\\SimplificaTerapia\\2025-1-p3-tidai-simplificaterapia\\src\\back\\SimplificaTerapia\\SimplificaTerapia_API\\SimplificaTerapia.csproj",
         "projectName": "SimplificaTerapia",
-        "projectPath": "C:\\Users\\Notebook\\Downloads\\SimplificaTerapia\\SimplificaTerapia_API\\SimplificaTerapia.csproj",
-        "packagesPath": "C:\\Users\\Notebook\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Notebook\\Downloads\\SimplificaTerapia\\SimplificaTerapia_API\\obj\\",
+        "projectPath": "C:\\Users\\vitor\\Documentos\\SimplificaTerapia\\2025-1-p3-tidai-simplificaterapia\\src\\back\\SimplificaTerapia\\SimplificaTerapia_API\\SimplificaTerapia.csproj",
+        "packagesPath": "C:\\Users\\vitor\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\vitor\\Documentos\\SimplificaTerapia\\2025-1-p3-tidai-simplificaterapia\\src\\back\\SimplificaTerapia\\SimplificaTerapia_API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Notebook\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\vitor\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -44,7 +44,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.200"
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net9.0": {
@@ -88,7 +88,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
