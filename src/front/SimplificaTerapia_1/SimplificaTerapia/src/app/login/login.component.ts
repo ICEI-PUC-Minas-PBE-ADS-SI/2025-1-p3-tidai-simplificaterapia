@@ -57,7 +57,17 @@ export class LoginComponent {
       tipo: this.tipoSelecionado
     }).subscribe({
       next: (res) => {
-        localStorage.setItem('usuarioLogado', JSON.stringify(res));
+        const usuarioLogado = {
+          id: res.id,
+          nome: res.nome,
+          email: res.email,
+          tipo: this.tipoSelecionado
+        };
+
+        localStorage.setItem('usuarioLogado', JSON.stringify(usuarioLogado));
+        
+        localStorage.setItem('userId', res.id)
+        
         this.loginState.logado = true;
 
         this.router.navigate(['/']);
@@ -68,4 +78,5 @@ export class LoginComponent {
       }
     });
   }
+
 }
