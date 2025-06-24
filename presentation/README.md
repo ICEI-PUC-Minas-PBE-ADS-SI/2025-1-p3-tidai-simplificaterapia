@@ -43,6 +43,4 @@ A seguir, estão as especificações técnicas que devem ser seguidas na criaç�
 
 > Demonstração prática do sistema *Simplifica Terapia*, evidenciando as principais funcionalidades desenvolvidas e a experiência do usuário na plataforma.
 
-📎 [Clique aqui para assistir ao vídeo](./video-demo.mp4)
-https://1drv.ms/v/c/662c470c8a4e0dcb/EZBeF7c2caJLvBZFnY4pUL4Bx9q0CBJvFEnPhGFGdfT9kQ
-
+📎 [Clique aqui para assistir ao vídeo](https://1drv.ms/v/c/662c470c8a4e0dcb/EZBeF7c2caJLvBZFnY4pUL4Bx9q0CBJvFEnPhGFGdfT9kQ)
