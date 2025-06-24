@@ -74,6 +74,18 @@ Quanto à gerência de issues, o projeto adota a seguinte convenção para etiqu
 - Desenvolvedor _back-end_: André Marcus, Vânia Lourenço e Vitor Schmidt
 - Testes: Vânia Lourenço, Mariany Karla e Maria Eduarda
 
+- #### Sprint 3
+- _Scrum master_: Maria Eduarda
+- Desenvolvedor _front-end_: Maria Eduarda e Mariany Karla 
+- Desenvolvedor _back-end_: André Marcus, Vânia Lourenço e Vitor Schmidt
+- Testes: Mariany Karla e Maria Eduarda
+
+- - #### Sprint 4
+- _Scrum master_: Maria Eduarda
+- Desenvolvedor _front-end_: Maria Eduarda 
+- Desenvolvedor _back-end_: André Marcus, Vânia Lourenço, Mariany Karla e Vitor Schmidt
+- Testes:Mariany Karla  André Marcus e Maria Eduarda
+
 ###  Quadro de tarefas
 
 <!-- > Apresente a divisão de tarefas entre os membros do grupo e o acompanhamento da execução, conforme o exemplo abaixo.-->
@@ -99,6 +111,33 @@ Atualizado em: 22/06/2025
 | Maria Eduarda | CSS unificado    | 18/03/2025     | 20/05/2025 | ✔️     | 20/05/2025      |
 | Mariany Karla | Página de login  | 05/04/2025     | 26/05/2025 | ✔️     | 26/05/2025      |
 | Mariany Karla | Script de login  | 16/04/2025     | 28/06/2025 | ✔️     | 28/06/2025      |
+
+#### Sprint 3
+
+Atualizado em: 22/06/2025
+
+| Responsável   | Tarefa/Requisito | Iniciado em    | Prazo      | Status | Terminado em    |
+| :----         |    :----         |      :----:    | :----:     | :----: | :----:          |
+| Maria Eduarda | Plano de Teste   | 15/05/2025     | 26/05/2025 | ✔️     | 26/05/2025      |
+| Maria Eduarda | Registros de Teste    | 18/05/2025     | 26/05/2025 | ✔️     | 26/05/2025      |
+| Vitor Schmidt | Código - Primeira Versão  | 18/05/2025     | 26/05/2025 | ✔️     | 26/05/2025      |
+| André Marcus | Código - Primeira Versão  | 16/05/2025     | 26/05/2025 | ✔️     | 26/05/2025      |
+| Vânia Lourenço | Documentação  | 20/05/2025     | 25/05/2025 | ✔️     | 26/05/2025      |
+
+
+#### Sprint 4
+
+Atualizado em: 22/06/2025
+
+| Responsável   | Tarefa/Requisito | Iniciado em    | Prazo      | Status | Terminado em    |
+| :----         |    :----         |      :----:    | :----:     | :----: | :----:          |
+| Mariany Karla | Plano de Teste de Usabilidade   | 28/05/2025     | 12/06/2025 | ✔️     | 22/06/2025      |
+| Mariany Karla | Registro de Testes de Usabilidade   | 29/05/2025     | 15/06/2025 | ✔️     | 22/06/2025      |
+| Vitor Schmidt | Código - Versão Final  | 28/05/2025     | 15/06/2025 | ✔️     | 23/06/2025      |
+| André Marcus | Código - Versão Final  | 18/06/2025     | 21/06/2025 | ✔️     | 23/06/2025      |
+| Vânia Lourenço | Código - Versão Final  | 17/06/2025     | 22/06/2025 | ✔️     | 23/06/2025      |
+| Maria Eduarda | Documentação Final GitHub  | 15/06/2025     | 12/06/2025 | ✔️     | 22/06/2025      |
+| Maria Eduarda | Apresentação Final  | 18/06/2025     | 16/06/2025 | ✔️     | 22/06/2025      |
 
 
 Legenda:
